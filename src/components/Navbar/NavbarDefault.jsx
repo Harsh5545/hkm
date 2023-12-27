@@ -9,21 +9,19 @@ function NavbarDefault() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
-    <nav className={`flex md:flex-row bg-black justify-between items-center px-6 py-4`}>
-      <div className="flex items-center">
+    <div className='flex flex-col justify-start md:flex-row bg-black md:justify-between items-center px-6 py-4'>
+      <div className="flex justify-between items-center w-full md:w-0">
         <h2 className="text-xl text-white font-semibold">Logo</h2>
-      </div>
-
-      <div className="flex flex-col items-center">
         <div className="md:hidden">
-          {/* Mobile Menu Button */}
           <button className="text-white" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? "✕" : "☰"}
           </button>
         </div>
+      </div>
 
+      <div className="flex flex-col items-start">
         <ul
-          className={`flex flex-col md:flex-row items-center gap-2 text-[#bdbdc0] font-medium font-jakarta ${
+          className={`flex flex-col md:flex-row items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-[#bdbdc0] font-medium font-jakarta ${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}
         >
@@ -50,12 +48,14 @@ function NavbarDefault() {
         </ul>
       </div>
 
-      <div className="hidden md:block">
+      <div className={`${
+            isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
+          }`}>
         <button className="font-jakarta text-sm px-4 py-2 rounded-full text-white font-medium bg-white bg-opacity-[.08] border border-white border-opacity-[.08] hover:border-opacity-25">
           Log in
         </button>
       </div>
-    </nav>
+    </div>
   );
 }
 
