@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { motion, AnimatePresence } from "framer-motion";
 
 function NavbarDefault() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,45 +10,52 @@ function NavbarDefault() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
-    <nav className={`flex md:flex-row bg-black justify-between items-center px-6 py-4`}>
+    <div className={`flex md:flex-row bg-black justify-between items-center px-6 py-4`}>
       <div className="flex items-center">
         <h2 className="text-xl text-white font-semibold">Logo</h2>
       </div>
 
-      <div className="flex flex-col items-center">
-        <div className="md:hidden">
-          {/* Mobile Menu Button */}
-          <button className="text-white" onClick={toggleMobileMenu}>
-            {isMobileMenuOpen ? "✕" : "☰"}
-          </button>
-        </div>
+      <div className="flex flex-col items-center md:hidden">
+        {/* Mobile Menu Button */}
+        <button className="text-white" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? "✕" : "☰"}
+        </button>
 
-        <ul
-          className={`flex flex-col md:flex-row items-center gap-2 text-[#bdbdc0] font-medium font-jakarta ${
-            isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
-          }`}
-        >
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Contact
-            </a>
-          </li>
-        </ul>
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.5 }}
+              className="w-full"
+            >
+              <ul className={`flex flex-col items-center gap-2 text-[#bdbdc0] font-medium font-jakarta`}>
+                <li>
+                  <a href="#" className="p-3 hover:text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="p-3 hover:text-white">
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="p-3 hover:text-white">
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="p-3 hover:text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <div className="hidden md:block">
@@ -55,7 +63,7 @@ function NavbarDefault() {
           Log in
         </button>
       </div>
-    </nav>
+    </div>
   );
 }
 
