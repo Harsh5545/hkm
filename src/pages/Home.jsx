@@ -1,12 +1,7 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import React from "react";
 
 function Home() {
-  return (
-    <div style={{ height: "100rem" }} >
-      <Navbar />
-      Home</div>
-  )
+  return <div style={{ height: "100rem" }}>Home</div>;
 }
 
-export default Home
+export default Home;

@@ -2,6 +2,7 @@ import react from 'react'
 
 import './App.css'
 import Home from './pages/Home'
+import Navbar from './components/Navbar/Navbar'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <>
-    
+      <Navbar/>
       <Home />
     </>
   )

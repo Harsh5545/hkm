@@ -9,7 +9,7 @@ function NavbarDefault() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
-    <div className='flex flex-col justify-start md:flex-row bg-black md:justify-between items-center px-6 py-4'>
+    <div className='flex fixed z-[999] top-2 left-1/2 -translate-x-1/2 w-[80%] flex-col justify-start md:flex-row bg-black md:justify-between items-center px-6 py-4'>
       <div className="flex justify-between items-center w-full md:w-0">
         <h2 className="text-xl text-white font-semibold">Logo</h2>
         <div className="md:hidden">
