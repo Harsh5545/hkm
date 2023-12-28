@@ -1,10 +1,11 @@
-import React from "react";
-import Hero from "./Home/Hero";
+  import React from "react";
+  import Hero from "./Home/Hero";
 
-function Home() {
-  return <div style={{ height: "100rem" }}>
-    <Hero/>
-  </div>;
-}
+  function Home() {
+    return <div >
+      
+      <Hero/>
+    </div>;
+  }
 
-export default Home;
+  export default Home;
