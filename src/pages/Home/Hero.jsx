@@ -24,7 +24,7 @@
     };
 
     return (
-        <div className=" h-[100vh] flex flex-col justify-center items-center bg-black " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
+        <div className=" h-[100rem] flex flex-col justify-center items-center bg-green-500 " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
         <div className="flex justify-between items-center " >
                 <div className="w-1/2 p-8  bg-white">
                     hero
