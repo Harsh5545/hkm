@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import Logo from'../../assets/logo.png'
 
 function NavbarDefault() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,9 +10,11 @@ function NavbarDefault() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
-    <div className='flex fixed z-[999] top-2 left-1/2 -translate-x-1/2 w-[80%] flex-col justify-start md:flex-row bg-black md:justify-between items-center px-6 py-4'>
+    <div className='flex w-[90%] mx-auto flex-col md:flex-row bg-black md:justify-between items-center px-6 py-4'>
       <div className="flex justify-between items-center w-full md:w-0">
-        <h2 className="text-xl text-white font-semibold">Logo</h2>
+        <span className="text-xl">
+          <img src={Logo}  alt="HarikrushnaMultimedia institue logo"/>
+        </span>
         <div className="md:hidden">
           <button className="text-white" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? "✕" : "☰"}
@@ -26,7 +29,7 @@ function NavbarDefault() {
           }`}
         >
           <li>
-            <a href="" className="p-3 hover:text-white">
+            <a href="" className="p-3 font-bold hover:text-white">
               Home
             </a>
           </li>

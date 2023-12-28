@@ -11,7 +11,7 @@ const navVariants = {
     y: 0,
     x: "-50%",
     transition: {
-      duration: 0.5, // Increase the duration to slow down the motion
+      duration: 1.5, // Increase the duration to slow down the motion
     },
   },
   exit: {
@@ -32,7 +32,7 @@ function NavbarFixed() {
       exit="exit"
       variants={navVariants}
       className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col bg-black  backdrop-blur-lg border border-white  flex md:flex-row md:justify-between items-center"
-      style={{ width: "80%" }} // Increase the width to your desired value
+      style={{ width: "90%" }} // Increase the width to your desired value
     >
          <div className="flex justify-between items-center w-full md:w-0">
         <h2 className="text-xl text-white font-semibold">Logo</h2>
