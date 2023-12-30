@@ -10,17 +10,13 @@ function NavbarDefault() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
-<<<<<<< HEAD
+
     <div className='flex z-[999] mx-auto flex-col md:flex-row bg-white md:justify-around items-center py-5'>
       <div className="flex justify-between items-center w-full md:w-0">
-        <span className="text-xl">
-          <img src={Logo} className="max-w-20"   alt="HarikrushnaMultimedia institue logo"/>
-=======
-    <div className='flex z-[999] mx-auto flex-col md:flex-row bg-black md:justify-between items-center px-6 py-4'>
-      <div className="flex justify-between items-center w-full md:w-0">
+
         <span className="text-xl">
           <img src={Logo} className="max-w-20" alt="HarikrushnaMultimedia institue logo"/>
->>>>>>> a84b638014f6fd2fcf5cd91c679b31d55393aee3
+
         </span>
         <div className="md:hidden">
           <button className="text-Black" onClick={toggleMobileMenu}>

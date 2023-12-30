@@ -24,29 +24,24 @@
     };
 
     return (
-<<<<<<< HEAD
+
         <div className=" h-[100vh]  bg-white " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
         
-        <div className="flex justify-between items-center left-container" >
-                <div className="p-20 flex flex-col bg-white">
+        <div className="flex w-100 justify-between items-center left-container" >
+                <div className=" flex  flex-col my-5 mx-10 bg-white">
                     <h2 className="flex font-semibold">Opportunity to Bring Your</h2>
                         <h1>Creative Passion to Life</h1>
                         <div>
                         <h2 className="flex font-semibold">You Will Learn Here</h2>
                             <TyperWriter />
-                            </div>
-=======
-        <div className=" h-[100rem] flex flex-col justify-center items-center bg-green-500 " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
-        <div className="flex justify-between items-center " >
-                <div className="w-1/2 p-8  bg-white">
-                    hero
->>>>>>> a84b638014f6fd2fcf5cd91c679b31d55393aee3
-        </div>
+                    </div>
+                    </div>
+   
                 <div className=" bg-orange-500 right-container">
                 zero</div>
                 </div>
-                </div>
-        
+            
+            </div>     
     );
     };
 
