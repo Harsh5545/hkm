@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import Logo from '../../assets/logo.png'
 
 const navVariants = {
   initial: {
@@ -31,13 +32,15 @@ function NavbarFixed() {
       animate="animate"
       exit="exit"
       variants={navVariants}
-      className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col bg-black  backdrop-blur-lg border border-white  flex md:flex-row md:justify-between items-center"
-      style={{ width: "90%" }} // Increase the width to your desired value
+      className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col bg-white  backdrop-blur-lg border border-balck  flex md:flex-row md:justify-between items-center"
+      style={{ width: "80%" }} // Increase the width to your desired value
     >
          <div className="flex justify-between items-center w-full md:w-0">
-        <h2 className="text-xl text-white font-semibold">Logo</h2>
+         <span className="text-xl">
+          <img src={Logo} className="max-w-20"   alt="HarikrushnaMultimedia institue logo"/>
+        </span>
         <div className="md:hidden">
-          <button className="text-white" onClick={toggleMobileMenu}>
+          <button className="text-black" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? "✕" : "☰"}
           </button>
         </div>
@@ -45,10 +48,13 @@ function NavbarFixed() {
 
       <div className="flex flex-col items-start">
         <ul
-          className={`flex flex-col md:flex-row items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-[#bdbdc0] font-medium font-jakarta ${
+          className={`flex flex-col md:flex-row items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}
         >
+          <li>
+      
+          </li>
           <li>
             <a href="" className="p-3 hover:text-white">
               Home
@@ -56,17 +62,17 @@ function NavbarFixed() {
           </li>
           <li>
             <a href="" className="p-3 hover:text-white">
-              Features
+              AboutUs
             </a>
           </li>
           <li>
             <a href="" className="p-3 hover:text-white">
-              Pricing
+              Courses
             </a>
           </li>
           <li>
             <a href="" className="p-3 hover:text-white">
-              Contact
+              Student Project
             </a>
           </li>
         </ul>
@@ -75,8 +81,8 @@ function NavbarFixed() {
       <div className={`${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}>
-        <button className="font-jakarta text-sm px-4 py-2 rounded-full text-white font-medium bg-white bg-opacity-[.08] border border-white border-opacity-[.08] hover:border-opacity-25">
-          Log in
+        <button className="font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25">
+          Contact Us
         </button>
       </div>
     </motion.div>

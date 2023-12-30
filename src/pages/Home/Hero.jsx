@@ -1,5 +1,5 @@
     import React, { useState, useEffect } from "react";
-
+    import TyperWriter from "./TyperWriter";
 
     const Hero = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -17,22 +17,29 @@
     }, []);
 
     const calculateRotation = (axis) => {
-        // Adjust these values based on your desired rotation range
-        const maxRotation = 2;
+    
+        const maxRotation = 1;
         const rotation = (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
         return rotation;
     };
 
     return (
-        <div className=" h-[100vh] flex flex-col justify-center items-center bg-black " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
-        <div className="flex justify-between items-center " >
-                <div className="w-1/2 p-8  bg-white">
-                    hero
+        <div className=" h-[100vh]  bg-white " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
+        
+        <div className="flex justify-between items-center left-container" >
+                <div className="p-20 flex flex-col bg-white">
+                    <h2 className="flex font-semibold">Opportunity to Bring Your</h2>
+                        <h1>Creative Passion to Life</h1>
+                        <div>
+                        <h2 className="flex font-semibold">You Will Learn Here</h2>
+                            <TyperWriter />
+                            </div>
         </div>
-                <div className="w-1/2 bg-orange-500">{/* Add your 3D model component here */}
+                <div className=" bg-orange-500 right-container">
                 zero</div>
-        </div>
-        </div>
+                </div>
+                </div>
+        
     );
     };
 
