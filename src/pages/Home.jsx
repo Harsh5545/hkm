@@ -16,7 +16,7 @@ function Home() {
   };
     return <div style={backgroundStyle} >
       
-      <Hero/>
+      <Hero />
     </div>;
   }
 

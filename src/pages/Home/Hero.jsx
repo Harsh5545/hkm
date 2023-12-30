@@ -24,6 +24,7 @@
     };
 
     return (
+<<<<<<< HEAD
         <div className=" h-[100vh]  bg-white " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
         
         <div className="flex justify-between items-center left-container" >
@@ -34,6 +35,12 @@
                         <h2 className="flex font-semibold">You Will Learn Here</h2>
                             <TyperWriter />
                             </div>
+=======
+        <div className=" h-[100rem] flex flex-col justify-center items-center bg-green-500 " style={{ transform: `rotateX(${calculateRotation("y")}deg) rotateY(${-calculateRotation("x")}deg)` }}>
+        <div className="flex justify-between items-center " >
+                <div className="w-1/2 p-8  bg-white">
+                    hero
+>>>>>>> a84b638014f6fd2fcf5cd91c679b31d55393aee3
         </div>
                 <div className=" bg-orange-500 right-container">
                 zero</div>
