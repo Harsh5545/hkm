@@ -12,8 +12,8 @@ function NavbarDefault() {
 
   return (
 
-    <div className='flex z-[999]   absolute w-full md:justify-center items-center '>
-      <div className="flex-col md:flex-row flex md:justify-around rounded-md w-[90%] opacity-[.5] items-center bg-white py-3 m-4">
+    <div className='flex z-[999]  absolute w-full md:justify-center items-center '>
+      <div className="flex-col md:flex-row flex md:justify-around rounded-md w-[90%] opacity-[.99] items-center bg-white py-3 m-4">
 
       <div className="flex justify-between px-4 items-center w-full md:w-0">
 

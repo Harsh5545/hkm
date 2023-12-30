@@ -26,7 +26,7 @@ const Hero = () => {
 
   return (
     <div
-      className=" h-[100vh] opacity-1 w-[90%] flex flex-col justify-center"
+      className=" h-[100vh] opacity-1 w-[95%] flex flex-col justify-center"
       style={{
         transform: `rotateX(${calculateRotation(
           "y"
@@ -40,7 +40,7 @@ const Hero = () => {
           <div  >
             <h2 className="flex text-4xl">You Will Learn Here</h2>
             <TyperWriter />
-            <Button value={'Download Browcher'} className={'bg-green-400'}/>
+            <Button value={'Download Brochure'} className={''}/>
           </div>
         </div>
         <div className="justify-start text-white right-container">zero</div>
