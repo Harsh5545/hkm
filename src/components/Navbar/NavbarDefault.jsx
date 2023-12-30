@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Logo from'../../assets/logo.png'
+import Button from "../Button/Button";
 
 function NavbarDefault() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,12 +30,12 @@ function NavbarDefault() {
 
       <div className="flex flex-col items-start">
         <ul
-          className={`flex flex-col md:flex-row items-center gap-8 md:gap-10 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${
+          className={`flex flex-col font-poppins md:flex-row items-center gap-8 md:gap-10 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}
         >
           <li>
-            <a href="" className=" font-bold hover:text-black">
+            <a href="" className=" hover:text-black">
               Home
             </a>
           </li>
@@ -59,8 +60,8 @@ function NavbarDefault() {
       <div className={`${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}>
-        <button className="font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black  bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25">
-        Contact Us</button>
+        <Button value={'Contact Us'} className={"font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black  bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25"}/>
+        
       </div>
       </div>
     </div>

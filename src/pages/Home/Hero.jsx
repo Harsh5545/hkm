@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TyperWriter from "./TyperWriter";
+import Button from "../../components/Button/Button";
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -33,15 +34,16 @@ const Hero = () => {
       }}
     >
       <div className="flex justify-between items-center left-container">
-        <div className=" flex flex-col items-start  flex-1 text-white">
-          <h2 className="flex  font-semibold">Opportunity to Bring Your</h2>
-          <h1>Creative Passion to Life</h1>
-          <div>
-            <h2 className="flex font-semibold">You Will Learn Here</h2>
+        <div className=" flex flex-col items-start font-poppins  text-white gap-12">
+          <h2 className="flex text-5xl ">Opportunity to Bring Your</h2>
+          <h1 className="text-7xl">Creative Passion to Life</h1>
+          <div  >
+            <h2 className="flex text-4xl">You Will Learn Here</h2>
             <TyperWriter />
+            <Button value={'Download Browcher'} className={'bg-green-400'}/>
           </div>
         </div>
-        <div className="flex-1 justify-start text-white right-container">zero</div>
+        <div className="justify-start text-white right-container">zero</div>
       </div>
      </div>
   );

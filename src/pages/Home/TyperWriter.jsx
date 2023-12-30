@@ -1,11 +1,10 @@
 import React from 'react';
 import TyperWriteComponent from 'typewriter-effect';
-
+import "./homeStyles.css"
 function TyperWriter() {
   return (
     <div className=''>
       <TyperWriteComponent
-        className='xxxx-large'
         options={{
           autoStart: true,
           loop: true,
