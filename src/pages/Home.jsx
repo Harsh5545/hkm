@@ -1,9 +1,9 @@
   import React from "react";
   import Hero from "./Home/Hero";
-
+  import img from "../assets/vfx.webp"
 function Home() {
   const backgroundStyle = {
-    backgroundImage: 'url("../../assets/homeBg.webp")', 
+    backgroundImage: `url(${img})`, 
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',

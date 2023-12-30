@@ -25,15 +25,15 @@ const Hero = () => {
 
   return (
     <div
-      className=" h-[100vh] w-full  bg-white "
+      className=" h-[100vh] w-[90%] flex flex-col justify-center"
       style={{
         transform: `rotateX(${calculateRotation(
           "y"
         )}deg) rotateY(${-calculateRotation("x")}deg)`,
       }}
     >
-      <div className="flex justify-between  left-container">
-        <div className=" flex flex-col items-start border-black border-2 flex-1 bg-white">
+      <div className="flex justify-between items-center left-container">
+        <div className=" flex flex-col items-start  flex-1 text-white">
           <h2 className="flex font-semibold">Opportunity to Bring Your</h2>
           <h1>Creative Passion to Life</h1>
           <div>
@@ -41,8 +41,7 @@ const Hero = () => {
             <TyperWriter />
           </div>
         </div>
-
-        <div className="flex-1 justify-start bg-orange-500 right-container">zero</div>
+        <div className="flex-1 justify-start text-white right-container">zero</div>
       </div>
      </div>
   );
