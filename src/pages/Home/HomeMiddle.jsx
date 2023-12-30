@@ -1,19 +1,16 @@
-import React from 'react'
-import { courseData } from '../../helpers/Constant'
+import React from "react";
+import { courseData } from "../../helpers/Constant";
+import { Canvas } from "@react-three/fiber";
+import Experience from "../../components/Experience/Experience";
 function HomeMiddle() {
   return (
-      <div className='w-full flex  justify-center '>
-          <div className='w-[90%] bg-emerald-500'>
-              {courseData.map((item)=>{
-                return(
-                  <div>
-                    {item.course}
-                  </div>
-                )
-              })}
-          </div>
+    <div className="h-[100%] w-[100%]">
+
+    <Canvas>
+      <Experience/>
+  </Canvas>
     </div>
-  )
+  );
 }
 
-export default HomeMiddle
+export default HomeMiddle;
