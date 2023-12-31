@@ -25,13 +25,13 @@ function Home() {
     bottom: 0,
     left: 0,
     background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
-    opacity: 0.91,
+    opacity: 0.88,
   };
 
   return (
     <>
     <div style={containerStyle}>
-      <div style={bgOverlayStyle}>   </div>
+      <div style={bgOverlayStyle}></div>
       <Hero />
       </div>
       <HomeMiddle/>
