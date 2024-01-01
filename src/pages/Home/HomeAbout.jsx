@@ -19,7 +19,7 @@ function HomeAbout() {
                   {WhyChooseUs.map((item, index) => {
                       return(
                       <li key={index}>
-                          {`${index + 1}. ${item}`}
+                          {` ${item}`}
                       </li>)
                   })}
               </ul>
