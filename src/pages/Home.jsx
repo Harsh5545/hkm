@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Home/Hero";
 import img from "../assets/vfx.webp";
 import HomeMiddle from "./Home/HomeMiddle";
+import HomeAbout from "./Home/HomeAbout";
 
 function Home() {
   const containerStyle = {
@@ -25,16 +26,17 @@ function Home() {
     bottom: 0,
     left: 0,
     background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
-    opacity: 0.88,
+    opacity: 0.79,
   };
 
   return (
     <>
-    <div style={containerStyle}>
+    <div  style={containerStyle}>
       <div style={bgOverlayStyle}></div>
       <Hero />
       </div>
-      <HomeMiddle/>
+      <HomeMiddle />
+      <HomeAbout/>
       </>
     
   );
