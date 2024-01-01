@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomeStyles.css';
+import {WhyChooseUs} from '../../helpers/Constant'
 
 function HomeAbout() {
   const HomeAboutStyles = {
@@ -13,7 +14,16 @@ function HomeAbout() {
       <h1 className='font-bold flex justify-center items-center text-4xl'>
               WHY CHOOSE US ? . . .
           </h1>
-          <div className='flex-1'></div>
+          <div className='flex-1 mt-10'>
+              <ul>
+                  {WhyChooseUs.map((item, index) => {
+                      return(
+                      <li key={index}>
+                          {`${index + 1}. ${item}`}
+                      </li>)
+                  })}
+              </ul>
+          </div>
           <div className='flex-1'></div>
    
     </div>
