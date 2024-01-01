@@ -14,17 +14,20 @@ function HomeAbout() {
       <h1 className='font-bold flex justify-center items-center text-4xl'>
               WHY CHOOSE US ? . . .
           </h1>
+          <div className='md:flex ' >
           <div className='flex-1 mt-10'>
-              <ul>
+              <ul className='gap-5'>
                   {WhyChooseUs.map((item, index) => {
                       return(
-                      <li key={index}>
+                      <li key={index} className='text-xl'>
                           {` ${item}`}
                       </li>)
                   })}
               </ul>
           </div>
-          <div className='flex-1'></div>
+          <div className='flex-1'>
+          </div>
+          </div>
    
     </div>
   );
