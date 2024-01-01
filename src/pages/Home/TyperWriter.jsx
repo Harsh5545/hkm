@@ -1,6 +1,6 @@
 import React from 'react';
 import TyperWriteComponent from 'typewriter-effect';
-import "./homeStyles.css"
+import "./HomeStyles.css"
 function TyperWriter() {
   return (
     <div className=''>

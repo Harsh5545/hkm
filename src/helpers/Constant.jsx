@@ -10,7 +10,7 @@ const CourseData = [
     course: "Game Design",
     image: '/model/Game-Design.webp',
     alt: "harikrushna multimedia game design image",
-    description: "Explore the exciting world of game design and development.",
+    description: "Explore the exciting world of game design and development. 1211   3B 254",
     buttonText: "Enroll Now"
   },
   {
@@ -23,3 +23,4 @@ const CourseData = [
 ];
 
 export default CourseData;
+

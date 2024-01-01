@@ -22,7 +22,7 @@ function HomeMiddle() {
 
   return (
     <div className={`w-full flex justify-center ${isScrolled ? "sticky top-0" : ""}`}>
-      <div className={`w-[80%] rounded-t-2xl flex shadow-md mt-[-3rem] bg-white z-10 ${isScrolled ? "animate-scroll-down" : "animate-scroll-up"}`}>
+      <div className={`w-[80%] rounded-3xl flex shadow-2xl mt-[-3rem] bg-white z-10 ${isScrolled ? "animate-scroll-down" : "animate-scroll-up"}`}>
         {Constant.map((course, index) => (
           <div
             className={`flex-1 flex justify-center my-20 px-20 text-center gap-2 items-center flex-col transition-all duration-1000 transform ${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
@@ -34,7 +34,7 @@ function HomeMiddle() {
               style={{ height: '15rem' }}
               className="transition-transform transform hover:scale-95 hover:-translate-y-2 hover:rotate-x-12 hover:rotate-y-12"
             />
-            <h1>{course.course}</h1>
+            <h1 className="text-">{course.course}</h1>
             <p>{course.description}</p>
             <Button value={course.buttonText} className="p-1" />
           </div>
