@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import Logo from '../../assets/logo.png'
+import Button from "../Button/Button";
 
 const navVariants = {
   initial: {
@@ -32,7 +33,7 @@ function NavbarFixed() {
       animate="animate"
       exit="exit"
       variants={navVariants}
-      className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col bg-white  backdrop-blur-lg border border-balck  flex md:flex-row md:justify-between items-center"
+      className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col bg-white  backdrop-blur-lg border border-balck justify-around flex md:flex-row items-center"
       style={{ width: "85%" }} // Increase the width to your desired value
     >
          <div className="flex justify-between items-center w-full md:w-0">
@@ -48,7 +49,7 @@ function NavbarFixed() {
 
       <div className="flex flex-col items-start">
         <ul
-          className={`flex flex-col md:flex-row items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${
+          className={`flex flex-col md:flex-row font-poppins items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}
         >
@@ -81,9 +82,9 @@ function NavbarFixed() {
       <div className={`${
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}>
-        <button className="font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25">
-          Contact Us
-        </button>
+        <Button className={"font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25"}
+         value={'Contact Us'}/>
+      
       </div>
     </motion.div>
   );

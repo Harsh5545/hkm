@@ -11,15 +11,15 @@ function HomeAbout() {
  
   return (
     <div className='mt-40 w-full p-10 h-[50]' style={HomeAboutStyles}>
-      <h1 className='font-bold flex justify-center items-center text-4xl'>
+      <h1 className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>
               WHY CHOOSE US ? . . .
           </h1>
-          <div className='md:flex ' >
+          <div className='md:flex' >
           <div className='flex-1 mt-10'>
               <ul className='gap-5'>
                   {WhyChooseUs.map((item, index) => {
                       return(
-                      <li key={index} className='text-xl'>
+                      <li key={index} className='text-sm font-poppins md:text-xl'>
                           {` ${item}`}
                       </li>)
                   })}

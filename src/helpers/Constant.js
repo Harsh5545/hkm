@@ -2,25 +2,26 @@ export const CourseData = [
   {
     course: "3D Architectural",
     image: '/model/3D-ARCHITECTURAL.webp',
-    alt: "harikrushna multimedia 3d Architectural image",
-    description: "Learn the art of creating stunning 3D architectural visualizations.",
+    alt: "Harikrushna Multimedia 3D Architectural Image",
+    description: "Master the creation of stunning 3D architectural visualizations. Elevate your skills with industry-leading techniques, crafting realistic models and captivating presentations.",
     buttonText: "Enroll Now"
   },
   {
     course: "Game Design",
     image: '/model/Game-Design.webp',
-    alt: "harikrushna multimedia game design image",
-    description: "Explore the exciting world of game design and development.",
+    alt: "Harikrushna Multimedia Game Design Image",
+    description: "Embark on an exciting journey into game design. Explore fundamentals of mechanics, storytelling, and aesthetics. Enroll now to bring your game ideas to life.",
     buttonText: "Enroll Now"
   },
   {
     course: "Graphic Design",
     image: '/model/Graphic-Design.webp',
-    alt: "harikrushna multimedia Graphics Design image",
-    description: "Unleash your creativity with in-depth graphic design skills.",
+    alt: "Harikrushna Multimedia Graphic Design Image",
+    description: "Unleash creativity with our comprehensive graphic design course. Dive into design principles, typography, and visual communication. Enroll now to kickstart your graphic design journey.",
     buttonText: "Enroll Now"
-  },
+  }
 ];
+
 
 
 

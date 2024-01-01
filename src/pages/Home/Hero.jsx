@@ -28,24 +28,28 @@ const Hero = () => {
 
   return (
     <div
-      className=" h-[100vh] opacity-1 w-[95%] flex flex-col justify-center"
+      className="h-[100vh] opacity-1 w-[95%] flex flex-col justify-center"
       style={{
         transform: `rotateX(${calculateRotation(
           "y"
         )}deg) rotateY(${-calculateRotation("x")}deg)`,
       }}
     >
-      <div className="flex justify-between h-full items-center left-container">
-        <div className=" flex flex-col flex-1 items-start font-poppins  text-white gap-12">
-          <h2 className="flex text-5xl ">Opportunity to Bring Your</h2>
-          <h1 className="text-7xl">Creative Passion to Life</h1>
+      <div className="flex flex-col md:flex-row justify-between h-full items-center left-container">
+        <div className=" flex flex-col flex-1 items-start justify-end md:justify-start font-poppins gap-4 text-white md:gap-12">
+          <h2 className="flex text-xl md:text-5xl ">Opportunity to Bring Your</h2>
+          <h1 className="text-2xl md:text-7xl">Creative Passion to Life</h1>
           <div  >
-            <h2 className="flex text-4xl">You Will Learn Here</h2>
+            <h2 className="flex  text-xl md:text-4xl">You Will Learn Here</h2>
             <TyperWriter />
-            <Button value={'Download Brochure'} className={''}/>
           </div>
+            <div className={'button pt-6'} >
+              <span>Download Brochure</span>
+              <b className="top">click to download</b>
+              <b className="bottom">1.2MB .pdf</b>
+            </div>
         </div>
-        <div className=" flex-1 h-[100%]  w-[100%] text-white ">
+        <div className=" flex-1 h-[100%] w-[100%] text-white ">
         <Canvas>
       <Experience/>
   </Canvas>

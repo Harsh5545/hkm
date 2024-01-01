@@ -1,10 +1,15 @@
 import React from 'react'
-
+import classNames from 'classnames'
 function Button(props) {
-    const {className,style,onClick,value}=props
+    const {className,style,onClick,value,children}=props
+    const defaultStyles = "";
+  // Combine default styles and provided className
+  const combinedClassName = classNames(defaultStyles, className);
   return (
     <div>
-        <button className={`${className} h-8 px-4 flex items-center justify-center bg-[#E7414D] rounded-md`} style={style} onClick={onClick}>{value}</button>
+        <button className={combinedClassName} style={style} onClick={onClick}>{value}
+        {children}
+        </button>
     </div>
   )
 }
