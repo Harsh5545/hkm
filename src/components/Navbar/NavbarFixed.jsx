@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import Logo from '../../assets/logo.png'
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const navVariants = {
   initial: {
@@ -54,28 +55,25 @@ function NavbarFixed() {
           }`}
         >
           <li>
-      
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              AboutUs
-            </a>
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Courses
-            </a>
-          </li>
-          <li>
-            <a href="" className="p-3 hover:text-white">
-              Student Project
-            </a>
-          </li>
+              <Link to="/" className=" hover:text-black">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className=" hover:text-black">
+                AboutUs
+              </Link>
+            </li>
+            <li>
+              <Link to="/course" className="hover:text-black">
+                Course
+              </Link>
+            </li>
+            <li>
+              <Link to="/student-project" className=" hover:text-black">
+                Student Project
+              </Link>
+            </li>
         </ul>
       </div>
 
