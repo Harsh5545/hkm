@@ -36,8 +36,8 @@ const Hero = () => {
         )}deg) rotateY(${-calculateRotation("x")}deg)`,
       }}
     >
-      <div className="flex flex-col md:flex-row justify-between h-full items-center left-container">
-        <div className=" flex flex-col flex-1 items-start justify-end md:justify-start font-poppins text-white md:gap-8">
+      <div className="flex flex-col select-none md:flex-row justify-between h-full items-center left-container">
+        <div className=" flex flex-col flex-1  items-start justify-end md:justify-start font-poppins text-white md:gap-8">
           <h2 className="flex text-xl md:text-3xl ">Opportunity to Bring Your</h2>
           <h1 className="text-2xl md:text-6xl">Creative Passion to Life</h1>
           <div  >
@@ -50,7 +50,7 @@ const Hero = () => {
               <b className="bottom">83MB .pdf</b>
             </div>
         </div>
-        <div className=" flex-1 h-[100%] w-[100%] text-white ">
+        <div className="sm:flex-2 md:flex-1 h-[100%] w-[100%] text-white ">
         <Canvas>
       <Experience/>
   </Canvas>

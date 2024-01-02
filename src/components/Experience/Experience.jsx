@@ -25,10 +25,10 @@ const Experience = () => {
       />
       <PerspectiveCamera
         makeDefault
-        position={[50,20,10]}
+        position={[60,0,20]}
       />
 
-      <group position={[0,-20,0]}>
+      <group position={[0,-20,4]}>
         <Wsa />
       </group>
     </>
