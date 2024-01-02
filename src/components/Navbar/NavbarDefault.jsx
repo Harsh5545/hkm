@@ -36,24 +36,24 @@ function NavbarDefault() {
             }`}
           >
             <li>
-              <a href="/" className=" hover:text-black">
+              <Link to="/" className=" hover:text-black">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className=" hover:text-black">
+              <Link to="/about" className=" hover:text-black">
                 AboutUs
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/course" className="hover:text-black">
+              <Link to="/course" className="hover:text-black">
                 Course
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/student-project" className=" hover:text-black">
+              <Link to="/student-project" className=" hover:text-black">
                 Student Project
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
