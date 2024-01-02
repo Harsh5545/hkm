@@ -1,19 +1,20 @@
 
 import React from "react";
 import { OrbitControls } from "@react-three/drei";
-import Wraith from "./Wraith";
+// import Wraith from "./Wraith";
 import { PerspectiveCamera } from "@react-three/drei";
+import Wsa from "./Wattson_Strange_Attractor";
 
 const Experience = () => {
   
     return (
     <>
       <OrbitControls
-        enableZoom={true}
-        minPolarAngle={Math.PI / 8}
-        maxPolarAngle={Math.PI / 1.2}
-        minDistance={40}
-        maxDistance={200}
+        // enableZoom={true}
+        // minPolarAngle={Math.PI / 8}
+        // maxPolarAngle={Math.PI / 1.2}
+        // minDistance={40}
+        // maxDistance={200}
       />
       <ambientLight />
       <directionalLight
@@ -24,11 +25,11 @@ const Experience = () => {
       />
       <PerspectiveCamera
         makeDefault
-        position={[80, 20, 150]}
+        position={[50,20,10]}
       />
 
-      <group position={[0,0,1]}>
-        <Wraith />
+      <group position={[0,-20,0]}>
+        <Wsa />
       </group>
     </>
   );
