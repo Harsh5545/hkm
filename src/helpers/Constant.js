@@ -38,7 +38,6 @@ export const WhyChooseUs = [
   '100% Placement Assistance',
   'Internal Competition',
   'We can start any course according to the time schedule of the student and his/her learning pace',
-  "Certificate & Diplomas are issued on practical project submission. Student's projects are uploaded on web server and Social Media platforms.",
   'Regular Workshops & Seminars',
   'Experiential Learning Through Practical & Hands On Training'
 ]

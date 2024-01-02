@@ -3,7 +3,7 @@
   Command: npx gltfjsx@6.2.16 src/assets/wraith.gltf 
   */
 
-  import React, { useRef } from 'react'
+  import React from 'react'
   import { useGLTF } from '@react-three/drei'
   
 

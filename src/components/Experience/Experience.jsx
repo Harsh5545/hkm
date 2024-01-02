@@ -1,27 +1,5 @@
-// import React from "react";
-// import { OrbitControls } from "@react-three/drei";
 
-// const Experience = () => {
-//   return (
-//     <>
-//       <OrbitControls />
-//       <ambientLight />
-//       <directionalLight
-//         position={[-5, 5, 5]}
-//         castShadow
-//         color={'blue'}
-//         shadow-mapSize-width={1024}
-//         shadow-mapSize-height={1024}
-//       />
-//       <mesh>
-//         <boxGeometry />
-//         <meshStandardMaterial />
-//       </mesh>
-//     </>
-//   );
-// };
-
-import React, { useRef } from "react";
+import React from "react";
 import { OrbitControls } from "@react-three/drei";
 import Wraith from "./Wraith";
 import { PerspectiveCamera } from "@react-three/drei";

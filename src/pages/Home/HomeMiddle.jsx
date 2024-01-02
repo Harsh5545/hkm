@@ -22,7 +22,7 @@ function HomeMiddle() {
 
   return (
     <div className={`w-full flex justify-center ${isScrolled ? " top-0" : ""}`}>
-      <div className={`w-[80%] rounded-3xl flex flex-col md:flex-row shadow-2xl mt-[-3rem] bg-white z-10 ${isScrolled ? "animate-scroll-down" : "animate-scroll-up"}`}>
+      <div className={`w-[80%] rounded-3xl flex flex-col md:flex-row shadow-2xl md:mt-[-3rem] mt-[-1rem] bg-white z-10 ${isScrolled ? "animate-scroll-down" : "animate-scroll-up"}`}>
         {CourseData.map((course, index) => (
           <div
             className={`flex-1 flex justify-center my-5 md:my-20 px-2 md:px-16 text-center gap-6 items-center flex-col transition-all duration-1000 transform text-sm ${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}

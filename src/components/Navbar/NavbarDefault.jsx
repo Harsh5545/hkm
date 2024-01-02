@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Logo from "../../assets/logo.png";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 function NavbarDefault() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ function NavbarDefault() {
           <span className="text-xl">
             <img
               src={Logo}
-              className="max-w-20"
+              className="md:max-w-20 max-w-10"
               alt="HarikrushnaMultimedia institue logo"
             />
           </span>
@@ -35,22 +36,22 @@ function NavbarDefault() {
             }`}
           >
             <li>
-              <a href="" className=" hover:text-black">
+              <a href="/" className=" hover:text-black">
                 Home
               </a>
             </li>
             <li>
-              <a href="" className=" hover:text-black">
+              <a href="/about" className=" hover:text-black">
                 AboutUs
               </a>
             </li>
             <li>
-              <a href="" className="hover:text-black">
+              <a href="/course" className="hover:text-black">
                 Course
               </a>
             </li>
             <li>
-              <a href="" className=" hover:text-black">
+              <a href="/student-project" className=" hover:text-black">
                 Student Project
               </a>
             </li>
@@ -62,12 +63,14 @@ function NavbarDefault() {
             isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
           }`}
         >
+           <Link to="/contact">
           <Button
             value={"Contact Us"}
             className={
               "font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black  bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25"
             }
           />
+          </Link>
         </div>
       </div>
     </div>

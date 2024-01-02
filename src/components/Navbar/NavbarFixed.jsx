@@ -38,7 +38,7 @@ function NavbarFixed() {
     >
          <div className="flex justify-between items-center w-full md:w-0">
          <span className="text-xl">
-          <img src={Logo} className="max-w-20"   alt="HarikrushnaMultimedia institue logo"/>
+          <img src={Logo} className="md:max-w-20 max-w-10"   alt="HarikrushnaMultimedia institue logo"/>
         </span>
         <div className="md:hidden">
           <button className="text-black" onClick={toggleMobileMenu}>

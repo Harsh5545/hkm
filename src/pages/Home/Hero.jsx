@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import TyperWriter from "./TyperWriter";
-import Button from "../../components/Button/Button";
 import { Canvas } from "@react-three/fiber";
 import Experience from "../../components/Experience/Experience";
+import './homeStyles.css'
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -18,6 +18,7 @@ const Hero = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+  
 
   const calculateRotation = (axis) => {
     const maxRotation = 1;
@@ -28,7 +29,7 @@ const Hero = () => {
 
   return (
     <div
-      className="h-[100vh] opacity-1 w-[95%] flex flex-col justify-center"
+      className="h-[100vh] opacity-1 md:w-[95%] flex flex-col justify-center"
       style={{
         transform: `rotateX(${calculateRotation(
           "y"
@@ -36,17 +37,17 @@ const Hero = () => {
       }}
     >
       <div className="flex flex-col md:flex-row justify-between h-full items-center left-container">
-        <div className=" flex flex-col flex-1 items-start justify-end md:justify-start font-poppins gap-4 text-white md:gap-12">
-          <h2 className="flex text-xl md:text-5xl ">Opportunity to Bring Your</h2>
-          <h1 className="text-2xl md:text-7xl">Creative Passion to Life</h1>
+        <div className=" flex flex-col flex-1 items-start justify-end md:justify-start font-poppins text-white md:gap-8">
+          <h2 className="flex text-xl md:text-3xl ">Opportunity to Bring Your</h2>
+          <h1 className="text-2xl md:text-6xl">Creative Passion to Life</h1>
           <div  >
-            <h2 className="flex  text-xl md:text-4xl">You Will Learn Here</h2>
+            <h2 className="flex  text-xl md:text-3xl">You Will Learn Here</h2>
             <TyperWriter />
           </div>
-            <div className={'button pt-6'} >
-              <span>Download Brochure</span>
+            <div className={'button md:pt-1 '} >
+              <span>Download</span>
               <b className="top">click to download</b>
-              <b className="bottom">1.2MB .pdf</b>
+              <b className="bottom">83MB .pdf</b>
             </div>
         </div>
         <div className=" flex-1 h-[100%] w-[100%] text-white ">

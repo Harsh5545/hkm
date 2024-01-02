@@ -1,5 +1,5 @@
 .Typewriter{
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Poppins';
 }
 .HomeAbout{
@@ -106,11 +106,45 @@
         font-size: 1.5rem;
     }
     .button span{
-        width:150px;
+        width:120px;
         font-size: .7rem;
         font-weight: 600
     }
     b{
-        width:130px
+        width:100px
     }
 }
+/* Add this to your existing CSS file or create a new one */
+@media (max-width: 768px) {
+    .left-container {
+      flex-direction: column-reverse; /* Stack the columns on smaller screens */
+      align-items: center;
+      text-align: center;
+      padding: 0.6rem;
+    }
+  
+    .left-container div {
+      margin-bottom: 10px;
+    }
+  
+    .button {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .button span,
+    .button b {
+      font-size: 12px;
+    }
+  
+    .button b.top,
+    .button b.bottom {
+      display: block;
+    }
+  
+    .flex-1 {
+      margin-top: 6rem;
+    }
+  }
+  

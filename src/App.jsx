@@ -1,19 +1,27 @@
-import react from 'react'
-
-import './App.css'
-import Home from './pages/Home'
-import Navbar from './components/Navbar/Navbar'
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home';
+import Aboutus from './pages/About/Aboutus';
+import Course from './pages/Course/Course';
+import StudentProject from './pages/StudentProject/StudentProject';
+import Contact from './pages/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Navbar/>
-      <Home />
-    </>
-  )
+    <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<Aboutus />} />
+      <Route path="/course" element={<Course />} />
+      <Route path="/student-project" element={<StudentProject />} />
+      <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer/>
+  </Router>
+  );
 }
 
-export default App
+export default App;
