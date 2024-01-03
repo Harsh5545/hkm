@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import imgvfx  from "../../assets/vfx.webp"
 // import { CourseData } from "../../helpers/Constant";
 import CourseMiddle from "./CourseMiddle";
+
 const CoursesPage = () => {
     const backgroundStyles = {
         backgroundImage: `url(${imgvfx})`, // Use backticks for string interpolation
