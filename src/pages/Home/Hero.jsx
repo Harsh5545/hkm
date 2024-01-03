@@ -44,8 +44,8 @@ const Hero = () => {
             <h2 className="flex  text-xl md:text-3xl">You Will Learn Here</h2>
             <TyperWriter />
           </div>
-            <div className={'button md:pt-1 '} >
-              <span>Download</span>
+            <div className={'button pt-2 md:pt-2 '} >
+              <span>Download Brochure</span>
               <b className="top">click to download</b>
               <b className="bottom">83MB .pdf</b>
             </div>

@@ -21,7 +21,7 @@ const Wsa=(props)=> {
     }
   }, [actions.walk])
   return (
-    <group ref={group} position={[0, 0, 0.006]} scale={50.54} {...props} dispose={null}>
+    <group ref={group} position={[0, 0, 0.006]} scale={35.54} {...props} dispose={null}>
       <group>
         <group name="Joints">
           <group name="jx_c_delta" rotation={[Math.PI / 2, 0, -Math.PI / 2]}>

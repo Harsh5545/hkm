@@ -47,7 +47,7 @@
     display: block;
     height: 40px;
     width: 280px;
-    margin: -50px 0 0 10px;
+    margin: -40px 0 0 10px;
     text-align: center;
     font: 12px/45px Helvetica, Verdana, sans-serif;
     color: #fff;
@@ -106,19 +106,12 @@
     .Typewriter{
         font-size: 1.5rem;
     }
-    .button span{
-        width:120px;
-        font-size: .7rem;
-        font-weight: 600
-    }
-    b{
-        width:100px
-    }
+
 }
 /* Add this to your existing CSS file or create a new one */
 @media (max-width: 768px) {
     .left-container {
-      flex-direction: column-reverse; /* Stack the columns on smaller screens */
+      flex-direction: column-reverse; 
       align-items: center;
       text-align: center;
       padding: 0.6rem;

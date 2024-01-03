@@ -1,20 +1,20 @@
 
-import React from "react";
-import { OrbitControls } from "@react-three/drei";
+import React, { useEffect } from "react";
+import { OrbitControls, ScrollControls } from "@react-three/drei";
 // import Wraith from "./Wraith";
 import { PerspectiveCamera } from "@react-three/drei";
 import Wsa from "./Wattson_Strange_Attractor";
 
 const Experience = () => {
-  
+
     return (
     <>
       <OrbitControls
-        // enableZoom={true}
+        enableZoom={true}
         // minPolarAngle={Math.PI / 8}
         // maxPolarAngle={Math.PI / 1.2}
-        // minDistance={40}
-        // maxDistance={200}
+        minDistance={50}
+        maxDistance={150}
       />
       <ambientLight />
       <directionalLight
@@ -28,7 +28,8 @@ const Experience = () => {
         position={[60,0,20]}
       />
 
-      <group position={[0,-20,4]}>
+
+      <group position={[0,-20,0]}>
         <Wsa />
       </group>
     </>
@@ -36,3 +37,12 @@ const Experience = () => {
 };
 
 export default Experience;
+
+{/* <PerspectiveCamera
+makeDefault
+position={[60,0,20]}
+/>
+
+<group position={[0,-20,4]}>
+<Wsa />
+</group> */}
