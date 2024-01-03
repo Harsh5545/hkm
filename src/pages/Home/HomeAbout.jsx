@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useTrail, animated } from 'react-spring';
+import { Helmet } from 'react-helmet';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+
 import './HomeStyles.css';
 import { WhyChooseUs } from '../../helpers/Constant';
-import { useTrail, animated, config } from 'react-spring';
-import { Link as ScrollLink, Events } from 'react-scroll';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 function HomeAbout() {
   const HomeAboutStyles = {
@@ -23,41 +24,49 @@ function HomeAbout() {
       setIsScrolled(window.scrollY > 150); // Change 100 to the desired scroll threshold
     };
 
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
-
-    // Remove the scroll event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <div className='mt-40 w-full md:p-10 p-2.5 h-[50]' style={HomeAboutStyles}>
-      <h1 className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>
-        WHY CHOOSE US ? . . .
-      </h1>
-      <div className='md:flex md:items-center flex-col-reverse md:flex-row'>
-        <div className='flex-1 mt-10'>
-          <ul className=''>
-            {trail.map((style, index) => (
-              <animated.li key={index} className='text-sm font-poppins md:text-xl' style={style}>
-                <KeyboardDoubleArrowRightIcon />
-                {` ${WhyChooseUs[index]}`}
-              </animated.li>
-            ))}
-          </ul>
-        </div>
-        <div className='flex flex-1 justify-center'>
-          <animated.img
-            className='md:h-[40rem] h-[20rem]'
-            src='/model/RoboAbout.webp'
-            alt=''
-            style={trail[WhyChooseUs.length - 1]}
-          />
+    <>
+      <Helmet>
+        <title>Harikrushna Multimedia Institute - Why Choose Us?</title>
+        <meta
+          name="description"
+          content="Discover the reasons to choose Harikrushna Multimedia Institute. Explore our industry-relevant courses and expert faculty. Shape your creative career in animation, VFX, gaming, and more."
+        />
+        {/* Add more meta tags as needed for SEO optimization */}
+      </Helmet>
+
+      <div className='mt-40 w-full md:p-10 p-2.5 h-[50]' style={HomeAboutStyles}>
+        <h1 className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>
+          WHY CHOOSE US ? . . .
+        </h1>
+        <div className='md:flex md:items-center flex-col-reverse md:flex-row'>
+          <div className='flex-1 mt-10'>
+            <ul className=''>
+              {trail.map((style, index) => (
+                <animated.li key={index} className='text-sm font-poppins md:text-xl' style={style}>
+                  <KeyboardDoubleArrowRightIcon />
+                  {` ${WhyChooseUs[index]}`}
+                </animated.li>
+              ))}
+            </ul>
+          </div>
+          <div className='flex flex-1 justify-center'>
+            <animated.img
+              className='md:h-[40rem] h-[20rem]'
+              src='/model/RoboAbout.webp'
+              alt=''
+              style={trail[WhyChooseUs.length - 1]}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
