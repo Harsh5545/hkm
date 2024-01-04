@@ -59,7 +59,7 @@ const CoursesPage = () => {
       </div>
       <div>
         <CourseMiddle />
-    /
+  
         </div>
     </>
   );

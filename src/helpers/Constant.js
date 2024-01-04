@@ -134,7 +134,7 @@ export const CourseDetails = [
   {
     id: '9',
     path: '/course/Graphic-design-animation.webp',
-    course: 'PROGRAM IN GRAPHICS & ANIMATION',
+    course: 'GRAPHICS & ANIMATION',
     description: 'Immerse yourself in a comprehensive program covering graphic design and animation techniques.',
     alt: 'Graphics & Animation Program Image',
     button: {

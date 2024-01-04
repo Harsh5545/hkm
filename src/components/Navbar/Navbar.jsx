@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import NavbarDefault from "./NavbarDefault.jsx";
-import NavbarFixed from "./Navbarfixed.jsx";
+import NavbarFixed from "./NavbarFixed.jsx";
 
 
 function Navbar() {

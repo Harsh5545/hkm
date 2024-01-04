@@ -1,29 +1,19 @@
 // Button.js
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import React from 'react'; // Import Link from react-router-dom
 import classNames from 'classnames';
 
 function Button(props) {
-  const { className, style, onClick, link, children } = props;
+  const { className, style, onClick, children,value } = props;
   const defaultStyles = "";
 
   // Combine default styles and provided className
   const combinedClassName = classNames(defaultStyles, className);
 
- 
-  if (link) {
-    return (
-      <div>
-        <Link className={combinedClassName} style={style} to={link}>
-          {children}
-        </Link>
-      </div>
-    );
-  }
+
   return (
     <div>
       <button className={combinedClassName} style={style} onClick={onClick}>
-        {children}
+        {children} {value}
       </button>
     </div>
   );
