@@ -1,6 +1,7 @@
 import React from 'react';
 import game from '/course/gamepng.webp'
 import BgGameDesign from '/course/BgGameDesign.webp'
+import Gamemode from '/course/gaming.webp'
 import modelGame from '/course/game-design-model.webp'
 function GameDesign() {
   const CourseHighlights = [
@@ -12,7 +13,7 @@ function GameDesign() {
   ];
 
   const backgroundStyles = {
-    backgroundImage: `url(${BgGameDesign})`, // Use backticks for string interpolation
+    backgroundImage: `url(${Gamemode})`, // Use backticks for string interpolation
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     height: '100vh',
@@ -23,7 +24,7 @@ function GameDesign() {
     content: '',
     position: 'absolute',
     background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
-    opacity: 0.79,
+    opacity: 0.91,
     height: '100vh',
   };
   return (
