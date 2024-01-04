@@ -1,5 +1,6 @@
 import React from 'react';
 import game from '/course/gamepng.webp'
+import Gamer from '/course/game-design1.webp'
 import BgGameDesign from '/course/BgGameDesign.webp'
 import Gamemode from '/course/gaming.webp'
 import modelGame from '/course/game-design-model.webp'
@@ -32,7 +33,7 @@ function GameDesign() {
           
       <div className="" style={backgroundStyles}>
             
-              <div className='mb-8  h-[100vh] flex md:flex-row flex-col justify-center items-center' style={bgOverlayStyle}>
+              <div className='mb-8y h-[100vh] flex md:flex-row flex-col-reverse justify-center items-center' style={bgOverlayStyle}>
               <div className='flex-1'>
                   <img src={game} className='opacity-1 ' alt=''/>
                   </div>
@@ -49,7 +50,7 @@ function GameDesign() {
 
 {/* COURSE HIGHLIGHTS section */}
 
-          <div className='flex '>
+          <div className='flex flex-col md:flex-row '>
       <div className='m-10 flex-1' >
         <h1 className="text-5xl font-bold mb-4">COURSE HIGHLIGHTS</h1>
         <ul className="list-disc pl-6">
@@ -60,8 +61,8 @@ function GameDesign() {
           ))}
         </ul>
           </div>
-              <div className='flex-1'>
-                  <img src={modelGame}  className='w-[25rem] h-[30rem]'alt=''/>
+              <div className='flex-1 '>
+                  <img src={Gamer}  className=' p-5' width='4000'  alt=''/>
               </div>
               
           </div>

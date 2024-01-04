@@ -13,13 +13,13 @@ const CourseMiddle = () => {
   }, []);
 
   return (
-    <div className='flex justify-center pt-5 bg-gray-100' >
-      <div className="grid grid-cols-2 ">
+    <div className='flex justify-center bg-gray-100' >
+      <div className="grid grid-cols-2 w-3/4 ">
         {CourseDetails.map((course) => (
           <div key={course.id} className='flex m-5 flex-col items-center justify-center' data-aos={course.id % 2 ? 'fade-right' : 'fade-left'}>
             <img src={course.path} className=' md:h-[20rem] h-[10rem] w-[25rem] md:w-[30rem] rounded-lg' alt={course.alt} />
             <h1 className='m-2 md:text-3xl text:2xl '>{course.course}</h1>
-            <p className='p-1 w-[80%] text-center mb-5 md:text-lg text-sm'>{course.description}</p>
+            <p className='p-1 w-[60%] text-center mb-5 md:text-lg text-sm'>{course.description}</p>
             <Button className="p-4 button-course"  link={course.button.link}>{course.button.text}</Button>
           </div>
         ))}
