@@ -26,7 +26,7 @@ function Home() {
     bottom: 0,
     left: 0,
     background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
-    opacity: 0.79,
+    opacity: 0.89,
   };
 
   return (

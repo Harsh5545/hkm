@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import imgvfx  from "../../assets/vfx.webp"
-// import { CourseData } from "../../helpers/Constant";
+import imgvfx  from "/model/course-bg.webp"
 import CourseMiddle from "./CourseMiddle";
 
 const CoursesPage = () => {
@@ -18,7 +17,7 @@ const CoursesPage = () => {
         content: '',
         position: 'absolute',
         background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
-        opacity: 0.94,
+        opacity: 0.91,
         height: '110vh',
       };
     
@@ -38,13 +37,14 @@ const CoursesPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
+
       <div className="mx-auto flex justify-center text-center " style={backgroundStyles}>
         <div style={bgOverlayStyle} className="flex flex-col  md:flex-row justify-center items-center">
               <div className=" w-[80%] relative"  >
-                  <img src="./model/Graphic-Design.webp" alt=""/>
+                  <img className="m-1 shadow-gray-800" src="./model/Graphic-Design.webp" alt="Graphic Design Course images"/>
               </div>
 <div className=" flex w-[80%] flex-col justify-center items-center" >
-        <h1 className="text-3xl font-bold mb-6 text-white">
+        <h1 className="text-4xl font-bold mb-6 text-white">
          Courses
         </h1>
         <p className="text-lg mb-4 text-white">
@@ -58,7 +58,8 @@ const CoursesPage = () => {
         </div>
       </div>
       <div>
-        <CourseMiddle/>
+        <CourseMiddle />
+    /
         </div>
     </>
   );

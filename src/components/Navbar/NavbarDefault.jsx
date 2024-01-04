@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import Logo from "../../assets/logo.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import './Navbar.css'
 
 function NavbarDefault() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,9 +24,29 @@ function NavbarDefault() {
             />
           </span>
           <div className="md:hidden">
-            <button className="text-black" onClick={toggleMobileMenu}>
+            {/* <button className="text-black" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? "✕" : "☰"}
-            </button>
+            </button> */}
+          
+                {isMobileMenuOpen ?
+                       <label class="hamburger">
+                       <input type="checkbox"/>
+                       <svg viewBox="0 0 32 32" onClick={toggleMobileMenu}>
+      <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+    </svg>
+</label>
+                      :
+                      <label className="hamburger">
+                      <input type="checkbox" />
+                      <svg viewBox="0 0 32 32" onClick={toggleMobileMenu}>
+                        <path className="line line-top" d="M7 10L20 10"></path>
+                        <path className="line line-middle" d="M7 16L25 16"></path>
+                        <path className="line line-bottom" d="M7 22L25 22"></path>
+                      </svg>
+                    </label>
+                    
+                }
+
           </div>
         </div>
 

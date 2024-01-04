@@ -42,3 +42,116 @@ export const WhyChooseUs = [
   'Experiential Learning Through Practical & Hands On Training'
 ]
 
+export const CourseDetails = [
+  {
+    id: '1',
+    path: '/course/Game-design.webp',
+    course: 'Game Design',
+    description: 'Learn the fundamentals of game design and create your own interactive experiences.',
+    alt: 'Game Design Course Image',
+    button: {
+      text: 'Learn More',
+      link: '/game-design'
+    }
+  },
+  {
+    id: '2',
+    path: '/course/Jwellery.webp',
+    course: '3D JEWELLERY DESIGN',
+    description: 'Master the art of 3D jewelry design and turn your creative ideas into stunning pieces.',
+    alt: '3D Jewelry Design Course Image',
+    button: {
+      text: 'Discover More',
+      link: '/3d-jewelry-design-page'
+    }
+  },
+  {
+    id: '3',
+    path: '/course/3D ARCHITECTURAL.webp',
+    course: '3D ARCHITECTURAL',
+    description: 'Explore the world of 3D architectural design and bring buildings to life.',
+    alt: '3D Architectural Design Course Image',
+    button: {
+      text: 'Explore Now',
+      link: '/3d-architectural-page'
+    }
+  },
+  {
+    id: '4',
+    path: '/course/Video-editing.webp',
+    course: 'VIDEO EDITING',
+    description: 'Learn the art of video editing and create compelling visual stories.',
+    alt: 'Video Editing Course Image',
+    button: {
+      text: 'Get Started',
+      link: '/video-editing-page'
+    }
+  },
+  {
+    id: '5',
+    path: '/course/3d-animation.webp',
+    course: '3D ANIMATION',
+    description: 'Dive into the world of 3D animation and bring characters and scenes to life.',
+    alt: '3D Animation Course Image',
+    button: {
+      text: 'Start Animating',
+      link: '/3d-animation-page'
+    }
+  },
+  {
+    id: '6',
+    path: '/course/Visual-Effect.webp',
+    course: 'VISUAL EFFECT',
+    description: 'Master the techniques of visual effects and add magic to your videos and films.',
+    alt: 'Visual Effect Course Image',
+    button: {
+      text: 'Explore Effects',
+      link: '/visual-effect-page'
+    }
+  },
+  {
+    id: '7',
+    path: '/course/2d-animation.webp',
+    course: '2D ANIMATION',
+    description: 'Learn the principles of 2D animation and create captivating animated stories.',
+    alt: '2D Animation Course Image',
+    button: {
+      text: 'Animate Now',
+      link: '/2d-animation-page'
+    }
+  },
+  {
+    id: '8',
+    path: '/course/graphics-design.webp',
+    course: 'GRAPHICS DESIGN',
+    description: 'Develop your graphic design skills and create stunning visuals for various purposes.',
+    alt: 'Graphics Design Course Image',
+    button: {
+      text: 'Explore Designs',
+      link: '/graphics-design-page'
+    }
+  },
+  {
+    id: '9',
+    path: '/course/Graphic-design-animation.webp',
+    course: 'PROGRAM IN GRAPHICS & ANIMATION',
+    description: 'Immerse yourself in a comprehensive program covering graphic design and animation techniques.',
+    alt: 'Graphics & Animation Program Image',
+    button: {
+      text: 'Discover Program',
+      link: '/graphics-animation-program-page'
+    }
+  },
+  {
+    id: '10',
+    path: '/course/game-design-animation.webp',
+    course: 'PROGRAM IN GAME DESIGN',
+    description: 'Explore a specialized program in game design and bring your game concepts to life with creativity and innovation.',
+    alt: 'Game Design Program Image',
+    button: {
+      text: 'Explore Program',
+      link: '/game-design-program-page'
+    }
+  }
+  
+];
