@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { OrbitControls, ScrollControls } from "@react-three/drei";
 // import Wraith from "./Wraith";
@@ -29,7 +28,7 @@ const Experience = () => {
       />
 
 
-      <group position={[0,-20,0]}>
+      <group position={[0,-5,0]}>
         <Wsa />
       </group>
     </>

@@ -49,7 +49,7 @@ function HomeAbout() {
           <div className='flex-1 mt-10'>
             <ul className=''>
               {trail.map((style, index) => (
-                <animated.li key={index} className='text-sm font-poppins md:text-xl' style={style}>
+                <animated.li key={index} className='text-sm font-poppins md:text-lg' style={style}>
                   <KeyboardDoubleArrowRightIcon />
                   {` ${WhyChooseUs[index]}`}
                 </animated.li>

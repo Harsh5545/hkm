@@ -3,6 +3,7 @@ import TyperWriter from "./TyperWriter";
 import { Canvas } from "@react-three/fiber";
 import Experience from "../../components/Experience/Experience";
 import './homeStyles.css'
+import Button  from "../../components/Button/Button";
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -36,24 +37,25 @@ const Hero = () => {
         )}deg) rotateY(${-calculateRotation("x")}deg)`,
       }}
     >
-      <div className="flex flex-col select-none md:flex-row justify-between h-full items-center left-container">
-        <div className=" flex flex-col flex-1  items-start justify-end md:justify-start font-poppins text-white md:gap-8">
-          <h2 className="flex text-xl md:text-3xl ">Opportunity to Bring Your</h2>
-          <h1 className="text-2xl md:text-6xl">Creative Passion to Life</h1>
+      <div className="flex flex-col select-none md:flex-row justify-between  h-full items-center left-container">
+        <div className=" flex flex-col flex-1  items-start mt-24 md:mt-0 justify-end md:justify-start font-poppins text-white md:gap-8">
+          <h2 className="flex text-sm md:text-3xl">Opportunity to Bring Your</h2>
+          <h1 className="text-sm md:text-6xl">Creative Passion to Life</h1>
           <div  >
-            <h2 className="flex  text-xl md:text-3xl">You Will Learn Here</h2>
+            <h2 className="flex  text-sm md:text-3xl">You Will Learn Here</h2>
             <TyperWriter />
           </div>
-            <div className={'button pt-2 md:pt-2 '} >
+          <Button value={'Download'} className={'btn'}/>
+            {/* <div className={'button pt-2 md:pt-2 '} >
               <span>Download Brochure</span>
               <b className="top">click to download</b>
               <b className="bottom">83MB .pdf</b>
-            </div>
+            </div> */}
         </div>
-        <div className="sm:flex-2 md:flex-1 h-[100%] w-[100%] text-white ">
-        <Canvas>
-      <Experience/>
-  </Canvas>
+        <div className="flex-1 h-full w-full text-white">
+          <Canvas>
+            <Experience/>
+          </Canvas>
         </div>
       </div>
      </div>

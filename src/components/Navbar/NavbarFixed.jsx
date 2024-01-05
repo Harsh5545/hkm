@@ -37,7 +37,7 @@ function NavbarFixed() {
       animate="animate"
       exit="exit"
       variants={navVariants}
-      className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col bg-white  backdrop-blur-lg border border-balck justify-around flex md:flex-row items-center"
+      className="fixed z-[999] top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col  backdrop-blur-lg border border-balck justify-around flex md:flex-row items-center"
       style={{ width: "85%" }} // Increase the width to your desired value
     >
          <div className="flex justify-between items-center w-full md:w-0">
