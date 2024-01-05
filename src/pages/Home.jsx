@@ -16,6 +16,7 @@ function Home() {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    
   };
 
   const bgOverlayStyle = {
