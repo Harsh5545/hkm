@@ -23,6 +23,45 @@ export const CourseData = [
 ];
 
 
+export const slides= [
+    {
+      "introline": "dogs",
+      "id": "dogs"
+    },
+    {
+      "introline": "elephants",
+      "id": "elephants"
+    },
+    {
+      "introline": "bears",
+      "id": "bears"
+    },
+    {
+      "introline": "lizards",
+      "id": "lizards"
+    },
+    {
+      "introline": "snakes",
+      "id": "snakes"
+    },
+    {
+      "introline": "cats",
+      "id": "cats"
+    },
+    {
+      "introline": "giraffes",
+      "id": "giraffes"
+    },
+    {
+      "introline": "owls",
+      "id": "owls"
+    },
+    {
+      "introline": "horses",
+      "id": "horses"
+    }
+  ]
+
 
 
 
