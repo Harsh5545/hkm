@@ -25,41 +25,65 @@ export const CourseData = [
 
 export const slides= [
     {
-      "introline": "dogs",
-      "id": "dogs"
+      "introline": "Adobe Premiere",
+      "id": "Adobe Premiere"
     },
     {
-      "introline": "elephants",
-      "id": "elephants"
+      "introline": "Adobe After Effects",
+      "id": "Adobe After Effects"
     },
     {
-      "introline": "bears",
-      "id": "bears"
+      "introline": "3DS Max",
+      "id": "3DS Max"
     },
     {
-      "introline": "lizards",
-      "id": "lizards"
+      "introline": "Adobe Audition",
+      "id": "Adobe Audition"
     },
     {
-      "introline": "snakes",
-      "id": "snakes"
+      "introline": "Autodesk 3D Max",
+      "id": "Autodesk 3D Max"
     },
     {
-      "introline": "cats",
-      "id": "cats"
+      "introline": "Adobe Animate CC",
+      "id": "Adobe Animate CC"
     },
     {
-      "introline": "giraffes",
-      "id": "giraffes"
+      "introline": "Blender",
+      "id": "Blender"
     },
     {
-      "introline": "owls",
-      "id": "owls"
+      "introline": "Adobe Photoshop",
+      "id": "Adobe Photoshop"
     },
     {
-      "introline": "horses",
-      "id": "horses"
-    }
+      "introline": "Adobe Illustartor",
+      "id": "Adobe Illustartor"
+  },
+  {
+    "introline": "Autodesk Maya",
+    "id": "Autodesk Maya"
+  },
+  {
+    "introline": "CorelDraw",
+    "id": "CorelDraw"
+  },
+  {
+    "introline": "Adobe Indesign",
+    "id": "Adobe Indesign"
+  },
+  {
+    "introline": "Adobe Premiere Pro",
+    "id": "Adobe Premiere Pro"
+  },
+  {
+    "introline": "CorelDRAW / Animate CC",
+    "id": "CorelDRAW / Animate CC"
+  },
+  {
+    "introline": "Corona Render / V- Ray AutoCAD",
+    "id": "Corona Render / V- Ray  AutoCAD"
+  }
   ]
 
 

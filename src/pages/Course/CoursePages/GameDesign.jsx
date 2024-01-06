@@ -4,6 +4,7 @@ import Gamer from "/course/game-design1.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import GamePage from "/course/GamePage.webp";
 import modelGame from "/course/game-design-model.webp";
+import certificate from "/course/certificate.webp";
 import WUL from "/course/WhatULearn.webp";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 function GameDesign() {
@@ -127,12 +128,19 @@ function GameDesign() {
       </div>
 
       {/* Vertical Caorousel */}
-      <div className="flex">
-        <div className="flex-1">
+      <div className="flex h-[60vh] justify-center items-center">
+        <div className="flex-1 items-center flex justify-center flex-col">
+          <h1 className="text-5xl ">
+            TOOLS & SOFTWARE
+          </h1>
           <VerticalCarousel/>
         </div>
-        <div className="flex-1">
-
+        <div className="flex-1 items-center flex justify-center flex-col ">
+          <h1 className="text-5xl">CERTIFICATIONS</h1>
+          <img src={certificate} width={240} alt="Certifiacte image from Harikrushnamultimedia.com" />
+          <p className="text-2xl " >
+          Harikrushna Multimedia Certified Expert in Game Design
+          </p>
         </div>
       </div>
     </div>

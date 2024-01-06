@@ -62,7 +62,7 @@ const VerticalCarousel = () => {
           <div className="carousel">
             <div className="leading-text"></div>
             <div className="slides">
-              <div className="carousel-inner">
+              <div className="carousel-inner flex justify-center items-center">
                 {slides.map((item, i) => (
                   <button
                     type="button"
