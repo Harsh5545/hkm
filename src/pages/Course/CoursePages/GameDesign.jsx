@@ -3,11 +3,19 @@ import game from "/course/gamepng.webp";
 import Gamer from "/course/game-design1.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import GamePage from "/course/GamePage.webp";
-import modelGame from "/course/game-design-model.webp";
-import certificate from "/course/certificate.webp";
+// import modelGame from "/course/game-design-model.webp";
+import Job from "/course/Job.webp";
+import certificate from '/course/certificate.webp'
+import Like from "/course/like.webp";
+import Time from "/course/time.webp";
 import WUL from "/course/WhatULearn.webp";
+
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
+import Button from "../../../components/Button/Button";
+
+
+
 function GameDesign() {
   const CourseHighlights = [
     "Job-oriented, industry-centric curriculum",
@@ -151,6 +159,66 @@ function GameDesign() {
       <div className="flex justify-center ">
         <ContactForm />
       </div>
+
+      {/* critera */}
+      
+      <div className="flex justify-evenly md:flex-row flex-col md:gap-1 gap-14 items-center m-10">
+    {/* <!-- ELIGIBILITY CRITERIA --> */}
+    <div className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+        <h1 className="text-4xl">
+            ELIGIBILITY CRITERIA
+        </h1>
+        <img className="h-[14rem] transition-transform transform hover:scale-110" width={250} src={Like} alt="" />
+        <p className="w-[60%] text-md md:text-xl text-center">
+            Graduates and undergraduates are welcome to apply after successfully completing their 10 + 2 education.
+        </p>
+    </div>
+
+    {/* <!-- COURSE DURATION --> */}
+    <div className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+        <h1 className="text-4xl">
+            COURSE DURATION
+        </h1>
+        <img className="h-[14rem] transition-transform transform hover:scale-110" width={250} src={Time} alt="" />
+        <p className="w-[60%] text-md md:text-xl text-center">
+            Experience a 36-month program with 2 hours of daily classes for 3 days a week, providing practical assignments in every session.
+        </p>
+    </div>
+
+    {/* <!-- PLACEMENT GUARANTEE --> */}
+    <div className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+        <h1 className="text-4xl">
+            PLACEMENT GUARANTEE
+        </h1>
+        <img className="h-[14rem] transition-transform transform hover:scale-110" width={250} src={Job} alt="" />
+        <p className="w-[60%] text-md md:text-xl text-center">
+            Secure your future with our Placement Guarantee, connecting you with industry leaders for exciting career opportunities after program completion.
+        </p>
+        </div>
+       
+</div>
+      {/* SIMILAR COURSE  */}
+      
+      <div className="h-[25rem] flex flex-col justify-center items-center ">
+        <h1 className="text-5xl text-center m-5">
+        SIMILAR COURSES
+        </h1>
+        <div className="flex w-[80%] items-center justify-between">
+        <div>
+          <h1 className="text-2xl">
+          3D JEWELLERY DESIGN
+          </h1>
+          <Button className='p-4 text-xl bg-slate-500 rounded-3xl' value='Explore'/>
+        </div>
+        <div>
+          <h1 className="text-2xl">
+          3D JEWELLERY DESIGN
+          </h1>
+          <Button className='p-4 text-xl bg-slate-500 rounded-3xl' value='Explore' />
+                </div>
+        </div>
+        </div>
+
     </div>
   );
 }
