@@ -54,13 +54,7 @@ function GameDesign() {
     height: "100vh",
   };
 
-  const bgOverWhatULearn = {
-    backgroundImage: `url(${whatULearn})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    height: "100vh",
-    position: "relative",
-  };
+
   useEffect(()=>{
     AOS.init({ duration: 1000 });
   })
@@ -71,11 +65,11 @@ function GameDesign() {
           className="mb-8y h-[100vh] flex md:flex-row flex-col-reverse justify-center items-center"
           style={bgOverlayStyle}
         >
-          <div className="flex-1">
-            <img src={game} className="opacity-1 " alt="" />
+          <div  className="flex-1">
+            <img data-aos="fade-down-right" src={game} className="opacity-1 " alt="" />
           </div>
 
-          <div className="flex-1 flex justify-end mt-24 flex-col items-center  text-center">
+          <div data-aos="fade-down-left" className="flex-1 flex justify-end mt-24 flex-col items-center  text-center">
             <h1
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
