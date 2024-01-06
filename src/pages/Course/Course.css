@@ -43,3 +43,52 @@
   .button-course:hover {
     transform: translate(5px, -5px);
   }
+
+  /* YourComponent.css */
+
+@keyframes shrink {
+  0% {
+    color: green;
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    color: grey;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    color: grey;
+  }
+
+  100% {
+    transform: scale(2);
+    color: green;
+  }
+}
+
+.animate {
+  transform: translate3d(0, 0, 0);
+  perspective: 1000;
+  filter: blur(0);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: center left;
+}
+
+.animate--shrink {
+  animation-duration: 1s;
+  animation-name: shrink;
+  animation-timing-function: linear;
+}
+
+.animate--grow {
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+
+

@@ -51,7 +51,7 @@ function GameDesign() {
     position:'relative'
   }
   return (
-      <div className=" mx-auto">
+      <div className=" font-poppins mx-auto">
           
       <div className="" style={backgroundStyles}>
             
@@ -72,9 +72,9 @@ function GameDesign() {
 
 {/* COURSE HIGHLIGHTS section */}
 
-          <div className='flex flex-col md:flex-row '>
-      <div className='m-10 flex-1' >
-        <h1 className="md:text-5xl text-3xl font-bold mb-4">COURSE HIGHLIGHTS</h1>
+          <div className='flex md:h-[80vh] flex-col md:flex-row items-center justify-center'>
+      <div className='m-10 flex-1 flex justify-between flex-col' >
+        <h1 className="md:text-5xl text-3xl text-center font-bold mb-4">COURSE HIGHLIGHTS</h1>
         <ul className="list-disc pl-6">
           {CourseHighlights.map((highlight, index) => (
             <li key={index} className="mb-2 md:text-2xl text-xl">
@@ -89,13 +89,13 @@ function GameDesign() {
               
       </div>
       {/* WHAT YOU'LL LEARN */}
-      <div className='flex md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]'>
+      <div className='flex  md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]'>
 
-        <div className='flex flex-1'>
-         <img src={WUL} className='w-full wd:h-[100vh] wd:h-[50vh]' alt=''/>
+        <div className='flex w-[60%]'>
+         <img src={WUL} className='w-full md:h-[100vh] h-[50vh]' alt=''/>
         </div>
         <div className='flex flex-1 flex-col gap-10 justify-center ' style={{ color: 'white' }}> 
-        <h1 className='md:text-6xl text-3xl text-center'>
+        <h1 className='md:text-5xl text-3xl text-center'>
           WHAT YOU'LL LEARN HERE
           </h1>
           <ul className=' items-start md:text-3xl text-xl'>

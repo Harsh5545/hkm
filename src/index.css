@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
 .btn{
     @apply  p-1 px-4 text-white font-poppins flex items-center justify-center duration-300 transform hover:scale-105 focus:outline-none bg-[#E7414D] rounded-md
 }

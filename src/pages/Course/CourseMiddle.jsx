@@ -3,6 +3,7 @@ import React, { useEffect} from 'react';
 import Button from '../../components/Button/Button';
 import { CourseDetails } from '../../helpers/Constant';
 import "./Course.css"; 
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from 'react-router-dom';
