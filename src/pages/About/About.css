@@ -1,0 +1,16 @@
+.vertical-slider {
+    height: 100vh;
+    
+    overflow: hidden;
+  }
+  
+  .slide {
+    transition: transform 0.5s ease-in-out;
+    margin-top:5rem;
+    display: flex;
+  }
+  
+  .active {
+    transform: translateY(0);
+  }
+  
