@@ -6,11 +6,8 @@
     flex-direction: column;
   }
   
- .carousel-wrapper p,
+ .carousel-wrapper,
   .carousel-item {
-    font-weight: 700;
-    font-size: 20px;
-    color: #000;
     line-height: 1.2;
   }
 

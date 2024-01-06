@@ -67,7 +67,7 @@ const VerticalCarousel = () => {
                   <button
                     type="button"
                     onClick={() => setActiveIndex(i)}
-                    className={cn("carousel-item", {
+                    className={cn("carousel-item text-[13px] md:text-[20px] font-poppins font-bold", {
                       active: activeIndex === i,
                       visible:
                         Math.abs(determinePlacement(i)) <=
