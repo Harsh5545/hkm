@@ -1,8 +1,7 @@
 import React from 'react';
 import game from '/course/gamepng.webp'
 import Gamer from '/course/game-design1.webp'
-import BgGameDesign from '/course/BgGameDesign.webp'
-import Gamemode from '/course/gaming.webp'
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import GamePage from '/course/GamePage.webp'
 import modelGame from '/course/game-design-model.webp'
 import WUL from '/course/WhatULearn.webp'
@@ -100,7 +99,8 @@ function GameDesign() {
           </h1>
           <ul className=' items-start md:text-3xl text-xl'>
             {whatULearn.map((learn, index) =>
-              <li className='mt-1' key={index}>
+              <li className='mt-1 flex items-center gap-2' key={index}>
+                <ArrowRightIcon/>
                 {learn}
             </li>
             )}
