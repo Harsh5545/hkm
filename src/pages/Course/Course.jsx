@@ -7,19 +7,21 @@ const CoursesPage = () => {
   const backgroundStyles = {
     backgroundImage: `url(${imgvfx})`, // Use backticks for string interpolation
     backgroundSize: "cover",
-    // backgroundPosition: 'center',
     backgroundRepeat: "no-repeat",
-    height: "110vh",
+    height: "100vh",
     position: "relative",
     // background:"blue "
   };
   const bgOverlayStyle = {
     content: "",
     position: "absolute",
-    background:
-      "linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)",
-    opacity: 0.91,
-    height: "110vh",
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+    background:"linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)",
+    opacity: 0.81,
+   
   };
 
   return (
@@ -45,8 +47,9 @@ const CoursesPage = () => {
         className="mx-auto flex justify-center text-center "
         style={backgroundStyles}
       >
+        <div style={bgOverlayStyle}></div>
         <div
-          style={bgOverlayStyle}
+          
           className="flex flex-col  md:flex-row justify-center items-center"
         >
           <div className=" w-[80%] relative">
@@ -56,7 +59,7 @@ const CoursesPage = () => {
               alt="Graphic Design Course images"
             />
           </div>
-          <div className=" flex w-[80%] flex-col justify-center items-center">
+          <div className="relative flex w-[80%] flex-col justify-center items-center">
             <h1 className="text-4xl font-bold mb-6 text-white">Courses</h1>
             <p className="text-lg mb-4 text-white">
               Welcome to Harikrushna Multimedia Institute, the best institute in

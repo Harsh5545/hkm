@@ -64,9 +64,13 @@ function GameDesign() {
   const bgOverlayStyle = {
     content: "",
     position: "absolute",
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
     background:
       "linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)",
-    opacity: 0.94,
+    opacity: 0.74,
     height: "100vh",
   };
 
@@ -84,9 +88,12 @@ function GameDesign() {
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
+        <div style={bgOverlayStyle}>
+
+        </div>
         <div
           className="mb-8y h-[100vh] flex md:flex-row flex-col-reverse justify-center items-center"
-          style={bgOverlayStyle}
+          
         >
           <div  style={{
         transform: `rotateX(${calculateRotation(
