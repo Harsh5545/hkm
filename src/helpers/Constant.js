@@ -114,7 +114,7 @@ export const CourseDetails = [
     alt: "Game Design Course Image",
     button: {
       text: "Learn More",
-      link: "/game-design",
+      link: "/course/game-design",
     },
   },
   {
@@ -126,7 +126,7 @@ export const CourseDetails = [
     alt: "3D Jewelry Design Course Image",
     button: {
       text: "Discover More",
-      link: "/3d-jewelry-design-page",
+      link: "/course/3d-jewelry-design",
     },
   },
   {
@@ -138,7 +138,7 @@ export const CourseDetails = [
     alt: "3D Architectural Design Course Image",
     button: {
       text: "Explore Now",
-      link: "/3d-architectural-page",
+      link: "/course/3d-architectural",
     },
   },
   {
@@ -150,7 +150,7 @@ export const CourseDetails = [
     alt: "Video Editing Course Image",
     button: {
       text: "Get Started",
-      link: "/video-editing-page",
+      link: "/course/video-editing",
     },
   },
   {
@@ -162,7 +162,7 @@ export const CourseDetails = [
     alt: "3D Animation Course Image",
     button: {
       text: "Start Animating",
-      link: "/3d-animation-page",
+      link: "/course/3d-animation",
     },
   },
   {
@@ -174,7 +174,7 @@ export const CourseDetails = [
     alt: "Visual Effect Course Image",
     button: {
       text: "Explore Effects",
-      link: "/visual-effect-page",
+      link: "/course/visual-effect",
     },
   },
   {
@@ -186,7 +186,7 @@ export const CourseDetails = [
     alt: "2D Animation Course Image",
     button: {
       text: "Animate Now",
-      link: "/2d-animation-page",
+      link: "/course/2d-animation",
     },
   },
   {
@@ -198,7 +198,7 @@ export const CourseDetails = [
     alt: "Graphics Design Course Image",
     button: {
       text: "Explore Designs",
-      link: "/graphics-design-page",
+      link: "/course/graphics-design",
     },
   },
   {
@@ -210,7 +210,7 @@ export const CourseDetails = [
     alt: "Graphics & Animation Program Image",
     button: {
       text: "Discover Program",
-      link: "/graphics-animation-program-page",
+      link: "/course/graphics-animation-program",
     },
   },
   {
@@ -222,7 +222,7 @@ export const CourseDetails = [
     alt: "Game Design Program Image",
     button: {
       text: "Explore Program",
-      link: "/game-design-program-page",
+      link: "/course/game-design-program",
     },
   },
 ];

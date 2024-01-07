@@ -209,7 +209,7 @@ function GameDesign() {
         </h1>
         <img className="h-[14rem] transition-transform duration-500 transform hover:scale-110" width={250} src={Time} alt="" />
         <p className="w-[60%] text-md md:text-xl text-center">
-            Experience a 36-month program with 2 hours of daily classes for 3 days a week, providing practical assignments in every session.
+            Experience a 12-months program with 2 hours of daily classes for 6 days a week, providing practical assignments in every session.
         </p>
     </div>
 
