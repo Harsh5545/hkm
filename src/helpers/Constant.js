@@ -256,6 +256,16 @@ const faqData = [
     question: "Are there any job placement opportunities after completing the course?",
     answer: "Harikrushna Multimedia is committed to helping students succeed in their careers. While we cannot guarantee job placements, we provide guidance and support, including career counseling and assistance with building portfolios, to enhance your employment prospects in the game design industry.",
   },
+  {
+    question: "What courses does Harikrushna Multimedia offer?",
+    answer: "Harikrushna Multimedia offers a range of courses to ignite your creative passions and equip you with industry-leading skills. Some of our courses include 3D ARCHITECTURAL, VIDEO EDITING, GAME DESIGN, 3D ANIMATION, VISUAL EFFECT, and 2D ANIMATION.",
+  },
+  {
+    question: "Can I enroll in multiple courses simultaneously?",
+    answer: "Yes, you can enroll in multiple courses simultaneously. However, we recommend considering the workload and time commitment to ensure a successful learning experience.",
+  },
+ 
+ 
   // Add more questions and answers as needed
 ];
 
