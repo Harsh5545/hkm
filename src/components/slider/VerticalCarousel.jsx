@@ -62,12 +62,12 @@ const VerticalCarousel = () => {
           <div className="carousel">
             <div className="leading-text"></div>
             <div className="slides">
-              <div className="carousel-inner flex justify-center items-center">
+              <div className="carousel-inner flex justify-center items-end">
                 {slides.map((item, i) => (
                   <button
                     type="button"
                     onClick={() => setActiveIndex(i)}
-                    className={cn("carousel-item text-[13px] md:text-[20px] font-poppins font-bold", {
+                    className={cn("carousel-item text-[15px] md:text-[20px] font-poppins font-bold", {
                       active: activeIndex === i,
                       visible:
                         Math.abs(determinePlacement(i)) <=

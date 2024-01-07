@@ -4,10 +4,10 @@ import Gamer from "/course/game-design1.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import GamePage from "/course/GamePage.webp";
 // import modelGame from "/course/game-design-model.webp";
-import Job from "/course/Job.webp";
+import Job from "/course/placement-guarantee.webp";
 import certificate from '/course/certificate-medal.webp'
-import Like from "/course/like.webp";
-import Time from "/course/time.webp";
+import Like from "/course/eligibility.webp";
+import Time from "/course/course-duration.webp";
 import WUL from "/course/WhatULearn.webp";
 import AOS from "aos"
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
@@ -145,7 +145,7 @@ function GameDesign() {
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
-      <div className="flex  md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
+      <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
         <div data-aos="fade-left" className="flex md:w-[60%] w-full">
           <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="" />
         </div>
@@ -164,12 +164,16 @@ function GameDesign() {
               </li>
             ))}
           </ul>
+          <div className="mx-auto">
+
+          <Button className='btn' onClick={()=>toNavigate('/contact')} value={'Explore Now'}/>
+          </div>
         </div>
       </div>
 
       {/* Vertical Caorousel */}
       <div className=" p-4 flex flex-col md:flex-row h-[100vh] md:h-[60vh] justify-center items-center">
-        <div data-aos="flip-up" className="flex-1 items-center flex justify-center flex-col">
+        <div data-aos="flip-up" className="flex-1 items-center flex justify-end flex-col">
           <h1 className="md:text-5xl font-poppins text-2xl">TOOLS & SOFTWARE</h1>
           <VerticalCarousel />
         </div>
@@ -190,37 +194,37 @@ function GameDesign() {
 
       {/* critera */}
       
-      <div className="flex justify-evenly md:flex-row flex-col md:gap-1 gap-14 items-center m-10">
+      <div className="grid md:grid-cols-3 px-8 justify-center md:flex-row flex-col md:gap-1 gap-14 items-center my-20">
     {/* <!-- ELIGIBILITY CRITERIA --> */}
-    <div data-aos="flip-left" className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+    <div data-aos="flip-left" className="md:col-span-1 flex gap-5 justify-center items-center flex-col animate-fadeIn">
         <h1 className="text-3xl text-center font-poppins">
             ELIGIBILITY CRITERIA
         </h1>
-        <img className="h-[14rem] transition-transform transform duration-500 hover:scale-110" width={250} src={Like} alt="" />
-        <p className="w-[60%] text-md md:text-xl text-center">
+        <img className="h-[14rem] transition-transform transform duration-500 hover:scale-110" width={400} src={Like} alt="" />
+        <p className="w-full md:w-[60%] text-md md:text-xl text-center">
             Graduates and undergraduates are welcome to apply after successfully completing their 10 + 2 education.
         </p>
     </div>
 
     {/* <!-- COURSE DURATION --> */}
-    <div data-aos="flip-right" className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+    <div data-aos="flip-right" className="md:col-span-1 flex gap-5 justify-center items-center flex-col animate-fadeIn">
         <h1 className="text-3xl text-center font-poppins ">
             COURSE DURATION
         </h1>
-        <img className="h-[14rem] transition-transform duration-500 transform hover:scale-110" width={250} src={Time} alt="" />
-        <p className="w-[60%] text-md md:text-xl text-center">
+        <img className="h-[14rem] transition-transform duration-500 transform hover:scale-110" width={400} src={Time} alt="" />
+        <p className="w-full md:w-[60%] text-md md:text-xl text-center">
             Experience a 12-months program with 2 hours of daily classes for 6 days a week, providing practical assignments in every session.
         </p>
     </div>
 
     {/* <!-- PLACEMENT GUARANTEE --> */}
-    <div data-aos="flip-left" className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+    <div data-aos="flip-left" className="md:col-span-1 flex gap-5 justify-center items-center flex-col animate-fadeIn">
         <h1 className="text-3xl text-center font-poppins">
             PLACEMENT GUARANTEE
         </h1>
-        <img className="h-[14rem] transition-transform transform  duration-500 hover:scale-110" width={250} src={Job} alt="" />
-        <p className="w-[60%] text-md md:text-xl text-center">
-            Secure your future with our Placement Guarantee, connecting you with industry leaders for exciting career opportunities after program completion.
+        <img className="h-[14rem] transition-transform transform  duration-500 hover:scale-110" width={400} src={Job} alt="" />
+        <p className="w-full md:w-[60%] text-md md:text-xl text-center">
+            Secure your future with our Placement Guarantee, connecting you with industry leaders for exciting career opportunities after program.
         </p>
         </div>
        
