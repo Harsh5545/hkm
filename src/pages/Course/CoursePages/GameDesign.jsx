@@ -59,7 +59,7 @@ function GameDesign() {
     AOS.init({ duration: 1000 });
   })
   return (
-    <div className=" font-poppins mx-auto">
+    <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
         <div
           className="mb-8y h-[100vh] flex md:flex-row flex-col-reverse justify-center items-center"
@@ -112,7 +112,7 @@ function GameDesign() {
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex  md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex w-[60%]">
+        <div data-aos="fade-left" className="flex md:w-[60%] w-full">
           <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="" />
         </div>
         <div data-aos="fade-right"
@@ -161,8 +161,8 @@ function GameDesign() {
       
       <div className="flex justify-evenly md:flex-row flex-col md:gap-1 gap-14 items-center m-10">
     {/* <!-- ELIGIBILITY CRITERIA --> */}
-    <div className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
-        <h1 className="text-3xl font-poppins">
+    <div data-aos="flip-left" className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+        <h1 className="text-3xl text-center font-poppins">
             ELIGIBILITY CRITERIA
         </h1>
         <img className="h-[14rem] transition-transform transform duration-500 hover:scale-110" width={250} src={Like} alt="" />
@@ -172,8 +172,8 @@ function GameDesign() {
     </div>
 
     {/* <!-- COURSE DURATION --> */}
-    <div className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
-        <h1 className="text-3xl font-poppins ">
+    <div data-aos="flip-right" className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+        <h1 className="text-3xl text-center font-poppins ">
             COURSE DURATION
         </h1>
         <img className="h-[14rem] transition-transform duration-500 transform hover:scale-110" width={250} src={Time} alt="" />
@@ -183,8 +183,8 @@ function GameDesign() {
     </div>
 
     {/* <!-- PLACEMENT GUARANTEE --> */}
-    <div className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
-        <h1 className="text-3xl font-poppins">
+    <div data-aos="flip-left" className="flex-grow flex gap-5 justify-center items-center flex-col animate-fadeIn">
+        <h1 className="text-3xl text-center font-poppins">
             PLACEMENT GUARANTEE
         </h1>
         <img className="h-[14rem] transition-transform transform  duration-500 hover:scale-110" width={250} src={Job} alt="" />
@@ -196,31 +196,7 @@ function GameDesign() {
 </div>
       {/* SIMILAR COURSE  */}
       
-      <div className="h-[25rem] flex flex-col justify-center items-center ">
-        <h1 className="text-5xl text-center m-5">
-        SIMILAR COURSES
-        </h1>
-        <div className="flex w-[80%] items-center justify-between">
-        <div>
-          <h1 className="text-2xl">
-          3D JEWELLERY DESIGN
-          </h1>
-          <button class="group group-hover:before:duration-500 group-hover:after:duration-1000 after:duration-500 hover:border-sky-300  duration-500 before:duration-500 hover:duration-500 underline underline-offset-2    hover:after:-right-2 hover:before:top-8 hover:before:right-16 hover:after:scale-150 hover:after:blur-none hover:before:-bottom-8 hover:before:blur-none hover:bg-sky-300 hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-sky-900 relative bg-sky-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-sky-400 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-cyan-600 after:right-8 after:top-3 after:rounded-full after:blur">
-  Explore
-</button>
-
-        </div>
-        <div>
-          <h1 className="text-2xl">
-          3D JEWELLERY DESIGN
-          </h1>
-          <button class="group group-hover:before:duration-500 group-hover:after:duration-1000 after:duration-500 hover:border-sky-300  duration-500 before:duration-500 hover:duration-500 underline underline-offset-2    hover:after:-right-2 hover:before:top-8 hover:before:right-16 hover:after:scale-150 hover:after:blur-none hover:before:-bottom-8 hover:before:blur-none hover:bg-sky-300 hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-sky-900 relative bg-sky-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-sky-400 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-cyan-600 after:right-8 after:top-3 after:rounded-full after:blur">
-  Explore
-</button>
-
-                </div>
-        </div>
-        </div>
+     
 
     </div>
   );
