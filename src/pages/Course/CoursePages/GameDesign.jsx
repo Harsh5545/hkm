@@ -5,7 +5,7 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import GamePage from "/course/GamePage.webp";
 // import modelGame from "/course/game-design-model.webp";
 import Job from "/course/Job.webp";
-import certificate from '/course/certificate.webp'
+import certificate from '/course/certificate-medal.webp'
 import Like from "/course/like.webp";
 import Time from "/course/time.webp";
 import WUL from "/course/WhatULearn.webp";
@@ -166,11 +166,11 @@ function GameDesign() {
           <h1 className="md:text-5xl font-poppins text-2xl">TOOLS & SOFTWARE</h1>
           <VerticalCarousel />
         </div>
-        <div data-aos="flip-down" className="flex-1 items-center flex justify-center flex-col font-poppins">
+        <div data-aos="flip-down" className="flex-1 items-center flex gap-2 justify-center flex-col font-poppins">
           <h1 className="md:text-5xl font-poppins text-2xl">CERTIFICATIONS</h1>
           <img
             src={certificate}
-            width={240}
+            width={209}
             alt="Certifiacte image from Harikrushnamultimedia.com"
           />
           <p className="text-lg md:text-2xl text-center">
