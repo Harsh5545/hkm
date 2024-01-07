@@ -1,4 +1,4 @@
-import React ,{useEffect} from "react";
+import React ,{useEffect, useState} from "react";
 import game from "/course/gamepng.webp";
 import Gamer from "/course/game-design1.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
@@ -13,10 +13,24 @@ import AOS from "aos"
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
-
+import faqData  from '../../../helpers/Constant'
+import FAQSection from "../../../components/Faq/Faq";
 
 
 function GameDesign() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   const CourseHighlights = [
     "Job-oriented, industry-centric curriculum",
     "Hands-on practical training using the latest tools and software",
@@ -36,6 +50,8 @@ function GameDesign() {
     "Understand Game Design",
     "3D Environment",
   ];
+ 
+  
 
   const backgroundStyles = {
     backgroundImage: `url(${GamePage})`, // Use backticks for string interpolation
@@ -58,6 +74,13 @@ function GameDesign() {
   useEffect(()=>{
     AOS.init({ duration: 1000 });
   })
+  const calculateRotation = (axis) => {
+    const maxRotation = -25;
+    const rotation =
+      (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
+    return rotation;
+  };
+
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
@@ -65,11 +88,15 @@ function GameDesign() {
           className="mb-8y h-[100vh] flex md:flex-row flex-col-reverse justify-center items-center"
           style={bgOverlayStyle}
         >
-          <div  className="flex-1">
-            <img data-aos="fade-down-right" src={game} className="opacity-1 " alt="" />
+          <div  style={{
+        transform: `rotateX(${calculateRotation(
+          "y"
+        )}deg) rotateY(${-calculateRotation("x")}deg)`,
+      }}  className="flex-1">
+            <img data-aos="fade-down-right" src={game} className=" " alt="" />
           </div>
 
-          <div data-aos="fade-down-left" className="flex-1 flex justify-end mt-24 flex-col items-center  text-center">
+          <div  data-aos="fade-down-left" className="flex-1 flex justify-end mt-24 flex-col items-center  text-center">
             <h1
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
@@ -152,10 +179,7 @@ function GameDesign() {
         </div>
       </div>
 
-      {/* Contact Form */}
-      <div className="flex justify-center ">
-        <ContactForm />
-      </div>
+   
 
       {/* critera */}
       
@@ -193,9 +217,13 @@ function GameDesign() {
         </p>
         </div>
        
-</div>
+      </div>
+         {/* Contact Form */}
+         <div className="flex justify-center ">
+        <ContactForm />
+      </div>
       {/* SIMILAR COURSE  */}
-      
+     <FAQSection/>
      
 
     </div>

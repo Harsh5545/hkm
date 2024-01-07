@@ -226,3 +226,38 @@ export const CourseDetails = [
     },
   },
 ];
+
+const faqData = [
+  {
+    question: "What is game design?",
+    answer: "Game design is the process of creating and designing the rules, mechanics, gameplay, and overall experience of a video game or any interactive entertainment product.",
+  },
+  {
+    question: "What are the key aspects of the course?",
+    answer: "The key aspects include 3D Modeling, Texturing and Materials, Lighting and Rendering, Visualization Techniques, Level Design, Design Visualization, Understand Game Design, and 3D Environment.",
+  },
+  {
+    question: "Who is this course suitable for?",
+    answer: "This course is suitable for anyone interested in entering the field of game design. Whether you're a beginner or have some experience in related disciplines, our course is designed to accommodate various skill levels.",
+  },
+  {
+    question: "Are there any prerequisites for enrolling in this course?",
+    answer: "There are no specific prerequisites for enrolling in this course. However, a basic understanding of computer usage and a passion for gaming and design can be beneficial.",
+  },
+  {
+    question: "What software or tools will be used in the course?",
+    answer: "The course will cover the use of industry-standard software for game design, including but not limited to tools for 3D modeling, texturing, and rendering. Specific software details will be provided during the course.",
+  },
+  {
+    question: "Is there any certification provided upon completion of the course?",
+    answer: "Yes, upon successful completion of the course, participants will receive a certification in game design from Harikrushna Multimedia, acknowledging their skills and knowledge in the field.",
+  },
+  {
+    question: "Are there any job placement opportunities after completing the course?",
+    answer: "Harikrushna Multimedia is committed to helping students succeed in their careers. While we cannot guarantee job placements, we provide guidance and support, including career counseling and assistance with building portfolios, to enhance your employment prospects in the game design industry.",
+  },
+  // Add more questions and answers as needed
+];
+
+export default faqData;
+
