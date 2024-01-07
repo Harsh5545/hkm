@@ -57,7 +57,7 @@ function GameDesign() {
     backgroundImage: `url(${GamePage})`, // Use backticks for string interpolation
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "100vh",
+    height: "110vh",
     position: "relative",
     // background:"blue "
   };
