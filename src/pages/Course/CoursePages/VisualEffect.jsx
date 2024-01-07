@@ -108,7 +108,7 @@ function VisualEffect() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
             >
-              Graphics & Animation
+              Visual Effect
             </h1>
             <p
               className="text-md md:text-xl w-[90%]"
