@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import VideoPNG from "/course/JewelleryPng.webp";
-import VideoEdit from "/course/JewlleryObject.webp";
+import VideoEdit from "/course/JewelleryOver.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import GamePage from "/course/GamePage.webp";
 import Job from "/course/placement-guarantee.webp";
@@ -151,7 +151,7 @@ enables easy collaboration while reducing material waste. </p>
         >
           <img
             src={VideoEdit}
-            className=" p-5"
+            className=" p-1 shadow-2xl  "
             width="600"
             alt="Animation video editing"
           />
