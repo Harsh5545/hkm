@@ -8,10 +8,10 @@ function ContactForm() {
       background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)'
     }} >
 
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col-reverse md:flex-row">
       
       <div className=" md:flex-1 flex justify-center flex-col  rounded-xl p-4 ">
-        <h3 className="h-3 text-white font-bold ">Contact us</h3>
+        <h3 className="h-3 text-white text-center md:text-start font-bold ">Contact us</h3>
         <br />
         <form className="text-white ">
           <div className="mb-4">
@@ -55,7 +55,7 @@ function ContactForm() {
         </form>
         </div>
         <div className=" md:flex-1 flex justify-center flex-col gap-10 items-center text-white py-3 px-4">
-        <h2 className="h2 text-center md:text-3xl text-xl font-bold">
+        <h2 className="h2 text-center md:text-3xl text-2xl font-bold">
           WE'D LOVE TO HEAR FROM YOU
         </h2>
       

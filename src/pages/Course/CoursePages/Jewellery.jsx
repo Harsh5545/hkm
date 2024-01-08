@@ -151,7 +151,7 @@ enables easy collaboration while reducing material waste. </p>
         >
           <img
             src={VideoEdit}
-            className=" p-1 shadow-2xl  "
+            className=" md:p-1 p-5 shadow-2xl  "
             width="600"
             alt="Animation video editing"
           />

@@ -98,7 +98,7 @@ function Architectural() {
 
           <div
             data-aos="fade-down-left"
-            className="flex-1 flex justify-end mt-24 flex-col items-center  text-center"
+            className="flex-1 flex justify-center mt-24 flex-col items-center  text-center"
           >
             <h1
               className="text-3xl md:text-4xl font-bold mb-4"
@@ -146,7 +146,7 @@ function Architectural() {
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img   src={Gamer} className="p-1 md:shadow-2xl shadow-lg" width="500" alt="" />
+          <img   src={Gamer} className="md:p-1 p-5 md:shadow-2xl shadow-2xl" width="500" alt="" />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
