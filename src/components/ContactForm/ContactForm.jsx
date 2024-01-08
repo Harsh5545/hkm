@@ -17,7 +17,7 @@ function ContactForm() {
           <div className="mb-4">
             <input
               type="name"
-              className="form-control shadow-none w-[60%] p-3 rounded-lg"
+              className="form-control shadow-none w-full md:w-[60%] p-3 rounded-lg"
               placeholder="Name"
               required
             />
@@ -25,7 +25,7 @@ function ContactForm() {
           <div className="mb-4">
             <input
               type="email"
-              className="form-control shadow-none w-[60%] p-3 rounded-lg"
+              className="form-control shadow-none w-full md:w-[60%] p-3 rounded-lg"
               placeholder="name@example.com"
               required
             />
@@ -33,7 +33,7 @@ function ContactForm() {
           <div className="mb-4">
             <input
               type="tel"
-              className="form-control shadow-none w-[60%] p-3 rounded-lg"
+              className="form-control shadow-none w-full md:w-[60%] p-3 rounded-lg"
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               placeholder="Number"
               required
@@ -41,15 +41,17 @@ function ContactForm() {
           </div>
           <div className="mb-4">
             <textarea
-              className="form-control shadow-none w-[60%] p-3 h-40 rounded-lg"
+              className="form-control shadow-none w-full md:w-[60%] p-3 h-40 rounded-lg"
               placeholder="Leave a comment here"
               required
             ></textarea>
           </div>
-          <button className="btn btn-primary  px-3 py-2 text-lg w-[60%]" type="submit">
+          <div className="flex justify-center w-full">
+          <button className="btn btn-primary  px-3 py-2 text-lg md:w-[60%]" type="submit">
             SEND
             <i className="fa fa-arrow-right ms-2" aria-hidden="true"></i>
           </button>
+          </div>
         </form>
         </div>
         <div className=" md:flex-1 flex justify-center flex-col gap-10 items-center text-white py-3 px-4">
