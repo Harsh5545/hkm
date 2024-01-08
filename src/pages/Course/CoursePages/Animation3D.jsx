@@ -8,7 +8,7 @@ import Job from "/course/placement-guarantee.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/eligibility.webp";
 import Time from "/course/course-duration.webp";
-import WUL from "/course/WhatULearn.webp";
+import WUL from "/course/Animi.webp";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
@@ -153,8 +153,8 @@ function Animation3D() {
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex md:w-[60%] w-full">
-          <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="" />
+        <div data-aos="fade-left" className="flex justify-center md:w-[60%] w-full">
+          <img src={WUL} width={700} alt="" />
         </div>
         <div
           data-aos="fade-right"
@@ -248,7 +248,7 @@ function Animation3D() {
           />
           <p className="w-full md:w-[60%] text-md md:text-xl text-center">
             Experience a 12-months program with 2 hours of daily classes for 6
-            days a week, providing practical assignments in every session.
+            days a week, providing practical assignments.
           </p>
         </div>
 

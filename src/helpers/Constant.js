@@ -155,7 +155,7 @@ export const CourseDetails = [
   },
   {
     id: "5",
-    path: "/course/3d-animation.webp",
+    path: "/course/CourseAnimation.webp",
     course: "3D ANIMATION",
     description:
       "Dive into the world of 3D animation and bring characters and scenes to life.",
@@ -228,10 +228,7 @@ export const CourseDetails = [
 ];
 
 const faqData = [
-  {
-    question: "What is game design?",
-    answer: "Game design is the process of creating and designing the rules, mechanics, gameplay, and overall experience of a video game or any interactive entertainment product.",
-  },
+
   {
     question: "What are the key aspects of the course?",
     answer: "The key aspects include 3D Modeling, Texturing and Materials, Lighting and Rendering, Visualization Techniques, Level Design, Design Visualization, Understand Game Design, and 3D Environment.",

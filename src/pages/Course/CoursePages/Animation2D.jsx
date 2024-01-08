@@ -92,9 +92,9 @@ function Animation2D() {
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
             }}
-            className="flex-1"
+            className="flex-1 justify-center flex items-center"
           >
-            <img data-aos="fade-down-right" src={game} className=" " alt="" />
+            <img data-aos="fade-down-right" src={game} width={550} alt="" />
           </div>
 
           <div

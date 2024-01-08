@@ -8,7 +8,7 @@ import Job from "/course/placement-guarantee.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/eligibility.webp";
 import Time from "/course/course-duration.webp";
-import WUL from "/course/WhatULearn.webp";
+import WUL from "/course/VisualEffectWUL.webp";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";

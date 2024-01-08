@@ -40,17 +40,25 @@ function PGA() {
   ];
 
   const whatULearn = [
-    "Adobe Illustrator",
-    "Adobe Photoshop",
-    "Adobe After Effects",
-    "Adobe Premiere Pro",
-    "Adobe InDesign",
-    "Adobe Audition",
-    "CorelDRAW / Animate CC",
-    "Autodesk 3ds Max",
-    "V-Ray",
-    "Autodesk Maya",
-    "Portfolio design",
+    'Graphics Designer',
+  'Character Designer',
+  'Background Artist',
+  'Digital Painter',
+  '3D Modeler',
+  'Texture Artist',
+  'Lighting Artist',
+  'Rigging Artist',
+  'Technical Animator',
+  'Visual Development Artist',
+  'Matte Painter',
+  'Previsualization Artist',
+  'Visual Storyteller',
+  'Social Media Reel Artist',
+  'Multimedia Designer',
+  'Motion Graphics Animator',
+  'Video Game Designer',
+  'Social Media Visual Designer',
+  'Video Editor',
   ];
 
   const backgroundStyles = {

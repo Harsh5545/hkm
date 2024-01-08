@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import game from "/course/3d-architechure-overlay.webp";
+import game from "/course/3DARchitechureimg.webp";
 import Gamer from "/course/3d-architechure-image.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import AnimationBackground from "/course/3d-architechure-bg.webp";
@@ -8,12 +8,11 @@ import Job from "/course/placement-guarantee.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/eligibility.webp";
 import Time from "/course/course-duration.webp";
-import WUL from "/course/WhatULearn.webp";
+import WUL from "/course/3DARCHITECTURALWUL.webp";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
-import faqData from "../../../helpers/Constant";
 import FAQSection from "../../../components/Faq/Faq";
 
 function Architectural() {
@@ -92,9 +91,9 @@ function Architectural() {
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
             }}
-            className="flex-1"
+            className="flex-1 flex justify-center items-center"
           >
-            <img data-aos="fade-down-right" src={game} className=" " alt="" />
+            <img data-aos="fade-down-right md:shadow-3xl shadow-lg" src={game} width="600" alt="" />
           </div>
 
           <div
@@ -147,13 +146,13 @@ function Architectural() {
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img src={Gamer} className=" p-5" width="600" alt="" />
+          <img   src={Gamer} className="p-1 md:shadow-2xl shadow-lg" width="500" alt="" />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex md:w-[60%] w-full">
-          <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="" />
+        <div data-aos="fade-left" className="flex justify-center items-center md:w-[60%] w-full">
+          <img src={WUL}  width={800} alt="" />
         </div>
         <div
           data-aos="fade-right"
@@ -246,7 +245,8 @@ function Architectural() {
             alt=""
           />
           <p className="w-full md:w-[60%] text-md md:text-xl text-center">
-          2 hours per day & 6 days a week 2 hours per day practice with assignments in class.
+          Experience a 12-months program with 2 hours of daily classes for 6
+            days a week, providing practical assignments.
           </p>
         </div>
 

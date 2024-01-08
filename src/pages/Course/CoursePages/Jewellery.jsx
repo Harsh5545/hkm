@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import VideoPNG from "/course/GraphicPng1.webp";
-import VideoEdit from "/course/PlayingGraphic.webp";
+import VideoPNG from "/course/JewelleryPng.webp";
+import VideoEdit from "/course/JewlleryObject.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import GamePage from "/course/GraphicBg.webp";
+import GamePage from "/course/GamePage.webp";
 import Job from "/course/Job.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/like.webp";
 import Time from "/course/time.webp";
-import VideoWYL from "/course/GraphicsPng.webp";
+import VideoWYL from "/course/JewelleryPng.png";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
@@ -37,14 +37,14 @@ function Jewellery() {
   ];
 
   const whatULearn = [
-    "Typography",
-    "Layout and Composition",
-    "Color Theory",
+    "3D Modeling",
+    "Texturing and Materials",
+    "Lighting and Rendering",
     "Visualization Techniques",
-    "Branding and Identity",
+    "Enhanced Creativity",
     "Realistic Visualization",
-    "Print and Digital Media",
-    "Image Manipulation",
+    "Materials",
+    "Realistic Rendering"
    
   ];
 
@@ -109,18 +109,19 @@ function Jewellery() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
             >
-              Video Editing
+              3D JEWELLERY DESIGN
             </h1>
             <p
               className="text-md md:text-xl w-[90%]"
               style={{ color: "white" }}
             >
-              Graphic design is the art of creating visual content to
-              communicate messages effectively. It utilizes typography, images,
-              colors, ads on social media and layout to convey ideas and
-              emotions in a visually appealing way. Graphic design is a craft
-              where professionals create visual content to communicate Messages.
-            </p>
+             3D jewellery design uses computer
+software to craft and visualize jewelry
+in 3D, offering more creative freedom,
+quicker prototyping, and realistic
+representation compared to traditional methods. This approach is
+cost-effective, customizable, and
+enables easy collaboration while reducing material waste. </p>
           </div>
         </div>
       </div>
@@ -208,7 +209,7 @@ function Jewellery() {
             alt="Certifiacte image from Harikrushnamultimedia.com"
           />
           <p className="text-lg md:text-2xl text-center">
-            Harikrushna Multimedia Certified Expert in Graphic Design
+            Harikrushna Multimedia Certified Expert in 3D JEWELLERY DESIGN
           </p>
         </div>
       </div>

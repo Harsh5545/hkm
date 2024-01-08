@@ -16,12 +16,13 @@ function NavbarDefault() {
   const toNavigate = useNavigate();
   return (
     <div className="flex z-[999] absolute w-full md:justify-center items-center ">
-      <div className="flex-col md:flex-row flex md:justify-around rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-3 m-4">
+      <div className="flex-col md:flex-row flex md:justify-between px-10 rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-1 m-4">
         <div className="flex justify-between px-4 items-center w-full md:w-0">
           <span className="text-xl">
             <img
               src={Logo}
-              className="md:max-w-20 max-w-10"
+              
+              className="md:max-w-[6rem] max-w-10"
               alt="HarikrushnaMultimedia institue logo"
             />
           </span>

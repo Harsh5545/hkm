@@ -65,7 +65,7 @@ function GraphicsDesign() {
     left: 0,
     background:
       "linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)",
-    opacity: 0.94,
+    opacity: 0.74,
     height: "100vh",
   };
 
