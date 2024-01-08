@@ -224,7 +224,7 @@ function PGA() {
 
       {/* critera */}
 
-      <div className="grid md:grid-cols-3 px-8 justify-center md:flex-row flex-col md:gap-1 gap-14 items-center my-20">
+      <div className="grid md:grid-cols-3 px-8 justify-center md:flex-row flex-col md:gap-1 gap-14 items-start my-20">
         {/* <!-- ELIGIBILITY CRITERIA --> */}
         <div
           data-aos="flip-left"
