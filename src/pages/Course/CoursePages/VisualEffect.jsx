@@ -8,7 +8,7 @@ import Job from "/course/placement-guarantee.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/eligibility.webp";
 import Time from "/course/course-duration.webp";
-import WUL from "/course/VisualEffectWUL.webp";
+import WUL from "/course/Avengers.webp";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
@@ -156,19 +156,19 @@ function VisualEffect() {
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
-      <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex md:w-[60%] w-full">
-          <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="harikrushna Multimedia WUL" />
+      <div className="flex  gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#010101]">
+        <div data-aos="fade-left" className="flex md:w-[50%] w-full">
+          <img src={WUL} width={6000} alt="harikrushna Multimedia WUL" />
         </div>
         <div
           data-aos="fade-right"
           className="flex flex-1 flex-col gap-10 justify-center "
           style={{ color: "white" }}
         >
-          <h1 className="md:text-5xl text-3xl text-center">
+          <h1 className="md:text-4xl text-2xl text-center">
             WHAT YOU'LL LEARN HERE
           </h1>
-          <ul className=" items-start md:text-3xl text-xl">
+          <ul className=" items-start grid grid-cols-2 md:text-2xl text-xl">
             {whatULearn.map((learn, index) => (
               <li className="mt-1 flex items-center gap-2" key={index}>
                 <ArrowRightIcon />
