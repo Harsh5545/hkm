@@ -57,7 +57,7 @@ function GameDesign() {
     backgroundImage: `url(${GamePage})`, // Use backticks for string interpolation
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "110vh",
+    height: "100vh",
     position: "relative",
     // background:"blue "
   };
@@ -145,9 +145,9 @@ function GameDesign() {
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
-      <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
+      <div className="flex  gap-5 md:flex-row flex-col-reverse justify-center items-center  bg-[#001321]">
         <div data-aos="fade-left" className="flex md:w-[60%] w-full">
-          <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="" />
+          <img src={WUL} className="w-full md:h-[100vh] h-[40vh]" alt="" />
         </div>
         <div data-aos="fade-right"
           className="flex flex-1 flex-col gap-10 justify-center "

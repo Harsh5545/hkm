@@ -179,7 +179,7 @@ export const CourseDetails = [
   },
   {
     id: "7",
-    path: "/course/2d-animation.webp",
+    path: "/course/2danimation.webp",
     course: "2D ANIMATION",
     description:
       "Learn the principles of 2D animation and create captivating animated stories.",

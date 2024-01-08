@@ -3,12 +3,12 @@ import VideoPNG from "/course/PGDPNG.webp";
 import VideoEdit from "/course/pdaoverview.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import GamePage from "/course/bgofpda.webp";
-// import modelGame from "/course/game-design-model.webp";
 import Job from "/course/placement-guarantee.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/eligibility.webp";
 import Time from "/course/course-duration.webp";
 import VideoWYL from "/course/GameWUL.webp";
+import Button from "../../../components/Button/Button";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
@@ -40,17 +40,18 @@ function PGD() {
   const whatULearn = [
     "Game Designer",
   "Level Designer",
-  "Game UI Designer",
+    "Game UI Designer",
+    
   "Gameplay Tester",
   "Game Artist",
   "3D Modeler",
   "Character Designer",
-  "Game Writer/Narrative Designer",
   "Game Animator",
   "Sound Designer",
-  "Game Tester/QA Analyst",
   "Game Producer",
-  "Monetization Designer"
+    "Monetization Designer",
+    "Game Tester/QA Analyst",
+    "Game Writer/Narrative Designer",
   ];
 
   const backgroundStyles = {
@@ -158,13 +159,13 @@ design elements crucial for creating captivating games.</p>
         </div>
         <div
           data-aos="fade-right"
-          className="flex flex-1 flex-col gap-10 justify-center "
+          className="flex  flex-1 flex-col gap-10 justify-center "
           style={{ color: "white" }}
         >
           <h1 className="md:text-5xl text-3xl text-center">
             WHAT YOU'LL LEARN HERE
           </h1>
-          <ul className=" items-start md:text-2xl text-xl">
+          <ul className=" items-start grid grid-cols-2 md:text-2xl text-xl">
             {whatULearn.map((learn, index) => (
               <li className="mt-1 flex items-center gap-2" key={index}>
                 <ArrowRightIcon />
@@ -172,6 +173,13 @@ design elements crucial for creating captivating games.</p>
               </li>
             ))}
           </ul>
+          <div className="mx-auto">
+            <Button
+              className="btn"
+              onClick={() => toNavigate("/contact")}
+              value={"Explore Now"}
+            />
+          </div>
         </div>
       </div>
 

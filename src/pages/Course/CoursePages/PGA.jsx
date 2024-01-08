@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import game from "/course/graphics-animation-overlay.webp";
-import Gamer from "/course/graphics-animation-image.webp";
+import game from "/course/WEBSITEpng.webp";
+import Gamer from "/course/AnimationOverviewPGA.webp";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import AnimationBackground from "/course/3d-architechure-bg.webp";
 // import modelGame from "/course/game-design-model.webp";
@@ -8,12 +8,11 @@ import Job from "/course/placement-guarantee.webp";
 import certificate from "/course/certificate-medal.webp";
 import Like from "/course/eligibility.webp";
 import Time from "/course/course-duration.webp";
-import WUL from "/course/WhatULearn.webp";
+import WUL from "/course/graphicWUL.webp";
 import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
-import faqData from "../../../helpers/Constant";
 import FAQSection from "../../../components/Faq/Faq";
 
 function PGA() {
@@ -47,17 +46,19 @@ function PGA() {
   '3D Modeler',
   'Texture Artist',
   'Lighting Artist',
-  'Rigging Artist',
-  'Technical Animator',
+    'Rigging Artist',
+    'Social Media Visual Designer',
+
   'Visual Development Artist',
   'Matte Painter',
-  'Previsualization Artist',
-  'Visual Storyteller',
+    'Previsualization Artist',
+    'Motion Graphics Animator',
+ 
   'Social Media Reel Artist',
   'Multimedia Designer',
-  'Motion Graphics Animator',
+  'Visual Storyteller',
   'Video Game Designer',
-  'Social Media Visual Designer',
+  'Technical Animator',
   'Video Editor',
   ];
 
@@ -116,7 +117,7 @@ function PGA() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
             >
-              Graphics & Animation
+             Program Graphics & Animation
             </h1>
             <p
               className="text-md md:text-xl w-[90%]"
@@ -160,13 +161,13 @@ function PGA() {
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img src={Gamer} className=" p-5" width="600" alt="harikrushna Multimedia Gamer" />
+          <img src={Gamer} className=" p-1 shadow-2xl" width="600" alt="harikrushna Multimedia Gamer" />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
-      <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex md:w-[60%] w-full">
-          <img src={WUL} className="w-full md:h-[100vh] h-[50vh]" alt="harikrushna Multimedia WUL" />
+      <div className="flex  gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
+        <div data-aos="fade-left" className="flex-1 w-full">
+          <img src={WUL}  width={5000} alt="harikrushna Multimedia WUL" />
         </div>
         <div
           data-aos="fade-right"
@@ -176,7 +177,7 @@ function PGA() {
           <h1 className="md:text-5xl text-3xl text-center">
             WHAT YOU'LL LEARN HERE
           </h1>
-          <ul className=" items-start md:text-3xl text-xl">
+          <ul className=" grid grid-cols-2 items-start md:text-2xl text-md">
             {whatULearn.map((learn, index) => (
               <li className="mt-1 flex items-center gap-2" key={index}>
                 <ArrowRightIcon />
