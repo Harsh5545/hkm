@@ -13,6 +13,7 @@ import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import FAQSection from "../../../components/Faq/Faq";
+import Button from "../../../components/Button/Button";
 
 function VideoEditing() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -142,6 +143,7 @@ function VideoEditing() {
               </li>
             ))}
           </ul>
+         
         </div>
         <div
           data-aos="zoom-in-up"
@@ -171,6 +173,13 @@ function VideoEditing() {
               </li>
             ))}
           </ul>
+          <div className="mx-auto">
+            <Button
+              className="btn"
+              onClick={() => toNavigate("/contact")}
+              value={"Explore Now"}
+            />
+          </div>
         </div>
       </div>
 

@@ -6,7 +6,7 @@ function ContactMap() {
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 py-12 mx-auto">
           <div>
-            <p className="font-medium text-blue-500 dark:text-blue-400">
+            <p className="font-medium  text-xl dark:text-blue-400" style={{ color: '#b9414d' }}>
               Contact us
             </p>
 

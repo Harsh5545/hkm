@@ -37,12 +37,12 @@ const Hero = () => {
         )}deg) rotateY(${-calculateRotation("x")}deg)`,
       }}
     >
-      <div className="flex flex-col select-none md:flex-row justify-between  h-full items-center left-container">
+      <div className="flex flex-col select-none md:flex-row justify-between h-full items-center left-container">
         <div className=" flex flex-col flex-1  items-start mt-24 md:mt-0 justify-end md:justify-start font-poppins text-white md:gap-8">
-          <h2 className="flex text-xl md:text-3xl">Opportunity to Bring Your</h2>
-          <h1 className="text-2xl md:text-6xl">Creative Passion to Life</h1>
-          <div className="text-2xl" >
-            <h2 className="flex text-xl md:text-3xl">You Will Learn Here</h2>
+          <h2 className="flex text-xl md:text-4xl">Opportunity to Bring Your</h2>
+          <h1 className="text-2xl md:text-5xl">Creative Passion to Life</h1>
+          <div className="flex flex-col gap-8" >
+            <h2 className="flex text-xl md:text-4xl">You Will Learn Here</h2>
             <TyperWriter />
           </div>
           <Button value={'Download'} className={'btn'}/>
