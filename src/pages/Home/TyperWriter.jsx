@@ -3,7 +3,7 @@ import TyperWriteComponent from 'typewriter-effect';
 import "./HomeStyles.css"
 function TyperWriter() {
   return (
-    <div className=''>
+    <div className='text-2xl'>
       <TyperWriteComponent
         options={{
           autoStart: true,

@@ -227,7 +227,7 @@ export const CourseDetails = [
   },
 ];
 
-const faqData = [
+export const faqData = [
 
   {
     question: "What are the key aspects of the course?",
@@ -266,5 +266,50 @@ const faqData = [
   // Add more questions and answers as needed
 ];
 
-export default faqData;
 
+
+ const testimonialsData = [
+  {
+    id: 1,
+    name: 'Hetal Patel',
+    photo: '/course/BouStdent1.webp',
+    content:
+      'I am extremely happy with the classes at Harikrushna Multimedia Institute. The teaching style is excellent, and the practical approach helped me grasp concepts easily.',
+  },
+  {
+    id: 2,
+    name: 'Rajesh Shah',
+    photo: '/course/BoyStdent.webp',
+    content:
+      'The faculty members are highly knowledgeable and supportive. They go the extra mile to ensure that every student understands the topics thoroughly.',
+  },
+  {
+    id: 3,
+    name: 'Asha Desai',
+    photo: '/course/GirlStdent1.webp',
+    content:
+      'Attending classes here has been a wonderful experience. The projects are challenging, and the guidance provided by the instructors is invaluable.',
+  },
+  {
+    id: 4,
+    name: 'Jignesh Mehta',
+    photo: '/course/BoyStdent2.webp',
+    content:
+      'The friendly and encouraging atmosphere at Harikrushna Multimedia Institute makes learning enjoyable. I recommend this institute to anyone interested in multimedia courses.',
+  },
+  {
+    id: 5,
+    name: 'Pooja Joshi',
+    photo: '/course/GirlStdent.webp',
+    content:
+      'The institutes focus on practical skills sets it apart. The placement assistance provided after completing the course is a significant advantage.',
+  },
+  {
+    id: 6,
+    name: 'Harhsad Kajale',
+    photo: '/course/BouStdent3.webp',
+    content:
+      'I appreciate the hands-on approach to learning. The industry-relevant curriculum prepares students for real-world challenges, making them job-ready.',
+  },
+];
+export default testimonialsData;

@@ -1,8 +1,9 @@
 import React from 'react'
+import ContactHero from './ContactHero'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div><ContactHero/></div>
   )
 }
 

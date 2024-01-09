@@ -30,7 +30,7 @@ const Hero = () => {
 
   return (
     <div
-      className="h-[100vh] opacity-1 md:w-[95%] flex flex-col justify-center"
+      className="h-[100vh] opacity-1 w-full md:w-[95%] flex flex-col justify-center"
       style={{
         transform: `rotateX(${calculateRotation(
           "y"
@@ -39,10 +39,10 @@ const Hero = () => {
     >
       <div className="flex flex-col select-none md:flex-row justify-between  h-full items-center left-container">
         <div className=" flex flex-col flex-1  items-start mt-24 md:mt-0 justify-end md:justify-start font-poppins text-white md:gap-8">
-          <h2 className="flex text-sm md:text-3xl">Opportunity to Bring Your</h2>
-          <h1 className="text-sm md:text-6xl">Creative Passion to Life</h1>
-          <div  >
-            <h2 className="flex  text-sm md:text-3xl">You Will Learn Here</h2>
+          <h2 className="flex text-xl md:text-3xl">Opportunity to Bring Your</h2>
+          <h1 className="text-2xl md:text-6xl">Creative Passion to Life</h1>
+          <div className="text-2xl" >
+            <h2 className="flex text-xl md:text-3xl">You Will Learn Here</h2>
             <TyperWriter />
           </div>
           <Button value={'Download'} className={'btn'}/>
