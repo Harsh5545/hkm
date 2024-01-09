@@ -13,7 +13,6 @@ import AOS from "aos"
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
-import faqData  from '../../../helpers/Constant'
 import FAQSection from "../../../components/Faq/Faq";
 
 

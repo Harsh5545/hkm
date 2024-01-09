@@ -8,7 +8,7 @@ import A3 from "/course/A3.webp";
 import A4 from "/course/A4.webp";
 import A5 from "/course/A5.webp";
 import A6 from "/course/A6.webp";
-import testimonialsData from "../../helpers/Constant";
+import  {testimonialsData}  from "../../helpers/Constant";
 function StudentWork() {
   const StudentData = [
     {
@@ -134,85 +134,48 @@ function StudentWork() {
       </div>
       {/*Student review */}
 
-      <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-6xl px-6 py-10 mx-auto">
-          <p className="text-xl font-medium text-blue-500">Testimonials</p>
+      <section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+        What Students are saying
+        </h1>
 
-          <h1 className="mt-2 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
-            What Students are saying
-          </h1>
+        <div class="flex justify-center mx-auto mt-6">
+            <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+            <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+            <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+        </div>
 
-          <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-            <div className="absolute w-full bg-blue-600 -z-10 md:h-96 rounded-2xl"></div>
+        <div class="flex items-start max-w-6xl mx-auto mt-16">
+            <button title="left arrow" class="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100" onClick={() => handleNavigation("left")}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
 
-            <div className="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-              <img
-                className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
-                src={currentTestimonial.photo}
-                alt="client photo"
-              />
-
-              <div className="mt-2 md:mx-6">
-                <div>
-                  <p className="text-xl font-medium tracking-tight text-white">
-                    {currentTestimonial.name}
-                  </p>
-                </div>
-
-                <p className="mt-4 text-lg leading-relaxed text-white md:text-xl">
-                  {currentTestimonial.content}
+            <div>
+                <p class="flex items-center text-center text-gray-500 lg:mx-8">
+                {currentTestimonial.content}
                 </p>
 
-                <div className="flex items-center justify-between mt-6 md:justify-start">
-                  <button
-                    title="left arrow"
-                    className="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-blue-400"
-                    onClick={() => handleNavigation("left")}
-                  >
-                    {/* Left Arrow SVG */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15 19l-7-7 7-7"
-                      />
-                    </svg>
-                  </button>
+                <div class="flex flex-col items-center justify-center mt-8">
+                    <img class="object-cover rounded-full w-14 h-14" src={currentTestimonial.photo} alt=""/>
 
-                  <button
-                    title="right arrow"
-                    className="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 md:mx-6 hover:bg-blue-400"
-                    onClick={() => handleNavigation("right")}
-                  >
-                    {/* Right Arrow SVG */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </button>
+                    <div class="mt-4 text-center">
+                        <h1 class="font-semibold text-gray-800 dark:text-white">{currentTestimonial.name}</h1>
+                        
+                    </div>
                 </div>
-              </div>
             </div>
-          </main>
+
+            <button title="right arrow" class="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100" onClick={() => handleNavigation("right")}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
         </div>
-      </section>
+    </div>
+</section>
 
       {/* before footer  */}
       <section className="bg-white dark:bg-gray-900">

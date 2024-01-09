@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import faqData from '../../helpers/Constant';
+import {faqData} from '../../helpers/Constant';
 
 const FAQSection = () => {
   const [expandedItems, setExpandedItems] = useState([]);

@@ -1,3 +1,4 @@
+
 export const CourseData = [
   {
     course: "3D Architectural",
@@ -268,48 +269,47 @@ export const faqData = [
 
 
 
- const testimonialsData = [
+export const testimonialsData = [
   {
     id: 1,
     name: 'Hetal Patel',
-    photo: '/course/BouStdent1.webp',
+    photo: "/course/BouStudent1.webp",
     content:
       'I am extremely happy with the classes at Harikrushna Multimedia Institute. The teaching style is excellent, and the practical approach helped me grasp concepts easily.',
   },
   {
     id: 2,
     name: 'Rajesh Shah',
-    photo: '/course/BoyStdent.webp',
+    photo: '/course/BoyStudent.webp',
     content:
       'The faculty members are highly knowledgeable and supportive. They go the extra mile to ensure that every student understands the topics thoroughly.',
   },
   {
     id: 3,
     name: 'Asha Desai',
-    photo: '/course/GirlStdent1.webp',
+    photo: '/course/GirlStudent1.webp',
     content:
       'Attending classes here has been a wonderful experience. The projects are challenging, and the guidance provided by the instructors is invaluable.',
   },
   {
     id: 4,
     name: 'Jignesh Mehta',
-    photo: '/course/BoyStdent2.webp',
+    photo: '/course/BoyStudent2.webp',
     content:
       'The friendly and encouraging atmosphere at Harikrushna Multimedia Institute makes learning enjoyable. I recommend this institute to anyone interested in multimedia courses.',
   },
   {
     id: 5,
     name: 'Pooja Joshi',
-    photo: '/course/GirlStdent.webp',
+    photo: '/course/GirlStudent.webp',
     content:
-      'The institutes focus on practical skills sets it apart. The placement assistance provided after completing the course is a significant advantage.',
+      "The institute's emphasis on practical skills not only sets it apart but also enhances employability. The placement assistance provided after completing the course is a significant advantage for graduates seeking career opportunities.",
   },
   {
     id: 6,
-    name: 'Harhsad Kajale',
-    photo: '/course/BouStdent3.webp',
+    name: 'Harshad Kajale',
+    photo: '/course/BouStudent3.webp',
     content:
       'I appreciate the hands-on approach to learning. The industry-relevant curriculum prepares students for real-world challenges, making them job-ready.',
   },
 ];
-export default testimonialsData;
