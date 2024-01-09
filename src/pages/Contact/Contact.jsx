@@ -1,9 +1,15 @@
 import React from 'react'
 import ContactHero from './ContactHero'
+import ContactForm from '../../components/ContactForm/ContactForm'
+import ContactMap from './ContactMap'
 
 function Contact() {
   return (
-    <div><ContactHero/></div>
+    <div><ContactHero />
+    
+      <ContactForm />
+      <ContactMap />
+    </div>
   )
 }
 
