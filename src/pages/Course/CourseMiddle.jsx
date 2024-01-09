@@ -22,7 +22,8 @@ const CourseMiddle = () => {
             <img src={course.path} width={500}  className='rounded-lg aspect-video object-fill shadow-xl' alt={course.alt} />
             <h1 className='m-2 md:text-3xl text:2xl '>{course.course}</h1>
             <p className='p-1 md:w-[60%] text-center mb-5 md:text-lg text-sm'>{course.description}</p>
-            <Button className="p-4 button-course"  onClick={()=>toNavigate(course.button.link)}>{course.button.text}</Button>
+            <Button className="p-4 button-course"  onClick={()=>{toNavigate(course.button.link)
+              window.scrollTo(0, 0)}}>{course.button.text}</Button>
           </div>
         ))}
       </div>

@@ -33,7 +33,6 @@ function NavbarFixed() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const toNavigate = useNavigate();
   const handleNavLinkClick = (path) => {
-    console.log(`Clicked on ${path}`);
     if (path === '/' && window.scrollY > 0) {
       
       window.scrollTo(0, 0);
