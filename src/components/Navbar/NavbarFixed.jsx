@@ -32,13 +32,8 @@ function NavbarFixed() {
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const toNavigate = useNavigate();
-  const handleNavLinkClick = (path) => {
-    if (path === '/' && window.scrollY > 0) {
-      
+  const handleNavLinkClick = () => {
       window.scrollTo(0, 0);
-    }
-
-    history.push(path);
     toggleMobileMenu();
   };
  
