@@ -39,14 +39,14 @@ function HomeExplore() {
         </ul>
         <Button value={"Book A Free Demo Class"} />
         <div className="grid grid-cols-2 mt-5">
-                  <div>
-                      <img src={Teach} width={100} alt=""/>
+                  <div >
+                      <img src={Teach} className="rounded-full" width={100} alt=""/>
             <h2 className="text-2xl">PROFESSIONAL MASTERS</h2>
            <p className="text-lg"> Masters help Imagineers to bring their imagination to life. Making
             the course more simpler to understand.</p>
           </div>
                   <div>
-                      <img src={Skill} width={100} alt=""/>
+                      <img src={Skill} className="rounded-full hover:p-5  " width={100} alt=""/>
             <h2 className="text-2xl">SKILL BASED COACHING</h2>
             <p className="text-lg">
               Skill-based training will benefit you in ways beyond your

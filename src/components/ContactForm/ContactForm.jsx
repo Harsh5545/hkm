@@ -13,7 +13,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="mt-2" style={{ background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #0F406D 100%)' }}>
+    <div className="mt-2 w-full" style={{ background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #0F406D 100%)' }}>
       <div className="flex flex-col-reverse md:flex-row">
         <div className="md:flex-1 flex justify-evenly flex-col rounded-xl ">
           <h3 className="text-white p-5 text-5xl text-center font-bold ">Contact us</h3>
@@ -44,16 +44,16 @@ function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4 w-full md:w-[40%]">
+            <div className="mb-4 w-full md:w-[60%]">
 
               <select
                 value={course}
                 onChange={handleCourseChange}
-                className="form-control-contact w-full p-2 rounded-3xl"
+                className="form-control-contact w-full p-3 rounded-3xl"
               >
-                <option value="" disabled>Select a course</option>
+                <option value=""  disabled>Select a course</option>
                 {sampleCourseNames.map((courseName, index) => (
-                  <option key={index} className="bg-white black" value={courseName}>
+                  <option key={index} className="bg-white text-black" value={courseName}>
                     {courseName}
                   </option>
                 ))}
