@@ -8,7 +8,7 @@ import A3 from "/course/A3.webp";
 import A4 from "/course/A4.webp";
 import A5 from "/course/A5.webp";
 import A6 from "/course/A6.webp";
-import  {testimonialsData}  from "../../helpers/Constant";
+import { testimonialsData } from "../../helpers/Constant";
 function StudentWork() {
   const StudentData = [
     {
@@ -95,8 +95,7 @@ function StudentWork() {
         </h1>
         <div className="flex gap-10 md:flex-row flex-col">
           <iframe
-           className="w-full md:w-[40rem] h-[20rem] md:h-[25rem]"
-         
+            className="w-full md:w-[40rem] h-[20rem] md:h-[25rem]"
             src="https://www.youtube.com/embed/hSNqVUOVLTg?si=L6pitCzW8QBpppMk"
             title="YouTube video player"
             frameBorder="0"
@@ -104,7 +103,7 @@ function StudentWork() {
             allowFullScreen
           ></iframe>
           <iframe
-             className="w-[25rem] md:w-[40rem] h-[20rem] md:h-[25rem]"
+            className="w-[25rem] md:w-[40rem] h-[20rem] md:h-[25rem]"
             src="https://www.youtube.com/embed/LbjXb-0e7LU?si=LdK0onbjOXCr_PXY"
             title="YouTube video player"
             frameBorder="0"
@@ -135,47 +134,82 @@ function StudentWork() {
       {/*Student review */}
 
       <section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-        What Students are saying
-        </h1>
+        <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+            What Students are saying
+          </h1>
 
-        <div class="flex justify-center mx-auto mt-6">
+          <div class="flex justify-center mx-auto mt-6">
             <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
             <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
             <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
-        </div>
+          </div>
 
-        <div class="flex items-start max-w-6xl mx-auto mt-16">
-            <button title="left arrow" class="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100" onClick={() => handleNavigation("left")}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
+          <div class="flex items-start max-w-6xl mx-auto mt-16">
+            <button
+              title="left arrow"
+              class="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100"
+              onClick={() => handleNavigation("left")}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
             </button>
 
             <div>
-                <p class="flex items-center text-center text-gray-500 lg:mx-8">
+              <p class="flex items-center text-center text-gray-500 lg:mx-8">
                 {currentTestimonial.content}
-                </p>
+              </p>
 
-                <div class="flex flex-col items-center justify-center mt-8">
-                    <img class="object-cover rounded-full w-14 h-14" src={currentTestimonial.photo} alt=""/>
+              <div class="flex flex-col items-center justify-center mt-8">
+                <img
+                  class="object-cover rounded-full w-14 h-14"
+                  src={currentTestimonial.photo}
+                  alt=""
+                />
 
-                    <div class="mt-4 text-center">
-                        <h1 class="font-semibold text-gray-800 dark:text-white">{currentTestimonial.name}</h1>
-                        
-                    </div>
+                <div class="mt-4 text-center">
+                  <h1 class="font-semibold text-gray-800 dark:text-white">
+                    {currentTestimonial.name}
+                  </h1>
                 </div>
+              </div>
             </div>
 
-            <button title="right arrow" class="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100" onClick={() => handleNavigation("right")}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
+            <button
+              title="right arrow"
+              class="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100"
+              onClick={() => handleNavigation("right")}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </button>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       {/* before footer  */}
       <section className="bg-white dark:bg-gray-900">

@@ -274,6 +274,7 @@ export const testimonialsData = [
     id: 1,
     name: 'Hetal Patel',
     photo: "/course/BouStudent1.webp",
+    contentHeading: 'Excellent Teaching Style',
     content:
       'I am extremely happy with the classes at Harikrushna Multimedia Institute. The teaching style is excellent, and the practical approach helped me grasp concepts easily.',
   },
@@ -281,6 +282,7 @@ export const testimonialsData = [
     id: 2,
     name: 'Rajesh Shah',
     photo: '/course/BoyStudent.webp',
+    contentHeading: 'Highly Supportive Faculty',
     content:
       'The faculty members are highly knowledgeable and supportive. They go the extra mile to ensure that every student understands the topics thoroughly.',
   },
@@ -288,6 +290,7 @@ export const testimonialsData = [
     id: 3,
     name: 'Asha Desai',
     photo: '/course/GirlStudent1.webp',
+    contentHeading: 'Wonderful Learning Experience',
     content:
       'Attending classes here has been a wonderful experience. The projects are challenging, and the guidance provided by the instructors is invaluable.',
   },
@@ -295,6 +298,7 @@ export const testimonialsData = [
     id: 4,
     name: 'Jignesh Mehta',
     photo: '/course/BoyStudent2.webp',
+    contentHeading: 'Friendly and Encouraging Atmosphere',
     content:
       'The friendly and encouraging atmosphere at Harikrushna Multimedia Institute makes learning enjoyable. I recommend this institute to anyone interested in multimedia courses.',
   },
@@ -302,6 +306,7 @@ export const testimonialsData = [
     id: 5,
     name: 'Pooja Joshi',
     photo: '/course/GirlStudent.webp',
+    contentHeading: 'Emphasis on Practical Skills',
     content:
       "The institute's emphasis on practical skills not only sets it apart but also enhances employability. The placement assistance provided after completing the course is a significant advantage for graduates seeking career opportunities.",
   },
@@ -309,6 +314,7 @@ export const testimonialsData = [
     id: 6,
     name: 'Harshad Kajale',
     photo: '/course/BouStudent3.webp',
+    contentHeading: 'Hands-On Approach to Learning',
     content:
       'I appreciate the hands-on approach to learning. The industry-relevant curriculum prepares students for real-world challenges, making them job-ready.',
   },
