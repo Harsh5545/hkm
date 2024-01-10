@@ -6,9 +6,7 @@ function ContactMap() {
       <section className="bg-white dark:bg-gray-900">
         <div className="container px-6 py-12 mx-auto">
           <div>
-            <p className="font-medium  text-xl dark:text-blue-400" style={{ color: '#b9414d' }}>
-              Contact us
-            </p>
+           
 
             <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
               Get in touch
@@ -22,7 +20,7 @@ function ContactMap() {
           <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
               <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 dark:bg-gray-800">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -45,13 +43,13 @@ function ContactMap() {
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Our friendly team is here to help.
                 </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+                <p className="mt-2 text-sm text-[#e9414d] font-medium dark:text-blue-400">
                 harikrushnamultimedia@gmail.com
                 </p>
               </div>
 
               <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 dark:bg-gray-800">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -79,13 +77,13 @@ function ContactMap() {
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Come say hello at our office HQ.
                 </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+                <p className="mt-2 text-sm text-[#e9414d] font-medium dark:text-blue-400">
                 Shop No-7, Millenium Arcade, Hazira Rd, below You Broadband, opposite Royal Enfield Showroom, Aahura Nagar Society, Adajan Gam, Adajan, Surat, Gujarat 395009
                 </p>
               </div>
 
               <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 dark:bg-gray-800">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -108,7 +106,8 @@ function ContactMap() {
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Mon-sat from 9am to 8pm.
                 </p>
-                <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+              
+                <p className="mt-2 text-sm text-[#e9414d] font-medium dark:text-blue-400">
                 +91 9664833542
                 </p>
               </div>

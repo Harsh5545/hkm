@@ -14,6 +14,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import FAQSection from "../../../components/Faq/Faq";
 import Button from "../../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function VideoEditing() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -46,11 +47,11 @@ function VideoEditing() {
     "Adding Audio and Music",
     "Applying Visual Effects",
     "Text and Titles",
-      "Advanced Editing Techniques",
-      "Exporting and Rendering",
-        "Editing for Different Platforms"
+    "Advanced Editing Techniques",
+    "Exporting and Rendering",
+    "Editing for Different Platforms",
   ];
-
+  const toNavigate = useNavigate();
   const backgroundStyles = {
     backgroundImage: `url(${GamePage})`, // Use backticks for string interpolation
     backgroundSize: "cover",
@@ -143,19 +144,30 @@ function VideoEditing() {
               </li>
             ))}
           </ul>
-         
         </div>
         <div
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img src={VideoEdit} className=" p-5" width="600" alt="Animation video editing" />
+          <img
+            src={VideoEdit}
+            className=" p-5"
+            width="600"
+            alt="Animation video editing"
+          />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex  md:flex-row flex-col-reverse justify-center items-center md:h-[100vh] h-[50vh] bg-[#001321]">
-        <div data-aos="fade-left" className="flex justify-center items-center md:w-[60%] w-full">
-          <img src={VideoWYL} width={600}  alt="HarikrushnaMultimedia Video image" />
+        <div
+          data-aos="fade-left"
+          className="flex justify-center items-center md:w-[60%] w-full"
+        >
+          <img
+            src={VideoWYL}
+            width={600}
+            alt="HarikrushnaMultimedia Video image"
+          />
         </div>
         <div
           data-aos="fade-right"

@@ -12,6 +12,8 @@ import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import FAQSection from "../../../components/Faq/Faq";
+import Button from "../../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function GraphicsDesign() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -45,7 +47,6 @@ function GraphicsDesign() {
     "Realistic Visualization",
     "Print and Digital Media",
     "Image Manipulation",
-   
   ];
 
   const backgroundStyles = {
@@ -78,7 +79,7 @@ function GraphicsDesign() {
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
   };
-
+  const toNavigate = useNavigate();
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
@@ -90,12 +91,12 @@ function GraphicsDesign() {
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
             }}
-            className="flex-1 flex justify-center items-center" 
+            className="flex-1 flex justify-center items-center"
           >
             <img
               data-aos="fade-down-right"
-                          src={VideoPNG}
-                          width={600}
+              src={VideoPNG}
+              width={600}
               className=" "
               alt="Video Png Harikrushna Multimedia"
             />
@@ -183,6 +184,13 @@ function GraphicsDesign() {
               </li>
             ))}
           </ul>
+          <div className="mx-auto">
+            <Button
+              className="btn"
+              onClick={() => toNavigate("/contact")}
+              value={"Explore Now"}
+            />
+          </div>
         </div>
       </div>
 

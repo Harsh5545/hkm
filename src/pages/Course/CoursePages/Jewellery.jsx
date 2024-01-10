@@ -13,6 +13,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import FAQSection from "../../../components/Faq/Faq";
 import Button from "../../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function Jewellery() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -45,8 +46,7 @@ function Jewellery() {
     "Enhanced Creativity",
     "Realistic Visualization",
     "Materials",
-    "Realistic Rendering"
-   
+    "Realistic Rendering",
   ];
 
   const backgroundStyles = {
@@ -55,7 +55,6 @@ function Jewellery() {
     backgroundRepeat: "no-repeat",
     height: "100vh",
     position: "relative",
-    // background:"blue "
   };
   const bgOverlayStyle = {
     content: "",
@@ -79,6 +78,7 @@ function Jewellery() {
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
   };
+  const toNavigate = useNavigate();
 
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
@@ -91,12 +91,12 @@ function Jewellery() {
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
             }}
-            className="flex-1 flex justify-center items-center" 
+            className="flex-1 flex justify-center items-center"
           >
             <img
               data-aos="fade-down-right"
-                          src={VideoPNG}
-                          width={600}
+              src={VideoPNG}
+              width={600}
               className=" "
               alt="Video Png Harikrushna Multimedia"
             />
@@ -116,13 +116,12 @@ function Jewellery() {
               className="text-md md:text-xl w-[90%]"
               style={{ color: "white" }}
             >
-             3D jewellery design uses computer
-software to craft and visualize jewelry
-in 3D, offering more creative freedom,
-quicker prototyping, and realistic
-representation compared to traditional methods. This approach is
-cost-effective, customizable, and
-enables easy collaboration while reducing material waste. </p>
+              3D jewellery design uses computer software to craft and visualize
+              jewelry in 3D, offering more creative freedom, quicker
+              prototyping, and realistic representation compared to traditional
+              methods. This approach is cost-effective, customizable, and
+              enables easy collaboration while reducing material waste.{" "}
+            </p>
           </div>
         </div>
       </div>
@@ -224,7 +223,7 @@ enables easy collaboration while reducing material waste. </p>
 
       {/* critera */}
 
-       <div className="grid md:grid-cols-3 px-8 justify-center md:flex-row flex-col md:gap-1 gap-14 items-start my-20">
+      <div className="grid md:grid-cols-3 px-8 justify-center md:flex-row flex-col md:gap-1 gap-14 items-start my-20">
         {/* <!-- ELIGIBILITY CRITERIA --> */}
         <div
           data-aos="flip-left"

@@ -4,6 +4,7 @@ import img from "../assets/vfx.webp";
 import HomeMiddle from "./Home/HomeMiddle";
 import HomeAbout from "./Home/HomeAbout";
 import HomeExplore from "./Home/HomeExplore";
+import HomeReview from "./Home/HomeReview";
 
 function Home() {
   const containerStyle = {
@@ -39,7 +40,8 @@ function Home() {
       </div>
       <HomeMiddle />
       <HomeAbout />
-      <HomeExplore/>
+      <HomeExplore />
+      <HomeReview/>
       </>
     
   );

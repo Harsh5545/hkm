@@ -14,6 +14,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
 import FAQSection from "../../../components/Faq/Faq";
+import { useNavigate } from "react-router-dom";
 
 function Architectural() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -46,7 +47,7 @@ function Architectural() {
     "Client Presentations",
     "Design Visualization",
     "Interior Design",
-    "Exterior Design"
+    "Exterior Design",
   ];
 
   const backgroundStyles = {
@@ -79,7 +80,7 @@ function Architectural() {
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
   };
-
+  const toNavigate = useNavigate();
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
@@ -93,7 +94,12 @@ function Architectural() {
             }}
             className="flex-1 flex justify-center items-center"
           >
-            <img data-aos="fade-down-right md:shadow-3xl shadow-lg" src={game} width="600" alt="" />
+            <img
+              data-aos="fade-down-right md:shadow-3xl shadow-lg"
+              src={game}
+              width="600"
+              alt=""
+            />
           </div>
 
           <div
@@ -110,7 +116,12 @@ function Architectural() {
               className="text-md md:text-xl w-[90%]"
               style={{ color: "white" }}
             >
-              3D architectural visualization is the creation of lifelike 3D representa tions of architectural designs and buildings using software tools. It helps architects, designers, and developers communicate their concepts effectively and present the appearance and features of a structure before construction. It is widely used in real estate marketing MULEDLA IN and design iterations.{" "}
+              3D architectural visualization is the creation of lifelike 3D
+              representa tions of architectural designs and buildings using
+              software tools. It helps architects, designers, and developers
+              communicate their concepts effectively and present the appearance
+              and features of a structure before construction. It is widely used
+              in real estate marketing MULEDLA IN and design iterations.{" "}
             </p>{" "}
             {/* <p
               className="invisible md:visible text-md md:text-xl w-[90%]"
@@ -146,13 +157,21 @@ function Architectural() {
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img   src={Gamer} className="md:p-1 p-5 md:shadow-2xl shadow-2xl" width="500" alt="" />
+          <img
+            src={Gamer}
+            className="md:p-1 p-5 md:shadow-2xl shadow-2xl"
+            width="500"
+            alt=""
+          />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex justify-center items-center md:w-[60%] w-full">
-          <img src={WUL}  width={800} alt="" />
+        <div
+          data-aos="fade-left"
+          className="flex justify-center items-center md:w-[60%] w-full"
+        >
+          <img src={WUL} width={800} alt="" />
         </div>
         <div
           data-aos="fade-right"
@@ -245,7 +264,7 @@ function Architectural() {
             alt=""
           />
           <p className="w-full md:w-[60%] text-md md:text-xl text-center">
-          Experience a 12-months program with 2 hours of daily classes for 6
+            Experience a 12-months program with 2 hours of daily classes for 6
             days a week, providing practical assignments.
           </p>
         </div>

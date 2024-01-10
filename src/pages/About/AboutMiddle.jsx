@@ -14,7 +14,7 @@ function AboutMiddle() {
   return (
     <div className="py-16 bg-gray-100 dark:bg-gray-800">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold text-blue-500 mb-8 text-center">
+        <h1 className="text-4xl font-bold pb-10 text-[#e9414d] mb-8 text-center">
           About Our Institute
         </h1>
         <div className="grid grid-cols-1 pl-5 md:grid-cols-2 gap-12">

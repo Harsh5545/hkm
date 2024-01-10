@@ -3,6 +3,12 @@
     font-family: 'Poppins';
     user-select: none;
 }
+@media (min-width:360px) and (max-width:720px){
+  .Typewriter{
+      font-size: .8rem;
+  }
+
+}
 .HomeAbout{
     background: linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%),     
 }
@@ -15,127 +21,38 @@
 .homeMiddleImg2{
     filter: drop-shadow(0 0 0.75rem #8575ba);
 }
-  .button span {
-    display: block;
-    font-family: "Poppins";
-    height: 50px;
-    width: 300px;
-    background: #E7414D;
-    color: white;
-    font: 17px/50px Helvetica, Verdana, sans-serif;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    background: -moz-linear-gradient(top, #E7414D 0%, #d73c47 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E7414D), color-stop(100%,#d73c47));
-    background: -webkit-linear-gradient(top, #E7414D 0%, #d73c47 100%);
-    background: -o-linear-gradient(top, #E7414D 0%, #d73c47 100%);
-    background: -ms-linear-gradient(top, #E7414D 0%, #d73c47 100%);
-    background: linear-gradient(top, #E7414D 0%, #d73c47 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7414D', endColorstr='#d73c47',GradientType=0 );
+ 
+  .tooltip-container {
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 17px;
+    padding: 0.7em 1.8em;
   }
   
-  b {
-    background: #222;
-    font-family: "Poppins";
-    display: block;
-    height: 40px;
-    width: 280px;
-    margin: -40px 0 0 10px;
-    text-align: center;
-    font: 12px/45px Helvetica, Verdana, sans-serif;
-    color: #fff;
+  .tooltip {
     position: absolute;
-    z-index: -1;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-  }
-  
-  .button span, b {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    -moz-box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  }
-  
-  .button:hover .top {
-    margin: -80px 0 0 10px;
-    line-height: 35px;
-  }
-  
-  .button:hover .bottom {
-    margin: -10px 0 0 10px;
-  }
-  
-  .button span:active {
-    background: #c97c81;
-    background: -moz-linear-gradient(top,  #E7414D 36%, #d73c47 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,#E7414D), color-stop(100%,#d73c47));
-    background: -webkit-linear-gradient(top,  #E7414D 36%, #d73c47 100%);
-    background: -o-linear-gradient(top,  #E7414D 36%, #d73c47 100%);
-    background: -ms-linear-gradient(top,  #E7414D 36%, #d73c47 100%);
-    background: linear-gradient(top,  #E7414D 36%, #d73c47 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7414D', endColorstr='#d73c47',GradientType=0 );
-  }
-  
-  .button:active .bottom {
-    margin: -20px 0 0 10px;
-  }
-  
-  .button:active .top {
-    margin: -70px 0 0 10px;
-  }
-@media (min-width:360px) and (max-width:720px){
-    .Typewriter{
-        font-size: .8rem;
-    }
+    /* top: 120%; */
+    left: 40%;
+    transform: translateX(-100%) translateY(-10%); /* Adjusted the initial position */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    background: var(--background);
 
-}
-/* Add this to your existing CSS file or create a new one */
-@media (max-width: 768px) {
-    .left-container {
-      flex-direction: column-reverse; 
-      align-items: center;
-      text-align: center;
-      padding: 0.6rem;
-    }
+    border-radius: 0.3em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 14px;
+    width: 120%; /* Adjusted the width */
+    padding: 0.6em 1em; /* Adjusted padding */
+  }
   
-    .left-container div {
-      margin-bottom: 10px;
-    }
-  
-    .button {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-  
-    .button span,
-    .button b {
-      font-size: 12px;
-    }
-  
-    .button b.top,
-    .button b.bottom {
-      display: block;
-    }
-  
+  .tooltip-container:hover .tooltip {
+    top: 85%; /* Adjusted the tooltip position */
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
   }
   

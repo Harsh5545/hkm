@@ -14,6 +14,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
 import FAQSection from "../../../components/Faq/Faq";
+import { useNavigate } from "react-router-dom";
 
 function Animation3D() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -37,7 +38,7 @@ function Animation3D() {
     "Placement assistance for a successful career launch",
     "Knowledge of AI",
   ];
-
+  const toNavigate= useNavigate()
   const whatULearn = [
     "3D Modeling",
     "Texturing and Materials",

@@ -13,10 +13,11 @@ import AOS from "aos";
 import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import FAQSection from "../../../components/Faq/Faq";
+import { useNavigate } from "react-router-dom";
 
 function PGD() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
+  const toNavigate = useNavigate();
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
@@ -39,16 +40,16 @@ function PGD() {
 
   const whatULearn = [
     "Game Designer",
-  "Level Designer",
+    "Level Designer",
     "Game UI Designer",
-    
-  "Gameplay Tester",
-  "Game Artist",
-  "3D Modeler",
-  "Character Designer",
-  "Game Animator",
-  "Sound Designer",
-  "Game Producer",
+
+    "Gameplay Tester",
+    "Game Artist",
+    "3D Modeler",
+    "Character Designer",
+    "Game Animator",
+    "Sound Designer",
+    "Game Producer",
     "Monetization Designer",
     "Game Tester/QA Analyst",
     "Game Writer/Narrative Designer",
@@ -114,15 +115,18 @@ function PGD() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
             >
-           PROGRAM IN GAME DESIGN
+              PROGRAM IN GAME DESIGN
             </h1>
             <p
               className="text-md md:text-xl w-[90%]"
               style={{ color: "white" }}
             >
-             Enrolling in the Game Design course at Harikrushna Multimedia empowers you to
-excel in the dynamic fields of Game Development, Interactive Media, and 3D Animation. This immersive program thoroughly familiarizes you with a diverse range of
-design elements crucial for creating captivating games.</p>
+              Enrolling in the Game Design course at Harikrushna Multimedia
+              empowers you to excel in the dynamic fields of Game Development,
+              Interactive Media, and 3D Animation. This immersive program
+              thoroughly familiarizes you with a diverse range of design
+              elements crucial for creating captivating games.
+            </p>
           </div>
         </div>
       </div>
@@ -149,13 +153,25 @@ design elements crucial for creating captivating games.</p>
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img src={VideoEdit} className=" shadow-2xl" width="650" alt="Animation video editing" />
+          <img
+            src={VideoEdit}
+            className=" shadow-2xl"
+            width="650"
+            alt="Animation video editing"
+          />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex  md:flex-row flex-col-reverse justify-center items-center py-4 gap-5 bg-[#001321]">
-        <div data-aos="fade-left" className="flex justify-center items-center md:w-[60%] w-full">
-          <img src={VideoWYL} width={600}  alt="HarikrushnaMultimedia Video image" />
+        <div
+          data-aos="fade-left"
+          className="flex justify-center items-center md:w-[60%] w-full"
+        >
+          <img
+            src={VideoWYL}
+            width={600}
+            alt="HarikrushnaMultimedia Video image"
+          />
         </div>
         <div
           data-aos="fade-right"

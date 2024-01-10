@@ -15,14 +15,14 @@ function NavbarDefault() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const toNavigate = useNavigate();
   return (
-    <div className="flex z-[999] absolute w-full md:justify-center items-center ">
-      <div className="flex-col md:flex-row flex md:justify-between px-10 rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-1 m-4">
-        <div className="flex justify-between px-4 items-center w-full md:w-0">
+    <div className="flex z-[999] absolute w-full justify-center items-center ">
+      <div className="flex-col md:flex-row flex justify-between px-1 md:px-10 rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-1 mt-4 ">
+        <div className="flex justify-between  items-center w-full md:w-0">
           <span className="text-xl">
             <img
               src={Logo}
               
-              className="md:max-w-[6rem] max-w-10"
+              className="md:max-w-[6rem] max-w-[6rem]"
               alt="HarikrushnaMultimedia institue logo"
             />
           </span>
@@ -92,9 +92,8 @@ function NavbarDefault() {
         >
           <Button
             value={"Free Consultation"}
-            className={
-              "font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black  bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25"
-            }
+            className="
+              buttonn "
             onClick={() => {
               toNavigate("/contact");
               toggleMobileMenu;

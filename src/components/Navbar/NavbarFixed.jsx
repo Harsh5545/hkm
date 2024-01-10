@@ -98,13 +98,14 @@ function NavbarFixed() {
         isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
       }`}>
         <Button
-          className={"font-jakarta text-sm px-4 py-2 rounded-full text-black font-medium bg-black bg-opacity-[.08] border border-black border-opacity-[.08] hover:border-opacity-25"}
-          value={'Free Consultation'}
-          onClick={() => {
-            toNavigate('/contact');
-            toggleMobileMenu();
-          }}
-        />
+            value={"Free Consultation"}
+            className="
+              buttonn "
+            onClick={() => {
+              toNavigate("/contact");
+              toggleMobileMenu;
+            }}
+          />
       </div>
     </motion.div>
   );

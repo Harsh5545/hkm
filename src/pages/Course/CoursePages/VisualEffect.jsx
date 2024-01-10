@@ -37,19 +37,19 @@ function VisualEffect() {
     "Placement assistance for a successful career launch",
     "Knowledge of AI",
   ];
-
+  const toNavigate = useNavigate();
   const whatULearn = [
     "3D Modeling",
     "Digital Mastery",
-    "Autodesk Maya", 
-    "Adobe Photoshop", 
+    "Autodesk Maya",
+    "Adobe Photoshop",
     "Adobe After Effects",
     "Texturing and Materials",
     "Rotoscoping",
     "Green Screen (VFX)",
     "Tital Editing",
     "Wedding Videso Album",
-    "Special Effects"
+    "Special Effects",
   ];
 
   const backgroundStyles = {
@@ -96,7 +96,12 @@ function VisualEffect() {
             }}
             className="flex-1"
           >
-            <img data-aos="fade-down-right" src={game} className=" " alt="harikrushna Multimedia game" />
+            <img
+              data-aos="fade-down-right"
+              src={game}
+              className=" "
+              alt="harikrushna Multimedia game"
+            />
           </div>
 
           <div
@@ -151,7 +156,12 @@ function VisualEffect() {
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img src={Gamer} className=" p-5" width="600" alt="harikrushna Multimedia Gamer" />
+          <img
+            src={Gamer}
+            className=" p-5"
+            width="600"
+            alt="harikrushna Multimedia Gamer"
+          />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
@@ -250,7 +260,8 @@ function VisualEffect() {
             alt="Harikrushna Multimedia Course Duration"
           />
           <p className="w-full md:w-[60%] text-md md:text-xl text-center">
-          2 hours per day & 6 days a week 2 hours per day practice with assignments in class
+            2 hours per day & 6 days a week 2 hours per day practice with
+            assignments in class
           </p>
         </div>
 

@@ -14,6 +14,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
 import FAQSection from "../../../components/Faq/Faq";
+import { useNavigate } from "react-router-dom";
 
 function Animation2D() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -79,7 +80,7 @@ function Animation2D() {
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
   };
-
+ const toNavigate= useNavigate()
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>

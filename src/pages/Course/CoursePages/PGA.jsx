@@ -14,6 +14,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
 import FAQSection from "../../../components/Faq/Faq";
+import { useNavigate } from "react-router-dom";
 
 function PGA() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -39,27 +40,27 @@ function PGA() {
   ];
 
   const whatULearn = [
-    'Graphics Designer',
-  'Character Designer',
-  'Background Artist',
-  'Digital Painter',
-  '3D Modeler',
-  'Texture Artist',
-  'Lighting Artist',
-    'Rigging Artist',
-    'Social Media Visual Designer',
+    "Graphics Designer",
+    "Character Designer",
+    "Background Artist",
+    "Digital Painter",
+    "3D Modeler",
+    "Texture Artist",
+    "Lighting Artist",
+    "Rigging Artist",
+    "Social Media Visual Designer",
 
-  'Visual Development Artist',
-  'Matte Painter',
-    'Previsualization Artist',
-    'Motion Graphics Animator',
- 
-  'Social Media Reel Artist',
-  'Multimedia Designer',
-  'Visual Storyteller',
-  'Video Game Designer',
-  'Technical Animator',
-  'Video Editor',
+    "Visual Development Artist",
+    "Matte Painter",
+    "Previsualization Artist",
+    "Motion Graphics Animator",
+
+    "Social Media Reel Artist",
+    "Multimedia Designer",
+    "Visual Storyteller",
+    "Video Game Designer",
+    "Technical Animator",
+    "Video Editor",
   ];
 
   const backgroundStyles = {
@@ -92,7 +93,7 @@ function PGA() {
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
   };
-
+  const toNavigate = useNavigate();
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
@@ -106,7 +107,12 @@ function PGA() {
             }}
             className="flex-1"
           >
-            <img data-aos="fade-down-right" src={game} className=" " alt="harikrushna Multimedia game" />
+            <img
+              data-aos="fade-down-right"
+              src={game}
+              className=" "
+              alt="harikrushna Multimedia game"
+            />
           </div>
 
           <div
@@ -117,7 +123,7 @@ function PGA() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ color: "white" }}
             >
-             Program Graphics & Animation
+              Program Graphics & Animation
             </h1>
             <p
               className="text-md md:text-xl w-[90%]"
@@ -161,13 +167,18 @@ function PGA() {
           data-aos="zoom-in-up"
           className="flex-1 flex items-center justify-center"
         >
-          <img src={Gamer} className=" p-1 shadow-2xl" width="600" alt="harikrushna Multimedia Gamer" />
+          <img
+            src={Gamer}
+            className=" p-1 shadow-2xl"
+            width="600"
+            alt="harikrushna Multimedia Gamer"
+          />
         </div>
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex  gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
         <div data-aos="fade-left" className="flex-1 w-full">
-          <img src={WUL}  width={5000} alt="harikrushna Multimedia WUL" />
+          <img src={WUL} width={5000} alt="harikrushna Multimedia WUL" />
         </div>
         <div
           data-aos="fade-right"
@@ -260,8 +271,9 @@ function PGA() {
             alt="Harikrushna Multimedia Course Duration"
           />
           <p className="w-full md:w-[60%] text-md md:text-xl text-center">
-          Experience a 12+2 months program with 1 hours of daily classes for 6
-            days a week, providing 2 hours per day practice with assignments in session.
+            Experience a 12+2 months program with 1 hours of daily classes for 6
+            days a week, providing 2 hours per day practice with assignments in
+            session.
           </p>
         </div>
 
