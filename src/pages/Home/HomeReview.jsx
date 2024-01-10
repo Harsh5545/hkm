@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { testimonialsData } from "../../helpers/Constant";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function HomeReview() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNavigation = (direction) => {
@@ -25,34 +30,34 @@ function HomeReview() {
           <div class="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>
 
           <div class="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
-              What our <span class="text-blue-500">customers</span> are saying
+            <h1 data-aos='fade-up' class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+              What our <span class="text-[#e9414d]">customers</span> are saying
             </h1>
 
               <div class="mt-10 lg:mt-20 lg:flex lg:items-center">
-                <img
+                <img data-aos='fade-left'
                   class="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96"
                   src={currentTestimonial.photo}
                   alt=""
                 />
 
                 <div class="mt-8 lg:px-10 lg:mt-0">
-                  <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:w-72">
+                  <h1 data-aos='fade-right' class="text-2xl font-semibold text-gray-800 dark:text-white lg:w-72">
                     {currentTestimonial.contentHeading}
                   </h1>
 
-                  <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
+                  <p data-aos='fade-up' class="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
                     {currentTestimonial.content}
                   </p>
 
-                  <h3 class="mt-6 text-lg font-medium text-blue-500">
+                  <h3 data-aos='fade-down' class="mt-6 text-lg font-medium text-[#e9414d]">
                     {currentTestimonial.name}
                   </h3>
                 </div>
               </div>
 
 
-            <div class="flex items-center justify-between mt-12 lg:justify-start">
+            <div data-aos='fade-up' class="flex items-center justify-between mt-12 lg:justify-start">
               <button
                 onClick={() => handleNavigation("left")}
                 title="left arrow"

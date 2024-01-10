@@ -11,12 +11,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 function HomeMiddle() {
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({ duration: 200 });
   }, []);
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 1,
   };
   const handleNavLinkClick = () => {
