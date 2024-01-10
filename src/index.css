@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-gradient);
+  border-radius: 5px;
+}
 .btn {
   @apply inline-block px-7 py-3 m-2 text-sm md:text-xl font-bold uppercase text-white bg-gradient-to-br to-[#f74450] from-[#E7414D] rounded-full shadow-md transition-transform ease-in-out cursor-pointer duration-500;
 }

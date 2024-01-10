@@ -5,9 +5,12 @@
 }
 @media (min-width:360px) and (max-width:720px){
   .Typewriter{
-      font-size: .8rem;
+      font-size: 1.7rem;
   }
-
+  .tooltip:hover {
+    width: 100vw;
+    background-color: yellow; /* Just for demonstration */
+  }
 }
 .HomeAbout{
     background: linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%),     
@@ -26,7 +29,7 @@
     position: relative;
     background: var(--background);
     cursor: pointer;
-    transition: background 0.3s;
+    transition:  0.5s;
     font-size: 17px;
     padding: 0.7em 1.8em;
   }
@@ -40,12 +43,13 @@
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     background: var(--background);
-
+    transition-duration:  0.5s;
     border-radius: 0.3em;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-size: 14px;
-    width: 120%; /* Adjusted the width */
+    font-size: 10px;
+    font-family: "Poppins";
+    width: 200%; /* Adjusted the width */
     padding: 0.6em 1em; /* Adjusted padding */
   }
   

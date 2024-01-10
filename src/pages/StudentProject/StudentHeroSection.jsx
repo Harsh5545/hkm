@@ -9,7 +9,7 @@ function StudentHeroSection() {
   }, []);
   return (
     <div className='h-[100vh] flex justify-center items-center'>
-      <header className="bg-white  dark:bg-gray-900">
+      <header className="bg-white w-full h-full flex items-center dark:bg-gray-900">
         <div className="container px-6 py-16 mx-auto">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2">

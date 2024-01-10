@@ -43,10 +43,10 @@ const Hero = () => {
     >
       <div className="flex flex-col select-none md:flex-row justify-between h-full items-center left-container">
         <div className=" flex flex-col flex-1  items-start mt-24 md:mt-0 justify-end md:justify-start font-poppins text-white md:gap-8">
-          <h2 data-aos='fade-left' className="flex text-xl md:text-4xl">Opportunity to Bring Your</h2>
-          <h1 data-aos='fade-right' className="text-2xl md:text-5xl">Creative Passion to Life</h1>
+          <h2 data-aos='fade-left' className="flex text-2xl md:text-4xl">Opportunity to Bring Your</h2>
+          <h1 data-aos='fade-right' className="text-3xl md:text-5xl">Creative Passion to Life</h1>
           <div  className="flex flex-col gap-8" >
-            <h2 data-aos='fade-left' className="flex text-xl md:text-4xl">You Will Learn Here</h2>
+            <h2 data-aos='fade-left' className="flex text-2xl md:text-4xl">You Will Learn Here</h2>
             <div data-aos='fade-right'>  <TyperWriter  /></div>
           
           </div>

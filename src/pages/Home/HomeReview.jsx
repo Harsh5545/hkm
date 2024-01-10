@@ -23,7 +23,7 @@ function HomeReview() {
     };
     const currentTestimonial = testimonialsData[currentIndex];
   return (
-    <div>
+    <div className="overflow-hidden">
       <section class="bg-white dark:bg-gray-900">
         <div class="relative flex">
           <div class="min-h-screen lg:w-1/3"></div>

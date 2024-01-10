@@ -11,15 +11,21 @@ const Wsa=(props)=> {
   const { nodes, materials, animations } = useGLTF('./model/gltf/Wattson_Strange_Attractor.gltf')
   const { actions,names } = useAnimations(animations, group)
   useEffect(() => {
-    // Play the animation when the component mounts
-    actions[names[0]].reset().fadeIn(0.5).play()
+    const firstAnimationName = names[0];
+
+  if (firstAnimationName && actions[firstAnimationName]) {
+    const firstAction = actions[firstAnimationName];
+    firstAction.reset().fadeIn(0.5).play();
 
     // Cleanup when the component unmounts
     return () => {
-      // Stop the animation or perform any cleanup if needed
-      actions[names[0]].fadeOut(0.5)
-    }
-  }, [actions.walk])
+      // Introduce a delay before stopping the animation
+      setTimeout(() => {
+        firstAction.stop();
+      }, 100);
+    };
+  }
+  }, [])
   return (
     <group ref={group} position={[0, 0, 0.006]} scale={50.54} {...props} dispose={null}>
       <group>
