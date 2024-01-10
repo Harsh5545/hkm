@@ -150,10 +150,10 @@ function Footer() {
                     Contact
                   </h3>
                   <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    +1 526 654 8965
+                  +91 9664833542
                   </span>
                   <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    example@email.com
+                  harikrushnamultimedia@gmail.com
                   </span>
                 </div>
               </div>

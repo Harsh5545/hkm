@@ -168,7 +168,7 @@ export const CourseDetails = [
   },
   {
     id: "6",
-    path: "/course/Visual-Effect.webp",
+    path: "/course/VFXCourse.webp",
     course: "VISUAL EFFECT",
     description:
       "Master the techniques of visual effects and add magic to your videos and films.",

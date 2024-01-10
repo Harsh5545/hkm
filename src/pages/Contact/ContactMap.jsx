@@ -46,7 +46,7 @@ function ContactMap() {
                   Our friendly team is here to help.
                 </p>
                 <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  hello@merakiui.com
+                harikrushnamultimedia@gmail.com
                 </p>
               </div>
 
@@ -80,7 +80,7 @@ function ContactMap() {
                   Come say hello at our office HQ.
                 </p>
                 <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  100 Smith Street Collingwood VIC 3066 AU
+                Shop No-7, Millenium Arcade, Hazira Rd, below You Broadband, opposite Royal Enfield Showroom, Aahura Nagar Society, Adajan Gam, Adajan, Surat, Gujarat 395009
                 </p>
               </div>
 
@@ -106,10 +106,10 @@ function ContactMap() {
                   Phone
                 </h2>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Mon-Fri from 8am to 5pm.
+                  Mon-sat from 9am to 8pm.
                 </p>
                 <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                  +1 (555) 000-0000
+                +91 9664833542
                 </p>
               </div>
             </div>
