@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Aboutus from './pages/About/Aboutus';
+import Loader from './components/Loader/Loader';
 import Course from './pages/Course/Course';
 import StudentProject from './pages/StudentProject/StudentProject';
 import Contact from './pages/Contact/Contact';
@@ -19,8 +20,23 @@ import PGA from './pages/Course/CoursePages/PGA';
 import PGD from './pages/Course/CoursePages/PGD';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data) that takes some time
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 102000);
+
+    // Clear the timeout to prevent a memory leak
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <Router>
+       {loading ? (
+        <Loader />
+      ) : (
+        <>
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
@@ -38,8 +54,11 @@ function App() {
         <Route path='/course/graphics-design' element={<GraphicsDesign />} />
         <Route path='/course/graphics-animation-program' element={<PGA />} />
         <Route path='/course/game-design-program' element={<PGD/>}/>
-      </Routes>
-      <Footer/>
+            </Routes>
+            
+            <Footer  />
+            </>
+      )}
   </Router>
   );
 }
