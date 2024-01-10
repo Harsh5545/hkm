@@ -1,5 +1,5 @@
 import React from "react";
-import Images from "/course/HomeExplore.webp";
+import Images from "/course/HomeExplore1.webp";
 import Teach from "/course/Teach.webp";
 import "./homeStyles.css";
 import Skill from "/course/Skill.webp";
@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 function HomeExplore() {
   const toNavigate = useNavigate();
   return (
-    <div className="grid md:grid-cols-2 overflow-hidden grid-cols-1 pb-[5rem]">
+    <div className="grid mt-10 md:grid-cols-2 overflow-hidden grid-cols-1 pb-[5rem]">
       <div className="">
         <img
           width={800}
@@ -21,7 +21,7 @@ function HomeExplore() {
       </div>
       <div className="flex p-2 justify-center flex-col">
         <h2 className="text-3xl">EXPLORE THE CREATION OF</h2>
-        <h1 className="text-4xl font-medium mb-5">EXISTING OPPORTUNITIES</h1>
+        <h1 className="text-4xl font-bold mb-5">EXISTING OPPORTUNITIES</h1>
         <p className="text-lg mb-5">
           Enjoy each step along the way that takes you into the unknown space.
           Let go and allow your imagination to become alive
