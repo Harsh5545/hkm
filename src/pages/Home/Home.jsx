@@ -1,12 +1,14 @@
 import React from "react";
-import Hero from "./Home/Hero";
-import img from "../assets/vfx.webp";
-import HomeMiddle from "./Home/HomeMiddle";
-import HomeAbout from "./Home/HomeAbout";
-import HomeExplore from "./Home/HomeExplore";
-import HomeReview from "./Home/HomeReview";
+import Hero from "./Hero";
+import img from "../../assets/vfx.webp";
+import HomeMiddle from "./HomeMiddle";
+import HomeAbout from "./HomeAbout";
+import HomeExplore from "./HomeExplore";
+import HomeReview from "./HomeReview";
 
 function Home() {
+
+  
   const containerStyle = {
     position: 'relative',
     minHeight: '100vh',

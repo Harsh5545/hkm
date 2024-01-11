@@ -6,11 +6,25 @@ import './homeStyles.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Button  from "../../components/Button/Button";
+import Loader1 from "../../components/Loader/Loader1";
 
 const Hero = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an asynchronous operation (e.g., fetching data) that takes some time
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+
+    // Clear the timeout to prevent a memory leak
+    return () => clearTimeout(timeout);
+  }, []);
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 2000 });
   }, []);
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -58,9 +72,15 @@ const Hero = () => {
             </div> */}
         </div>
         <div className="flex-1 h-full w-full text-white">
+        {loading ? (
+        <Loader1 />
+      ) : (
+        <>
           <Canvas>
             <Experience/>
-          </Canvas>
+                </Canvas>
+                </>
+      )}
         </div>
       </div>
      </div>
