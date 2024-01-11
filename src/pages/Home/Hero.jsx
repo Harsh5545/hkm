@@ -16,7 +16,7 @@ const Hero = () => {
     // Simulate an asynchronous operation (e.g., fetching data) that takes some time
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 6000);
 
     // Clear the timeout to prevent a memory leak
     return () => clearTimeout(timeout);

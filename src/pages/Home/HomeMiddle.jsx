@@ -16,7 +16,7 @@ function HomeMiddle() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 100,
+    speed: 50,
     slidesToShow: 1,
     autoplay:true,
   };

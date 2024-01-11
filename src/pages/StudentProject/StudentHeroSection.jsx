@@ -12,7 +12,7 @@ function StudentHeroSection() {
       <header className="bg-white w-full h-full flex items-center dark:bg-gray-900">
         <div className="container px-6 py-16 mx-auto">
           <div className="flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-1/2">
+            <div className="w-full flex items-center justify-center lg:w-1/2">
               <div className="lg:max-w-lg md:gap-5 flex flex-col">
                 <h1 data-aos='fade-left' className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
                   Student <span className="text-[#e9414d]">Project</span>
@@ -35,7 +35,7 @@ function StudentHeroSection() {
             </div>
 
             <div className="flex md:items-center justify-center items-end w-full mt-6 lg:mt-0 lg:w-1/2">
-              <img data-aos='fade-right' className="w-full h-full lg:max-w-3xl" src={studentImage} alt="Harikrushna Multimedia Institute Student IMAGE" />
+              <img data-aos='fade-right' width={700} className=" h-full lg:max-w-3xl" src={studentImage} alt="Harikrushna Multimedia Institute Student IMAGE" />
             </div>
           </div>
         </div>

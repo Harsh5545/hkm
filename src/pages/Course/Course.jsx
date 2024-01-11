@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import imgvfx from "/model/course-bg.webp";
 import CourseMiddle from "./CourseMiddle";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const CoursesPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const backgroundStyles = {
     backgroundImage: `url(${imgvfx})`, // Use backticks for string interpolation
     backgroundSize: "cover",
@@ -53,15 +57,15 @@ const CoursesPage = () => {
           className="flex flex-col  md:flex-row justify-center items-center"
         >
           <div className=" w-[80%] relative">
-            <img
+            <img data-aos="fade-left"
               className="m-1 shadow-gray-800"
               src="./model/Graphic-Design.webp"
               alt="Graphic Design Course images"
             />
           </div>
           <div className="relative flex w-[80%] flex-col justify-center items-center">
-            <h1 className="text-4xl font-bold mb-6 text-white">Courses</h1>
-            <p className="text-lg mb-4 text-white">
+            <h1 data-aos="fade-down" className="text-5xl font-bold mb-6 text-white">Courses</h1>
+            <p data-aos="fade-right" className="text-xl mb-4 text-white">
               Welcome to Harikrushna Multimedia Institute, the best institute in
               Surat, offering dynamic courses to shape your creative career. Our
               expert faculty provides industry-relevant and employment-oriented
@@ -70,7 +74,7 @@ const CoursesPage = () => {
               are passionate about storytelling through animation or creating
               immersive gaming experiences, we have the right courses for you.
             </p>
-            <p className="text-lg mb-6 text-white">
+            <p className="text-xl mb-6 text-white md:visible hidden ">
               Chase your dream career by enrolling in our courses after
               completing your 12th grade. Transform your passion into a
               profession with Harikrushna Multimedia Institute.
