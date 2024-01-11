@@ -16,8 +16,9 @@ function HomeMiddle() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 100,
     slidesToShow: 1,
+    autoplay:true,
   };
   const handleNavLinkClick = () => {
     window.scrollTo(0, 0);

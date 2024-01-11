@@ -43,7 +43,7 @@ function HomeReview() {
                 data-aos="fade-left"
                 className="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96"
                 src={currentTestimonial.photo}
-                alt=""
+                alt="Harikrushna Multimedia"
               />
 
               <div className="mt-8 lg:px-10 lg:mt-0">
@@ -77,7 +77,7 @@ function HomeReview() {
               <button
                 onClick={() => handleNavigation("left")}
                 title="left arrow"
-                className=" p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100"
+                className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -85,11 +85,11 @@ function HomeReview() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M15 19l-7-7 7-7"
                   />
                 </svg>
@@ -98,7 +98,7 @@ function HomeReview() {
               <button
                 onClick={() => handleNavigation("right")}
                 title="right arrow"
-                className=" p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:mx-6 hover:bg-gray-100"
+                className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:mx-6 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,11 +106,11 @@ function HomeReview() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M9 5l7 7-7 7"
                   />
                 </svg>

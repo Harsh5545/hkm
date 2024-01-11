@@ -117,7 +117,6 @@ function StudentWork() {
             allowFullScreen
           ></iframe>
           <iframe
-            data-aos="fade-left"
             className="w-[25rem] md:w-[40rem] h-[20rem] md:h-[25rem]"
             src="https://www.youtube.com/embed/LbjXb-0e7LU?si=LdK0onbjOXCr_PXY"
             title="YouTube video player"
