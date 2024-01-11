@@ -23,7 +23,7 @@ function ContactHero() {
     return rotation;
     };
     useEffect(() => {
-      AOS.init({ duration: 1000 });
+      AOS.init({ duration: 200 });
     }, []);
   return (
     <div className="flex justify-center w-full md:items-end items-end  h-[90vh]" >
@@ -52,7 +52,7 @@ function ContactHero() {
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
             }} className="flex justify-center items-end">
-          <img data-aos="fade-left"   src={image} width={550} alt=""/>
+          <img    src={image} width={550} alt=""/>
           </div>
           </div>
           </div>
