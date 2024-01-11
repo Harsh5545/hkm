@@ -38,7 +38,7 @@ function Animation3D() {
     "Placement assistance for a successful career launch",
     "Knowledge of AI",
   ];
-  const toNavigate= useNavigate()
+  const toNavigate = useNavigate();
   const whatULearn = [
     "3D Modeling",
     "Texturing and Materials",
@@ -71,8 +71,12 @@ function Animation3D() {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  },[]);
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   const calculateRotation = (axis) => {
     const maxRotation = -10;
     const rotation =
@@ -153,7 +157,10 @@ function Animation3D() {
       </div>
       {/* WHAT YOU'LL LEARN */}
       <div className="flex py-8 gap-5 md:flex-row flex-col-reverse justify-center items-center h-full bg-[#001321]">
-        <div data-aos="fade-left" className="flex justify-center md:w-[60%] w-full">
+        <div
+          data-aos="fade-left"
+          className="flex justify-center md:w-[60%] w-full"
+        >
           <img src={WUL} width={700} alt="" />
         </div>
         <div

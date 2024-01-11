@@ -6,7 +6,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const CoursesPage = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
   }, []);
   const backgroundStyles = {
     backgroundImage: `url(${imgvfx})`, // Use backticks for string interpolation
@@ -23,9 +27,9 @@ const CoursesPage = () => {
     right: 0,
     bottom: 0,
     left: 0,
-    background:"linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)",
+    background:
+      "linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)",
     opacity: 0.81,
-   
   };
 
   return (
@@ -52,19 +56,22 @@ const CoursesPage = () => {
         style={backgroundStyles}
       >
         <div style={bgOverlayStyle}></div>
-        <div
-          
-          className="flex flex-col  md:flex-row justify-center items-center"
-        >
+        <div className="flex flex-col  md:flex-row justify-center items-center">
           <div className=" w-[80%] relative">
-            <img data-aos="fade-left"
+            <img
+              data-aos="fade-left"
               className="m-1 shadow-gray-800"
               src="./model/Graphic-Design.webp"
               alt="Graphic Design Course images"
             />
           </div>
           <div className="relative flex w-[80%] flex-col justify-center items-center">
-            <h1 data-aos="fade-down" className="text-5xl font-bold mb-6 text-white">Courses</h1>
+            <h1
+              data-aos="fade-down"
+              className="text-5xl font-bold mb-6 text-white"
+            >
+              Courses
+            </h1>
             <p data-aos="fade-right" className="text-xl mb-4 text-white">
               Welcome to Harikrushna Multimedia Institute, the best institute in
               Surat, offering dynamic courses to shape your creative career. Our

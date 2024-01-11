@@ -16,9 +16,9 @@ function HomeMiddle() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 50,
+    speed: 200,
     slidesToShow: 1,
-    autoplay:true,
+    autoplay: true,
   };
   const handleNavLinkClick = () => {
     window.scrollTo(0, 0);
@@ -48,12 +48,12 @@ function HomeMiddle() {
             </p>
           </Link>
         </div>
-        <div className="hidden   md:visible md:flex">
+        <div className="hidden md:visible md:flex">
           {CourseData.map((course, index) => (
             <div
               className="flex-1 flex justify-center my-2 px-2 md:px-14 text-center gap-6 items-center flex-col transition-all duration-1000 transform text-sm "
               key={index}
-              data-aos={CourseData.id % 2 ? "fade-right" : "fade-left"}
+              data-aos="fade-right" 
             >
               <img
                 src={course.image}
@@ -77,7 +77,7 @@ function HomeMiddle() {
                 <div
                   className={`flex-1 flex justify-center  px-2 md:px-14 text-center gap-6 items-center flex-col transition-all duration-1000 transform text-sm `}
                   key={index}
-                  data-aos={CourseData.id % 2 ? "fade-right" : "fade-left"}
+                  data-aos= "fade-right"
                 >
                   <img
                     src={course.image}

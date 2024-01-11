@@ -6,7 +6,7 @@ const Experience = () => {
   const [groupPosition, setGroupPosition] = useState([0, -30, 0]);
   const [groupCamera, setGroupCamera] = useState([0, 0, 0]);
   const [modelScale, setModelScale] = useState([1, 1, 1]);
-
+  const [modelLoaded, setModelLoaded] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -22,21 +22,25 @@ const Experience = () => {
       }
     };
 
-    // Initial position setup
     handleResize();
-
-    // Listen for window resize
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  useEffect(() => {
+    import("./Wattson_Strange_Attractor").then(() => {
+      setModelLoaded(true);
+    });
+  }, []);
   return (
     <>
-      <OrbitControls enableZoom={true} minDistance={50} maxDistance={150} />
+      <OrbitControls     enableZoom={true}
+        enablePan={true}
+        enableRotate={true}
+        minDistance={50}
+        maxDistance={150} />
       <ambientLight />
       <directionalLight
         position={[-5, 5, 5]}
@@ -46,9 +50,11 @@ const Experience = () => {
       />
       <PerspectiveCamera makeDefault position={groupCamera} />
 
-      <group position={groupPosition} scale={modelScale}>
-        <Wsa />
-      </group>
+      {modelLoaded && (
+        <group position={groupPosition} scale={modelScale}>
+          <Wsa />
+        </group>
+      )}
     </>
   );
 };

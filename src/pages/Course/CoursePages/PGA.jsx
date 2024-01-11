@@ -85,8 +85,12 @@ function PGA() {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  },[]);
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   const calculateRotation = (axis) => {
     const maxRotation = -10;
     const rotation =

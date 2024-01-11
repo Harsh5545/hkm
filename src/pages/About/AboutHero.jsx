@@ -22,20 +22,29 @@ function AboutHero() {
     const rotation =
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
-    };
+  };
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
   }, []);
 
   return (
     <div className="flex justify-center md:items-end items-center h-[90vh]">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="flex justify-center items-end">
-          <img  style={{
+          <img
+            style={{
               transform: `rotateX(${calculateRotation(
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
-            }} src={img} width={550} alt="About PNG Image of www.HarikrushnaMultimedia.com" />
+            }}
+            src={img}
+            width={550}
+            alt="About PNG Image of www.HarikrushnaMultimedia.com"
+          />
         </div>
         <div
           data-aos="fade-up"

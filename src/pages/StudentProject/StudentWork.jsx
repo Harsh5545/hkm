@@ -13,7 +13,11 @@ import "aos/dist/aos.css";
 import { testimonialsData } from "../../helpers/Constant";
 function StudentWork() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
   }, []);
   const StudentData = [
     {

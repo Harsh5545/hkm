@@ -9,11 +9,15 @@ import { useNavigate } from "react-router-dom";
 
 const CourseMiddle = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
   }, []);
   const toNavigate = useNavigate();
   return (
-    <div className="flex my-12 justify-center bg-gray-100 overflow-x-hidden">
+    <div className="flex py-12 justify-center bg-gray-100 overflow-x-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {CourseDetails.map((course) => (
           <div

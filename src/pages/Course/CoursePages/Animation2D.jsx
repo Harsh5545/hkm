@@ -72,15 +72,19 @@ function Animation2D() {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  },[]);
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   const calculateRotation = (axis) => {
     const maxRotation = -10;
     const rotation =
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
   };
- const toNavigate= useNavigate()
+  const toNavigate = useNavigate();
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
