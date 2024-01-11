@@ -1,29 +1,24 @@
 import React from "react";
 import "./About.css";
-import Slider from "react-slick";
 
 import about from "/course/AboutUs.webp";
 function AboutMiddle() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  const bgColor = {
+    background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
+
+  }
   return (
-    <div className="py-16 bg-gray-100 dark:bg-gray-800">
+    <div className="py-16 overflow-hidden bg-gray-100 dark:bg-gray-800">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold pb-10 text-[#e9414d] mb-8 text-center">
           About Our Institute
         </h1>
-        <div className="grid grid-cols-1 px-4 md:pl-5 md:grid-cols-2 gap-12">
-          <div className="md:col-span-1">
+        <div className="grid grid-cols-1 px-4 md:pl-5 md:grid-cols-2 gap-5 ">
+          <div className="md:col-span-1 flex flex-col justify-center m-1">
             <p className="text-gray-700 dark:text-gray-300 text-lg">
-              Welcome to{" "}
+              Welcome to
               <span className="font-bold">
-                {" "}
-                Harikrushna Multimedia Institute{" "}
+                Harikrushna Multimedia Institute
               </span>
               , located in Surat, Gujarat. We take pride in offering a diverse
               range of creative courses that empower aspiring individuals in the
@@ -55,15 +50,35 @@ function AboutMiddle() {
             </p>
           </div>
           <div className="md:col-span-1 flex justify-center items-center">
-            <div class="card">
-              <div class="bg">
-                {" "}
-                <img src={about} alt="" className="h-full" width={550}/>
+            <div className="card w-[24rem] md:w-[31rem] h-[28rem] md:h-[41rem] ">
+              <div className="bg w-[25rem] md:w-[30rem] h-[29rem] md:h-[40rem]">
+                <img src={about} alt="" className="h-full" width={550} />
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
           </div>
         </div>
+      </div>
+      <div  className="md:px-10 px-5 md:my-32  my-20 ">
+        <h1 className="text-[#0F406D] my-10 mx-10 font-bold text-2xl md:text-5xl">
+          Our Mission <span className="text-[#e9414d] ">& Vision</span>
+        </h1>
+        <div style={bgColor} className="md:p-10 p-5 m-5 rounded-3xl text-center grid grid-cols-1 md:grid-cols-2">
+  <div className="text-[#fff]">
+    <h1 className="font-bold text-xl md:text-4xl">Our Mission</h1>
+    <p className="md:p-10 p-4 md:text-2xl text-md">
+      At <span className="font-medium">Harikrushna Multimedia</span>, we empower students through innovative education, fostering independence and critical thinking.
+    </p>
+  </div>
+  <div className="pt-5 md:pt-0 text-[#fff]">
+    <h1 className="font-bold text-xl md:text-4xl">Our Vision</h1>
+    <p className="md:p-10 p-4 md:text-2xl text-md">
+      <span className="font-medium ">Harikrushna Multimedia's</span> vision is to shape futures through cutting-edge animation education, inspiring artistic excellence and industry leadership.
+    </p>
+  </div>
+</div>
+
+
       </div>
     </div>
   );

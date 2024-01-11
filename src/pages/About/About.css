@@ -16,8 +16,7 @@
  
   .card {
     position: relative;
-    width: 30rem;
-    height: 35rem;
+    
     border-radius: 14px;
     /* z-index: 1111; */
     overflow: hidden;
@@ -30,9 +29,6 @@
   
   .bg {
     position: absolute;
-  
-    width: 29rem;
-    height: 34rem;
     z-index: 2;
     background: rgba(255, 255, 255, .95);
     backdrop-filter: blur(24px);

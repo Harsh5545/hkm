@@ -17,7 +17,7 @@ function ContactHero() {
     };
   }, []);
   const calculateRotation = (axis) => {
-    const maxRotation = -10;
+    const maxRotation = -20;
     const rotation =
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
@@ -26,7 +26,7 @@ function ContactHero() {
       AOS.init({ duration: 1000 });
     }, []);
   return (
-    <div className="flex justify-center w-full md:items-end items-end  h-[80vh]" >
+    <div className="flex justify-center w-full md:items-end items-end  h-[90vh]" >
           
           <div className="grid md:grid-cols-2 grid-cols-1 ">
     

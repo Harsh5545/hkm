@@ -60,7 +60,7 @@ function HomeExplore() {
             <div className="tooltip">
               <h2 className="text-2xl">PROFESSIONAL MASTERS</h2>
               <p className="text-lg">
-                {" "}
+            
                 Masters help Imagineers to bring their imagination to life.
                 Making the course more simpler to understand.
               </p>

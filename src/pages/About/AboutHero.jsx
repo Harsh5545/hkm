@@ -1,18 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import img from "/course/About.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function AboutHero() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+  const calculateRotation = (axis) => {
+    const maxRotation = -20;
+    const rotation =
+      (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
+    return rotation;
+    };
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center md:items-end items-center h-[90vh]">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="flex justify-center items-end">
-          <img src={img} width={550} alt="" />
+          <img  style={{
+              transform: `rotateX(${calculateRotation(
+                "y"
+              )}deg) rotateY(${-calculateRotation("x")}deg)`,
+            }} src={img} width={550} alt="About PNG Image of www.HarikrushnaMultimedia.com" />
         </div>
         <div
           data-aos="fade-up"
@@ -27,7 +50,7 @@ function AboutHero() {
             </p>
 
             <h1
-              className="mt-2 md:text-4xl font-semibold text-gray-800 text-xl dark:text-white"
+              className="mt-2 md:text-4xl text-2xl font-semibold text-gray-800  dark:text-white"
               data-aos="fade-left"
             >
               Explore the World of Creativity
