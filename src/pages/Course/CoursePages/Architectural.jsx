@@ -73,7 +73,7 @@ function Architectural() {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  });
+  },[]);
   const calculateRotation = (axis) => {
     const maxRotation = -10;
     const rotation =

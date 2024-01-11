@@ -5,7 +5,6 @@ import about from "/course/AboutUs.webp";
 function AboutMiddle() {
   const bgColor = {
     background: 'linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%)',
-
   }
   return (
     <div className="py-16 overflow-hidden bg-gray-100 dark:bg-gray-800">

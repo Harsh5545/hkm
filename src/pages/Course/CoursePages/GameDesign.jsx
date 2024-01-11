@@ -73,7 +73,7 @@ function GameDesign() {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  });
+  },[]);
   const calculateRotation = (axis) => {
     const maxRotation = -25;
     const rotation =
