@@ -31,8 +31,8 @@ function ContactHero() {
           <div className="grid md:grid-cols-2 grid-cols-1 ">
     
         <div  data-aos="fade-up" className="container px-3 flex justify-center items-center mx-auto">
-          <div  className="text-center flex flex-col gap-10">
-            <p  data-aos="fade-right" className=" text-2xl md:text-6xl font-bold text-[#e9414d] dark:text-blue-400">
+          <div   className="text-center flex flex-col gap-10">
+            <p   className=" text-2xl md:text-6xl font-bold text-[#e9414d] dark:text-blue-400">
               Contact us
             </p>
 
@@ -40,19 +40,19 @@ function ContactHero() {
               We'd love to hear from you
             </h1>
 
-            <p  data-aos="fade-left" className="mt-3 text-2xl text-gray-500 dark:text-gray-400">
+            <p   className="mt-3 text-2xl text-gray-500 dark:text-gray-400">
               Chat to our friendly team.
             </p>
           </div>
         </div>
         
           
-          <div   style={{
+          <div  data-aos="fade-down"  style={{
               transform: `rotateX(${calculateRotation(
                 "y"
               )}deg) rotateY(${-calculateRotation("x")}deg)`,
             }} className="flex justify-center items-end">
-          <img    src={image} width={550} alt=""/>
+          <img src={image} width={550} alt=""/>
           </div>
           </div>
           </div>

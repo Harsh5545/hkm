@@ -56,7 +56,7 @@ const CoursesPage = () => {
         style={backgroundStyles}
       >
         <div style={bgOverlayStyle}></div>
-        <div className="flex flex-col  md:flex-row justify-center items-center">
+        <div className="flex flex-col  md:flex-row justify-end md:justify-center items-center">
           <div className=" w-[80%] relative">
             <img
               data-aos="fade-left"
@@ -65,7 +65,7 @@ const CoursesPage = () => {
               alt="Graphic Design Course images"
             />
           </div>
-          <div className="relative flex w-[80%] flex-col justify-center items-center">
+          <div className="relative flex w-[80%] flex-col justify-end md:justify-center items-center">
             <h1
               data-aos="fade-down"
               className="text-5xl font-bold mb-6 text-white"
@@ -77,9 +77,7 @@ const CoursesPage = () => {
               Surat, offering dynamic courses to shape your creative career. Our
               expert faculty provides industry-relevant and employment-oriented
               training using the latest tools and technologies. Explore our
-              exciting courses in animation, VFX, gaming, and more. Whether you
-              are passionate about storytelling through animation or creating
-              immersive gaming experiences, we have the right courses for you.
+              exciting courses in animation, VFX, gaming, and more.
             </p>
             <p className="text-xl mb-6 text-white md:visible hidden ">
               Chase your dream career by enrolling in our courses after

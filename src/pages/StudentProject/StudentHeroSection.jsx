@@ -16,7 +16,7 @@ function StudentHeroSection() {
       <header className="bg-white w-full h-full flex items-center dark:bg-gray-900">
         <div className="container px-6 py-16 mx-auto">
           <div className="flex flex-col lg:flex-row items-center">
-            <div className="w-full flex items-center justify-center lg:w-1/2">
+            <div className="w-full flex items-center md:justify-center justify-end lg:w-1/2">
               <div className="lg:max-w-lg md:gap-5 flex flex-col">
                 <h1
                   data-aos="fade-left"
@@ -31,9 +31,7 @@ function StudentHeroSection() {
                 >
                   Explore the innovative projects created by students at
                   Harikrushna Multimedia Institute. Our students showcase their
-                  skills and creativity through a diverse range of projects,
-                  spanning graphic design, web development, multimedia
-                  production, and more. Ready to embark on your own creative
+                  skills and creativity through a diverse range of projects. Ready to embark on your own creative
                   journey? Explore now and be inspired!
                 </p>
 
