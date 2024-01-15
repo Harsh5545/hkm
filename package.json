@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run generate-sitemap",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-sitemap": "node generateSitemap.cjs"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -29,6 +30,7 @@
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.3",
+    "sitemap": "^7.1.1",
     "slick-carousel": "^1.8.1",
     "three": "^0.160.0",
     "typewriter-effect": "^2.21.0"
