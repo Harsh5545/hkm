@@ -15,9 +15,8 @@ function AboutMiddle() {
         <div className="grid grid-cols-1 px-4 md:pl-5 md:grid-cols-2 gap-5 ">
           <div className="md:col-span-1 flex flex-col justify-center m-1">
             <p className="text-gray-700 dark:text-gray-300 text-lg">
-              Welcome to
-              <span className="font-bold">
-                Harikrushna Multimedia Institute
+              Welcome to 
+              <span className="font-bold"> Harikrushna Multimedia Institute
               </span>
               , located in Surat, Gujarat. We take pride in offering a diverse
               range of creative courses that empower aspiring individuals in the
