@@ -14,6 +14,7 @@ import VerticalCarousel from "../../../components/slider/VerticalCarousel";
 import ContactForm from "../../../components/ContactForm/ContactForm";
 import Button from "../../../components/Button/Button";
 import FAQSection from "../../../components/Faq/Faq";
+import { useNavigate } from "react-router-dom";
 
 function VisualEffect() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
