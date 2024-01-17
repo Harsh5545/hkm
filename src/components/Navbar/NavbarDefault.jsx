@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Logo from "../../assets/logo.png";
 import Button from "../Button/Button";
