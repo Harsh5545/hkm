@@ -61,7 +61,7 @@ function NavbarDefault() {
                 className=" hover:text-black"
                 onClick={toggleMobileMenu}
               >
-                AboutUs
+                About Us
               </Link>
             </li>
             <li>
