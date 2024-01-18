@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import imgvfx from "/model/course-bg.webp";
 import CourseMiddle from "./CourseMiddle";

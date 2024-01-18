@@ -1,4 +1,4 @@
-import React from "react";
+
 import Hero from "./Hero";
 import img from "../../assets/vfx.webp";
 import HomeMiddle from "./HomeMiddle";
