@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import Logo from '../../assets/logo.png'
@@ -78,7 +78,7 @@ function NavbarFixed() {
           </li>
           <li>
             <Link to="/about" className=" hover:text-black" onClick={() => handleNavLinkClick("/about")}>
-              AboutUs
+              About Us
             </Link>
           </li>
           <li>
