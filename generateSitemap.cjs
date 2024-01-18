@@ -1,8 +1,7 @@
-// generateSitemap.js
+
 const { SitemapStream, streamToPromise } = require("sitemap");
 const fs = require("fs");
 
-// Your React app's routes
 const routes = [
     "/",
     "/about",
@@ -10,24 +9,24 @@ const routes = [
     "/student-project",
     "/contact",
     "/course/game-design",
-    '/course/3d-jewelry-design',
-    '/course/3d-architectural', 
-    '/course/video-editing',
-    '/course/3d-animation',
-    '/course/visual-effect',
-    '/course/2d-animation',
-    '/course/graphics-design',
-    '/course/graphics-animation-program',
-    '/course/game-design-program' 
-  // Add more routes as needed
+    "/course/3d-jewelry-design",
+    "/course/3d-architectural", 
+    "/course/video-editing",
+    "/course/3d-animation",
+    "/course/visual-effect",
+    "/course/2d-animation",
+    "/course/graphics-design",
+    "/course/graphics-animation-program",
+    "/course/game-design-program"
+ 
 ];
 
 const createSitemap = async () => {
   const sitemapStream = new SitemapStream({
-    hostname: "https://harshadkajale.online",
-  }); // replace with your website URL
+    hostname: "https://harikrushnamultimedia.com",
+  });
 
-  // Add URLs to the sitemap
+
   routes.forEach((route) => {
     sitemapStream.write({ url: route });
   });
