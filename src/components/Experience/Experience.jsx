@@ -6,7 +6,7 @@ const Experience = () => {
   const [groupPosition, setGroupPosition] = useState([0, -30, 0]);
   const [groupCamera, setGroupCamera] = useState([0, 0, 0]);
   const [modelScale, setModelScale] = useState([1, 1, 1]);
-  const [modelLoaded, setModelLoaded] = useState(false);
+  // const [modelLoaded, setModelLoaded] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -29,11 +29,11 @@ const Experience = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  useEffect(() => {
-    import("./Wattson_Strange_Attractor").then(() => {
-      setModelLoaded(true);
-    });
-  }, []);
+  // useEffect(() => {
+  //   import("./Wattson_Strange_Attractor").then(() => {
+  //     setModelLoaded(true);
+  //   });
+  // }, []);
   return (
     <>
       <OrbitControls     enableZoom={true}
@@ -50,11 +50,11 @@ const Experience = () => {
       />
       <PerspectiveCamera makeDefault position={groupCamera} />
 
-      {modelLoaded && (
+      {/* {modelLoaded && ( */}
         <group position={groupPosition} scale={modelScale}>
           <Wsa />
         </group>
-      )}
+      {/* )} */}
     </>
   );
 };
