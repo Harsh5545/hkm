@@ -1,26 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import TyperWriter from "./TyperWriter";
 import { Canvas } from "@react-three/fiber";
-import Experience from "../../components/Experience/Experience";
-import './homeStyles.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Button  from "../../components/Button/Button";
+import Button from "../../components/Button/Button";
 import Loader1 from "../../components/Loader/Loader1";
 
+const Experience = lazy(() => import("../../components/Experience/Experience"));
+
 const Hero = () => {
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate an asynchronous operation (e.g., fetching data) that takes some time
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    // Clear the timeout to prevent a memory leak
-    return () => clearTimeout(timeout);
-  }, []);
+  
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
@@ -37,7 +26,6 @@ const Hero = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  
 
   const calculateRotation = (axis) => {
     const maxRotation = 1;
@@ -56,34 +44,34 @@ const Hero = () => {
       }}
     >
       <div className="flex flex-col mt-6 md:mt-2 select-none md:flex-row justify-between h-full items-center left-container">
-        <div className=" flex flex-col flex-1  items-start justify-end md:justify-start font-poppins text-white gap-1 md:gap-8">
-          <h2 data-aos='fade-left' className="flex text-2xl md:text-4xl">Opportunity to Bring Your</h2>
-          <h1 data-aos='fade-right' className="text-3xl md:text-5xl">Creative Passion to Life</h1>
-          <div  className="flex flex-col gap-2 md:gap-8" >
-            <h2 data-aos='fade-left' className="flex text-2xl md:text-4xl">You Will Learn Here</h2>
-            <div data-aos='fade-right'>  <TyperWriter  /></div>
-          
+        <div className="flex flex-col flex-1  items-start justify-end md:justify-start font-poppins text-white gap-1 md:gap-8">
+          <h2 data-aos="fade-left" className="flex text-2xl md:text-4xl">
+            Opportunity to Bring Your
+          </h2>
+          <h1 data-aos="fade-right" className="text-3xl md:text-5xl">
+            Creative Passion to Life
+          </h1>
+          <div className="flex flex-col gap-2 md:gap-8">
+            <h2 data-aos="fade-left" className="flex text-2xl md:text-4xl">
+              You Will Learn Here
+            </h2>
+            <div data-aos="fade-right">
+              <TyperWriter />
+            </div>
           </div>
-          <Button value={'Download'} data-aos="flip-up" className={'btn'}/>
-            {/* <div className={'button pt-2 md:pt-2 '} >
-              <span>Download Brochure</span>
-              <b className="top">click to download</b>
-              <b className="bottom">83MB .pdf</b>
-            </div> */}
+          <Button value={"Download"} data-aos="flip-up" className={"btn"} />
         </div>
         <div className="flex-1 h-full w-full text-white">
-        {loading ? (
-        <Loader1 />
-      ) : (
-        <>
-          <Canvas>
-            <Experience/>
+         
+              <Suspense fallback={<Loader1 />}>
+                <Canvas>
+                  <Experience />
                 </Canvas>
-                </>
-      )}
+              </Suspense>
+          
         </div>
       </div>
-     </div>
+    </div>
   );
 };
 
