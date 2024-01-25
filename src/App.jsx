@@ -27,17 +27,7 @@ const Staticroutes = [
     path: "/",
     element: (
       <Suspense fallback={<Loader />}>
-        {" "}
-        <Home />{" "}
-      </Suspense>
-    ),
-  },
-  {
-    path: "/about",
-    element: (
-      <Suspense fallback={<Loader />}>
-        {" "}
-        <Aboutus />{" "}
+        <Home />
       </Suspense>
     ),
   },
@@ -45,16 +35,23 @@ const Staticroutes = [
     path: "/course",
     element: (
       <Suspense fallback={<Loader />}>
-        {" "}
         <Course />
       </Suspense>
     ),
   },
   {
+    path: "/about",
+    element: (
+      <Suspense fallback={<Loader />}>
+        <Aboutus />
+      </Suspense>
+    ),
+  },
+
+  {
     path: "/student-project",
     element: (
       <Suspense fallback={<Loader />}>
-        {" "}
         <StudentProject />
       </Suspense>
     ),
