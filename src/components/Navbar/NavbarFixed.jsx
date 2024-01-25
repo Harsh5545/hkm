@@ -82,7 +82,7 @@ function NavbarFixed() {
             </Link>
           </li>
           <li>
-            <Link to="/course" className="hover:text-black" onClick={() => handleNavLinkClick("/course")}>
+            <Link to="/courses" className="hover:text-black" onClick={() => handleNavLinkClick("/course")}>
               Course
             </Link>
           </li>
