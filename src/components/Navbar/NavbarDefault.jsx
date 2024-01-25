@@ -66,7 +66,7 @@ function NavbarDefault() {
             </li>
             <li>
               <Link
-                to="/course"
+                to="/courses"
                 className="hover:text-black"
                 onClick={toggleMobileMenu}
               >
