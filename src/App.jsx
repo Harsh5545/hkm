@@ -32,7 +32,7 @@ const Staticroutes = [
     ),
   },
   {
-    path: "/course",
+    path: "/courses",
     element: (
       <Suspense fallback={<Loader />}>
         <Course />
