@@ -29,7 +29,7 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault();
     const serviceId = "service_0krafbr";
-    const templateId = "template_nmqzrml";
+    const templateId = "template_61p6zpj";
     const publicKey = "e8m4_SZqHq0uAAXvA";
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
@@ -65,7 +65,7 @@ function ContactForm() {
           >
             <div className="mb-4 w-full md:w-[60%]">
               <input
-                type="from_name"
+                name="user_name"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
                 placeholder="Name"
                 required
@@ -73,7 +73,7 @@ function ContactForm() {
             </div>
             <div className="mb-4 w-full md:w-[60%]">
               <input
-                type="reply_to"
+                name="user_email"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
                 placeholder="name@example.com"
                 required
@@ -83,7 +83,7 @@ function ContactForm() {
               <input
                 type="tel"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
-//hello harsh
+                name="user_phone"
                 placeholder="Number"
                 required
               />
@@ -91,6 +91,7 @@ function ContactForm() {
             <div className="mb-4 w-full md:w-[60%]">
               <select
                 value={course}
+                name="message"
                 onChange={handleCourseChange}
                 className="form-control-contact w-full p-3 rounded-3xl"
               >
