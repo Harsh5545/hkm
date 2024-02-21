@@ -51,7 +51,7 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Open Graph meta tags for Twitter */}
-        <meta name="twitter:card" content="/src/assets/logo.png" />
+        <meta name="twitter:card" content="https://harikrushnamultimedia.com/assets/logo-bRchjwO1.png" />
         <meta
           name="twitter:title"
           content="Harikrushna Multimedia Institute - Explore Exciting Courses"
@@ -60,7 +60,7 @@ function Home() {
           name="twitter:description"
           content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
         />
-        <meta name="twitter:image" content="/src/assets/logo.png" />
+        <meta name="twitter:image" content="https://harikrushnamultimedia.com/assets/logo-bRchjwO1.png" />
 
         {/* General Open Graph meta tags */}
         <meta
@@ -72,7 +72,7 @@ function Home() {
           content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/src/assets/logo.png" />
+        <meta property="og:image" content="https://harikrushnamultimedia.com/assets/logo-bRchjwO1.png" />
         <meta property="og:url" content={window.location.href} />
         <meta
           property="og:site_name"
