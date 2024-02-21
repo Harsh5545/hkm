@@ -1,6 +1,6 @@
 import  { useState, useEffect } from 'react';
 import { useTrail, animated } from 'react-spring';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import './homeStyles.css';
 import { WhyChooseUs } from '../../helpers/Constant';
@@ -38,7 +38,7 @@ function HomeAbout() {
           name="description"
           content="Discover the reasons to choose Harikrushna Multimedia Institute. Explore our industry-relevant courses and expert faculty. Shape your creative career in animation, VFX, gaming, and more."
         />
-        {/* Add more meta tags as needed for SEO optimization */}
+       
       </Helmet>
 
       <div className='mt-40 w-full md:p-10 p-2.5 h-[50]' style={HomeAboutStyles}>

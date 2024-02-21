@@ -7,41 +7,52 @@ function StudentProject() {
   return (
     <div>
       <Helmet>
-        <title>Harikrushna Multimedia Institute Student Project</title>
+        <title>Harikrushna Multimedia Institute Student Projects</title>
         <meta
           name="description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Explore the impressive student projects at Harikrushna Multimedia Institute. Witness the creativity and innovation of our students in animation, VFX, gaming, and more. Be inspired by their work and consider joining our courses to kickstart your creative journey."
         />
         <meta
           name="keywords"
-          content="Harikrushna Multimedia Institute, animation courses, VFX courses, gaming courses, media and entertainment courses, creative career, 12th grade courses, Surat"
+          content="Harikrushna Multimedia Institute, student projects, animation, VFX, gaming, media and entertainment, creative career, 12th grade courses, Surat"
         />
         <meta name="author" content="Harikrushna Multimedia Institute" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Open Graph meta tags for Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Harikrushna Multimedia Institute - Explore Exciting Courses" />
+        <meta name="twitter:card" content="public/course/3d-animation.webp" />
+        <meta
+          name="twitter:title"
+          content="Harikrushna Multimedia Institute Student Projects"
+        />
         <meta
           name="twitter:description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Explore the impressive student projects at Harikrushna Multimedia Institute. Witness the creativity and innovation of our students in animation, VFX, gaming, and more. Be inspired by their work and consider joining our courses to kickstart your creative journey."
         />
-        <meta name="twitter:image" content="URL_TO_YOUR_TWITTER_IMAGE" />
+        <meta name="twitter:image" content="/public/course/3d-animation.webp" />
 
         {/* General Open Graph meta tags */}
-        <meta property="og:title" content="Harikrushna Multimedia Institute - Explore Exciting Courses" />
+        <meta
+          property="og:title"
+          content="Harikrushna Multimedia Institute Student Projects"
+        />
         <meta
           property="og:description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Explore the impressive student projects at Harikrushna Multimedia Institute. Witness the creativity and innovation of our students in animation, VFX, gaming, and more. Be inspired by their work and consider joining our courses to kickstart your creative journey."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/course/A2.webp" />
+        <meta property="og:image" content="/public/course/3d-animation.webp" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Harikrushna Multimedia Institute" />
+        <meta
+          property="og:site_name"
+          content="Harikrushna Multimedia Institute"
+        />
+        <link rel="canonical" href={window.location.href} />
       </Helmet>
+
       <StudentHeroSection />
-      <StudentWork/>
+      <StudentWork />
     </div>
   );
 }

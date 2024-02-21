@@ -34,39 +34,48 @@ const CoursesPage = () => {
 
   return (
     <>
-     <Helmet>
-        <title>Harikrushna Multimedia Institute - Explore Exciting Courses</title>
+      <Helmet>
+        <title>VFX Animation Course - Harikrushna Multimedia Institute</title>
         <meta
           name="description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Unlock the world of imagination with our VFX Animation Course at Harikrushna Multimedia Institute. Dive into the fascinating realm of visual effects and animation, mastering industry-relevant skills. Join us to turn your passion into a profession. Explore our comprehensive curriculum, hands-on training, and industry connections."
         />
         <meta
           name="keywords"
-          content="Harikrushna Multimedia Institute, animation courses, VFX courses, gaming courses, media and entertainment courses, creative career, 12th grade courses, Surat"
+          content="VFX Animation Course, Visual Effects, Animation, Multimedia Institute, Creative Career, 12th Grade Courses, Surat, Industry-Relevant Skills, Hands-On Training, Animation Curriculum, VFX Techniques, Multimedia Education"
         />
         <meta name="author" content="Harikrushna Multimedia Institute" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* Open Graph meta tags for Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Harikrushna Multimedia Institute - Explore Exciting Courses" />
+        <meta name="twitter:card" content="/src/assets/vfx.webp" />
+        <meta
+          name="twitter:title"
+          content="VFX Animation Course - Harikrushna Multimedia Institute"
+        />
         <meta
           name="twitter:description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Unlock the world of imagination with our VFX Animation Course at Harikrushna Multimedia Institute. Dive into the fascinating realm of visual effects and animation, mastering industry-relevant skills. Join us to turn your passion into a profession. Explore our comprehensive curriculum, hands-on training, and industry connections."
         />
-        <meta name="twitter:image" content="URL_TO_YOUR_TWITTER_IMAGE" />
+        <meta name="twitter:image" content="/src/assets/vfx.webp" />
 
-        {/* General Open Graph meta tags */}
-        <meta property="og:title" content="Harikrushna Multimedia Institute - Explore Exciting Courses" />
+        <meta
+          property="og:title"
+          content="VFX Animation Course - Harikrushna Multimedia Institute"
+        />
         <meta
           property="og:description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Unlock the world of imagination with our VFX Animation Course at Harikrushna Multimedia Institute. Dive into the fascinating realm of visual effects and animation, mastering industry-relevant skills. Join us to turn your passion into a profession. Explore our comprehensive curriculum, hands-on training, and industry connections."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/course/A2.webp" />
+        <meta property="og:image" content="/src/assets/vfx.webp" />
         <meta property="og:url" content={window.location.href} />
-        <meta property="og:site_name" content="Harikrushna Multimedia Institute" />
+        <meta
+          property="og:site_name"
+          content="Harikrushna Multimedia Institute"
+        />
+
+        <link rel="canonical" href={window.location.href} />
       </Helmet>
 
       <div
