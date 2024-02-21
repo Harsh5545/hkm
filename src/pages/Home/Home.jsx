@@ -35,9 +35,10 @@ function Home() {
     <>
     <Helmet>
         <title>Harikrushna Multimedia Institute - Explore Exciting Courses</title>
+        <link rel='canonical' href={window.location.href} />
         <meta
           name="description"
-          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more. Pursue your passion by joining our courses after completing your 12th grade."
+          content="Discover exciting and industry-relevant courses at Harikrushna Multimedia Institute. Transform your creative career with expert-led training in animation, VFX, gaming, and more."
         />
         <meta
           name="keywords"
