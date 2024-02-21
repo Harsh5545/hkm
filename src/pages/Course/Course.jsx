@@ -48,7 +48,7 @@ const CoursesPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="twitter:card" content="/src/assets/vfx.webp" />
+        <meta name="twitter:card" content="https://harikrushnamultimedia.com/model/Graphic-Design.webp" />
         <meta
           name="twitter:title"
           content="VFX Animation Course - Harikrushna Multimedia Institute"
@@ -57,7 +57,7 @@ const CoursesPage = () => {
           name="twitter:description"
           content="Unlock the world of imagination with our VFX Animation Course at Harikrushna Multimedia Institute. Dive into the fascinating realm of visual effects and animation, mastering industry-relevant skills. Join us to turn your passion into a profession. Explore our comprehensive curriculum, hands-on training, and industry connections."
         />
-        <meta name="twitter:image" content="/src/assets/vfx.webp" />
+        <meta name="twitter:image" content="https://harikrushnamultimedia.com/model/Graphic-Design.webp" />
 
         <meta
           property="og:title"
@@ -68,7 +68,7 @@ const CoursesPage = () => {
           content="Unlock the world of imagination with our VFX Animation Course at Harikrushna Multimedia Institute. Dive into the fascinating realm of visual effects and animation, mastering industry-relevant skills. Join us to turn your passion into a profession. Explore our comprehensive curriculum, hands-on training, and industry connections."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/src/assets/vfx.webp" />
+        <meta property="og:image" content="https://harikrushnamultimedia.com/model/Graphic-Design.webp" />
         <meta property="og:url" content={window.location.href} />
         <meta
           property="og:site_name"
