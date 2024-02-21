@@ -40,7 +40,7 @@ const createSitemap = async () => {
   );
 
   // Save the sitemap to a file
-  fs.writeFileSync("dist/sitemap.xml", sitemapContent, "utf8");
+  fs.writeFileSync("dist/sitemap.txt", sitemapContent, "utf8");
 };
 
 createSitemap();
