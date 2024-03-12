@@ -32,14 +32,7 @@ function HomeAbout() {
 
   return (
     <>
-      <Helmet>
-        <title>Harikrushna Multimedia Institute - Why Choose Us?</title>
-        <meta
-          name="description"
-          content="Discover the reasons to choose Harikrushna Multimedia Institute. Explore our industry-relevant courses and expert faculty. Shape your creative career in animation, VFX, gaming, and more."
-        />
-       
-      </Helmet>
+    
 
       <div className='mt-40 w-full md:p-10 p-2.5 h-[50]' style={HomeAboutStyles}>
         <h1 className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>

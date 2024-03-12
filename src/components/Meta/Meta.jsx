@@ -1,29 +1,48 @@
-import PropTypes from 'prop-types';
-const Meta = ({ title, description, image, url }) => {
-    return (
-      <>
-        <title>{title || 'Your 3D and Animation Classes'}</title>
-        <meta name="description" content={description || 'Explore the world of 3D and animation with our engaging classes. Learn industry-standard tools and techniques.'} />
-  
-        {/* Open Graph meta tags */}
-        <meta property="og:title" content={title || 'Your 3D and Animation Classes'} />
-        <meta property="og:description" content={description || 'Explore the world of 3D and animation with our engaging classes. Learn industry-standard tools and techniques.'} />
-        <meta property="og:image" content={image || '/default-image.jpg'} />
-        <meta property="og:url" content={url || 'https://yourdomain.com'} />
-  
-        {/* Twitter Card meta tags */}
-        <meta name="twitter:title" content={title || 'Your 3D and Animation Classes'} />
-        <meta name="twitter:description" content={description || 'Explore the world of 3D and animation with our engaging classes. Learn industry-standard tools and techniques.'} />
-        <meta name="twitter:image" content={image || '/default-image.jpg'} />
-      </>
-    );
-  };
 
-  Meta.propTypes = {
-    title: PropTypes.string,
-    description: PropTypes.string,
-    image: PropTypes.string,
-    url: PropTypes.string,
-  };
-  
-  export default Meta;
+import React, { useEffect } from "react"
+
+
+const usePageSeo = ({
+    title,
+    description,
+    keywords = [],
+    ogTitle,
+    ogDescription,
+    ogImage,
+    ogUrl
+}) => {
+    useEffect(() => {
+        document.title = title
+        setMetaTag('name', 'description', description)
+        setMetaTag('name', 'keywords', keywords)
+        setMetaTag('property', 'og:title', ogTitle || title)
+        setMetaTag('property', 'og:description', ogDescription || description)
+        setMetaTag('property', 'og:image', ogImage)
+        setMetaTag('property', 'og:url', ogUrl || window.location.href)
+
+        return () => {
+        }
+    }, [
+        title,
+        description,
+        keywords = [],
+        ogTitle,
+        ogDescription,
+        ogImage,
+        ogUrl
+    ])
+
+    const setMetaTag = (attr, key, content) => {
+        if (content) {
+            let element = document.querySelector(`meta[${attr}="${key}"]`)
+            if (!element) {
+                element = document.createElement('meta')
+                element.setAttribute(attr, key)
+                document.head.appendChild(element)
+            }
+
+            element.setAttribute('content', content)
+        }
+    }
+}
+export default usePageSeo
